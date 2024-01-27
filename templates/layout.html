@@ -1,0 +1,67 @@
+<!-- create same layout across website-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% block styles %}
+        {% endblock %}
+        <!-- styling for the header/navbar -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='layout.css') }}">
+        <title>
+            Portfolio | Tania Argot
+        </title>
+    </head>
+
+    <body>
+        <!-- navigation bar left section with logo -->
+        <header class="navigationbar">
+            <div class="left">
+                <a href="home.html">
+                    <p>
+                        Portfolio
+                    </p>
+                </a>
+            </div>
+            <!-- navigation bar right section with menu -->
+            <div class="right">
+                <nav>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                </nav>
+            </div>
+        </header>
+        {% block body %}
+        {% endblock %}
+    </body>
+
+    <footer>
+        <div class="footer">
+            <div class="contact-row">
+                <div class="contact-column">
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:taniaargot@gmail.com">taniaargot@gmail.com</a>
+                    </p>
+                </div>
+                <div class="contact-column">
+                    <h3>Phone</h3>
+                    <p>
+                        <a href="tel:+4522831999">+45 22 83 19 99</a>
+                    </p>
+                </div>
+                <div class="contact-column">
+                    <h3>Connect with me</h3>
+                    <p>
+                        <a href="https://www.linkedin.com/in/taniaargot/">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>
+                    &copy; <script>document.write(new Date().getFullYear())</script> Tania Argot
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</html>
