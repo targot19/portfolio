@@ -1,8 +1,16 @@
+import Introduction from "../sections/Introduction";
+import Experience from "../sections/Experience";
+import Contact from "../sections/Contact";
+import Footer from "../components/Footer";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <Introduction />
+      <Experience />
+      <Contact />
+      <Footer />
+    </>
   )
 }
 
