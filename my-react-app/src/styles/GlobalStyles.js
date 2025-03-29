@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
         align-items: center;
         justify-content: center;
         font-color:rgb(237, 216, 216);
-        background-color:rgb(19, 11, 11);
+        background-color:rgb(211, 116, 116);
     }
 `
 
