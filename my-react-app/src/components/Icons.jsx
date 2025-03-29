@@ -19,15 +19,15 @@ export default Icons;
 
 const IconsWrapper = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     border: 3px solid black;
     gap: 30px;
     `
 
 const Icon = styled.img`
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border: 2px dotted red;
     gap: 20px;    
     `

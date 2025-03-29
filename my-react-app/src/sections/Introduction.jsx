@@ -1,17 +1,40 @@
 import React from "react";
-import PageContainer from "../components/PageContainer";
 import SectionContainer from "../components/SectionContainer";
+import ContentWrapper from "../components/ContentWrapper";
+import HorizontalWrapper from "../components/HorizontalWrapper";
+import styled from "styled-components";
+import Profile from "../assets/Profile.jpg";
 
 const Introduction = () => {
     return (
-        <PageContainer>
-            <SectionContainer>
-                <section className="introduction">
-                    <h1>Hi</h1>
-                </section>
-            </SectionContainer>
-        </PageContainer>
+        <SectionContainer>
+             <ProfilePic src={Profile} alt="Profile picture" />
+             <ContentWrapper>
+                 <h1>
+                     Introduction
+                 </h1>
+                 <HorizontalWrapper>
+                     <p>
+                         edofe
+                     </p>
+                 </HorizontalWrapper>
+             </ContentWrapper>
+         </SectionContainer>
     );
 }
 
 export default Introduction;
+ 
+ const ProfilePic = styled.img`
+     //visibility: hidden;
+     overflow: hidden;
+     width: 25%;
+     height: 25%;
+     object-fit: cover;
+     border: 2px dotted red;
+ 
+     &:hover {
+     transform: scale(1.05);
+     transition: all .35s linear;
+     }
+ `

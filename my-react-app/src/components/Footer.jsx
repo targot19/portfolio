@@ -7,21 +7,19 @@ const Footer = () => {
     const year = today.getFullYear();
 
     return (
-        <PageContainer>  /* skal denne med? */
-            <OuterContainer>
-                <footer>
-                    <p>
-                        <small>All Rights Reserved © {year} Tania Argot</small>
-                    </p>
-                </footer>
-            </OuterContainer>
-        </PageContainer>
+        <PageContainer>
+             <FooterSection>
+                 <p>
+                     <small>All Rights Reserved © {year} Tania Argot</small>
+                 </p>
+             </FooterSection>
+         </PageContainer>
     );
 };
 
 export default Footer;
 
-const OuterContainer = styled.div`
+const FooterSection = styled.div`
   display: flex;
   position: fixed;
   bottom: 0;
@@ -30,7 +28,7 @@ const OuterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 10%;
+  height: 5%;
   width: 100%;
   background-color:rgb(74, 44, 44);
 `;

@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
 import Icons from "../components/Icons.jsx";
+import SectionContainer from "../components/SectionContainer.jsx";
+import ContentWrapper from "../components/ContentWrapper.jsx";
+import HorizontalWrapper from "../components/HorizontalWrapper.jsx";
 
 const Contact = () => {
     return (
-        <ContactSectionContainer>
+        <SectionContainer>
             <ProfilePic src={Profile} alt="Profile picture" />
             <ContentWrapper>
                 <h2>Let's talk!</h2>
@@ -13,32 +16,11 @@ const Contact = () => {
                     </HorizontalWrapper>
                     <Icons />
             </ContentWrapper>
-        </ContactSectionContainer>
+        </SectionContainer>
     );
 }
 
 export default Contact;
-
-const ContactSectionContainer = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 3px solid black;
-    //gap: 10px;
-    `
-
-const ContentWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    border: 2px solid blue;
-    `
-
-const HorizontalWrapper = styled.div`
-    display: flex;
-    overflow: hidden;
-    flex-direction: row;
-    border: 2px dotted purple;
-    `
 
 const ProfilePic = styled.img`
     //visibility: hidden;
