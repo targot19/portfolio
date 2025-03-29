@@ -4,15 +4,14 @@ import ContentWrapper from "../components/ContentWrapper";
 import HorizontalWrapper from "../components/HorizontalWrapper";
 import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
+import SectionTitle from "../components/SectionTitle.jsx";
 
 const Introduction = () => {
     return (
         <SectionContainer>
              <ProfilePic src={Profile} alt="Profile picture" />
              <ContentWrapper>
-                 <h1>
-                     Introduction
-                 </h1>
+                 <SectionTitle>Portfolio of Tania Argot</SectionTitle>
                  <HorizontalWrapper>
                      <p>
                          edofe

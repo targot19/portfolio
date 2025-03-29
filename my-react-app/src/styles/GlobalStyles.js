@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-color:rgb(237, 216, 216);
+        font-color:rgb(37, 24, 24);
         background-color:rgb(211, 116, 116);
     }
 `
