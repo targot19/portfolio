@@ -4,13 +4,14 @@ import Icons from "../components/Icons.jsx";
 import SectionContainer from "../components/SectionContainer.jsx";
 import ContentWrapper from "../components/ContentWrapper.jsx";
 import HorizontalWrapper from "../components/HorizontalWrapper.jsx";
+import SectionTitle from "../components/SectionTitle.jsx";
 
 const Contact = () => {
     return (
         <SectionContainer>
             <ProfilePic src={Profile} alt="Profile picture" />
             <ContentWrapper>
-                <h2>Let's talk!</h2>
+                <SectionTitle>Let's connect</SectionTitle>
                     <HorizontalWrapper>
                         <p>Contact me</p>
                     </HorizontalWrapper>

@@ -4,19 +4,21 @@ import ContentWrapper from "../components/ContentWrapper";
 import HorizontalWrapper from "../components/HorizontalWrapper";
 import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
+import SectionTitle from "../components/SectionTitle.jsx";
+import { useTranslation } from "react-i18next";
 
 const Introduction = () => {
+    const { t, i18n } = useTranslation();
+    console.log("Current language:", i18n.language);
+    console.log("Translation for 'introduction.title':", t("introduction.title"));
+
     return (
         <SectionContainer>
              <ProfilePic src={Profile} alt="Profile picture" />
              <ContentWrapper>
-                 <h1>
-                     Introduction
-                 </h1>
+                 <SectionTitle>{t("introduction.title")}</SectionTitle>
                  <HorizontalWrapper>
-                     <p>
-                         edofe
-                     </p>
+                    <IntroText>Hi</IntroText>
                  </HorizontalWrapper>
              </ContentWrapper>
          </SectionContainer>
@@ -26,8 +28,7 @@ const Introduction = () => {
 export default Introduction;
  
  const ProfilePic = styled.img`
-     //visibility: hidden;
-     overflow: hidden;
+     overflow: visible;
      width: 25%;
      height: 25%;
      object-fit: cover;
@@ -38,3 +39,9 @@ export default Introduction;
      transition: all .35s linear;
      }
  `
+
+ const IntroText = styled.p`
+    color: black;
+    font-size: large;
+    place-content: center;
+`

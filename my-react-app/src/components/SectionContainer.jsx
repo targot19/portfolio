@@ -2,14 +2,26 @@ import styled from "styled-components";
 
 const SectionContainer = styled.section`
      display: flex;
-     width: 75vw;
+     width: 100vw;
      justify-content: center;
      align-items: center;
      align-self: center;
      border: 1px solid white;
-     padding: 20px 20px 20px 20px;
+     padding: 20px;
      gap: 20px;
      overflow: visible;
- `
- 
- export default SectionContainer;
+ `;
+
+ export const Box1 = styled(SectionContainer)`
+    background-color: red;
+`;
+
+export const Box2 = styled(SectionContainer)`
+background-color: blue;
+`;
+
+export const Box3 = styled(SectionContainer)`
+background-color: green;
+`;
+
+export default SectionContainer;
