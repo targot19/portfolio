@@ -1,3 +1,5 @@
+/** Inspo taken from: https://github.com/EmmaHoltegaard/porfolio-react-vite/blob/main/my-portfolio/src/components/LanguageSwitcher.jsx */
+
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
