@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
+import Translator from './Translator';
 
 const NavBar = () => {
     return (
@@ -10,6 +11,9 @@ const NavBar = () => {
                 <NavItem href="/Projects">Projects</NavItem>
                 <NavItem href="/Contact">Contact</NavItem>
             </NavLinks>
+            <TranslatorWrapper>
+                <Translator />
+            </TranslatorWrapper>
         </NavBarContainer>
     );
 };
@@ -55,4 +59,10 @@ const NavItem = styled.a`
         background-color: #ececec;
         border-radius: 2px;
     }
+`;
+
+const TranslatorWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;

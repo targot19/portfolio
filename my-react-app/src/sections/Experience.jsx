@@ -4,7 +4,6 @@ import ContentWrapper from '../components/ContentWrapper';
 import HorizontalWrapper from '../components/HorizontalWrapper';
 import SectionTitle from '../components/SectionTitle';
 import { SectionTitleWrapper1 } from '../components/SectionTitleWrapper';
-import en from '../locales/en.json';
 
 const Experience = () => {
     return (
