@@ -11,12 +11,11 @@ const GlobalStyles = createGlobalStyle`
         font-family: "Georgia", sans-serif;
         font-weight: 400;
         font-style: normal;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        margin: 0;
+        padding: 0;
+        display: block;
         font-color:rgb(37, 24, 24);
-        background-color:rgb(211, 116, 116);
+        background-color: #efefef;
     }
 `
 

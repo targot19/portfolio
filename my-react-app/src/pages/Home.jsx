@@ -1,14 +1,12 @@
 import Introduction from "../sections/Introduction";
-import Experience from "../sections/Experience";
-import Contact from "../sections/Contact";
 import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
 
 const Home = () => {
   return (
     <>
+      <NavBar />
       <Introduction />
-      <Experience />
-      <Contact />
       <Footer />
     </>
   )
