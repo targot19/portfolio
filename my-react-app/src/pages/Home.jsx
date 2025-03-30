@@ -1,14 +1,14 @@
 import Introduction from "../sections/Introduction";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import CustomCarousel from "../components/Carousel";
+import RecommendationCarousel from "../components/RecommendationCarousel";
 
 const Home = () => {
   return (
     <>
       <NavBar />
       <Introduction />
-      <CustomCarousel />
+      <RecommendationCarousel />
       <Footer />
     </>
   )

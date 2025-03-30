@@ -16,7 +16,7 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3, // Show 3 cards at a time
-    partialVisibilityGutter: 60, // Add more spacing between cards and edges
+    partialVisibilityGutter: 40, // Add more spacing between cards and edges
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -28,24 +28,6 @@ const responsive = {
     items: 1,
     partialVisibilityGutter: 20,
   },
-};
-
-// Custom Left Arrow
-const CustomLeftArrow = ({ onClick }) => {
-  return (
-    <ArrowButton style={{ left: "-20px" }} onClick={onClick}>
-      &#8592;
-    </ArrowButton>
-  );
-};
-
-// Custom Right Arrow
-const CustomRightArrow = ({ onClick }) => {
-  return (
-    <ArrowButton style={{ right: "-20px" }} onClick={onClick}>
-      &#8594;
-    </ArrowButton>
-  );
 };
 
 const CustomCarousel = () => {
@@ -68,16 +50,13 @@ const CustomCarousel = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-10-px"
           partialVisible={true} // Enable partial visibility
-          customLeftArrow={<CustomLeftArrow />}
-          customRightArrow={<CustomRightArrow />}
         >
           {reviews.map((review) => (
             <Card key={review._id} style={{ width: "18rem", margin: "0 auto" }}>
               <Card.Body>
                 <Card.Title>{review.text}</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Hi
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
@@ -108,25 +87,5 @@ const CarouselWrapper = styled.div`
   position: relative; /* Ensure proper positioning for the buttons */
   @media (max-width: 568px) {
     max-width: 90%; /* Make it more compact on smaller screens */
-  }
-`;
-
-const ArrowButton = styled.button`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
   }
 `;

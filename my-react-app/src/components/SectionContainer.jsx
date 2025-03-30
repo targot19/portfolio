@@ -6,7 +6,7 @@ const SectionContainer = styled.section`
      justify-content: center;
      align-items: center;
      align-self: center;
-     border: 1px solid white;
+     border: 2px solid black;
      padding: 20px;
      gap: 20px;
      overflow: visible;
