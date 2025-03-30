@@ -11,11 +11,9 @@ const Introduction = () => {
         <SectionContainer>
              <ProfilePic src={Profile} alt="Profile picture" />
              <ContentWrapper>
-                 <SectionTitle>Portfolio of Tania Argot</SectionTitle>
+                 <SectionTitle>Full-stack developer</SectionTitle>
                  <HorizontalWrapper>
-                     <p>
-                         edofe
-                     </p>
+                    <IntroText>Hi</IntroText>
                  </HorizontalWrapper>
              </ContentWrapper>
          </SectionContainer>
@@ -25,8 +23,7 @@ const Introduction = () => {
 export default Introduction;
  
  const ProfilePic = styled.img`
-     //visibility: hidden;
-     overflow: hidden;
+     overflow: visible;
      width: 25%;
      height: 25%;
      object-fit: cover;
@@ -37,3 +34,9 @@ export default Introduction;
      transition: all .35s linear;
      }
  `
+
+ const IntroText = styled.p`
+    color: black;
+    font-size: large;
+    place-content: center;
+`

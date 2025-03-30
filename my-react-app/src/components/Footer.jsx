@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <FooterSection>
-            <p><small>© {year} by Tania Argot</small></p>
+            <FooterText>© {year} by Tania Argot</FooterText>
         </FooterSection>
     );
 };
@@ -16,7 +16,6 @@ export default Footer;
 
 const FooterSection = styled.div`
   display: flex;
-  font-color: #6d6d6d;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -26,5 +25,10 @@ const FooterSection = styled.div`
   align-items: center;
   height: 5%;
   width: 100%;
-  background-color: #b4b4b4;
+  background-color: #efefef;
+`;
+
+const FooterText = styled.p`
+    color: black;
+    font-weight: 1px;
 `;
