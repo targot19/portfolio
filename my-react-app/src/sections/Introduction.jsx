@@ -8,9 +8,7 @@ import SectionTitle from "../components/SectionTitle.jsx";
 import { useTranslation } from "react-i18next";
 
 const Introduction = () => {
-    const { t, i18n } = useTranslation();
-    console.log("Current language:", i18n.language);
-    console.log("Translation for 'introduction.title':", t("introduction.title"));
+    const { t } = useTranslation();
 
     return (
         <SectionContainer>
@@ -18,7 +16,7 @@ const Introduction = () => {
              <ContentWrapper>
                  <SectionTitle>{t("introduction.title")}</SectionTitle>
                  <HorizontalWrapper>
-                    <IntroText>Hi</IntroText>
+                    <IntroText>{t("introduction.description")}</IntroText>
                  </HorizontalWrapper>
              </ContentWrapper>
          </SectionContainer>

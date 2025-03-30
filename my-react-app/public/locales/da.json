@@ -1,6 +1,23 @@
 {
+    "navigation": {
+        "portfolio": "Portfolio",
+        "resume": "CV",
+        "projects": "Projekter",
+        "contact": "Kontakt"
+    },
+    "footer": {
+        "copyright": "af Tania Argot"
+    },
     "introduction": {
-        "title": "Portfolio",
-        "description": "Full-stack developer with a unique profile; BA in Communication and Digital Media and MSc in Digitalisation and Application Development."
+        "title": "Mød Tania",
+        "description": "Uddannet humanist med interesse for at udvikle og sikre etisk korrekt IT med målgruppen inkluderet i hvert skridt i processen. Med en bachelor i kommunikation og en fremtidig kandidat i informationsteknologi kan jeg agere som både udvikler og integrator."
+    },
+    "skillset": {
+        "coding": "bleh",
+        "IDE": "VS Code"
+    },
+    "recommendations": {
+        "title": "Anbefalinger",
+        "multi-byg": "Hej"
     }
 }

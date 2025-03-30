@@ -1,13 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const Footer = () => {
+    const { t } = useTranslation();
     const today = new Date();
     const year = today.getFullYear();
 
     return (
         <FooterSection>
-            <FooterText>© {year} by Tania Argot</FooterText>
+            <FooterText>© {year} {t("footer.copyright")}</FooterText>
         </FooterSection>
     );
 };

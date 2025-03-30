@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import React from 'react';
 import Translator from './Translator';
+import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
+    const { t } = useTranslation();
+
     return (
         <NavBarContainer>
-            <NavTitle href="/">Portfolio</NavTitle>
+            <NavTitle href="/">{t("navigation.portfolio")}</NavTitle>
             <NavLinks>
-                <NavItem href="/Resume">Resume</NavItem>
-                <NavItem href="/Projects">Projects</NavItem>
-                <NavItem href="/Contact">Contact</NavItem>
+                <NavItem href="/Resume">{t("navigation.resume")}</NavItem>
+                <NavItem href="/Projects">{t("navigation.projects")}</NavItem>
+                <NavItem href="/Contact">{t("navigation.contact")}</NavItem>
             </NavLinks>
             <TranslatorWrapper>
                 <Translator />
