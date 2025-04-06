@@ -9,9 +9,8 @@ const NavBar = () => {
     return (
         <NavBarContainer>
             <NavLinks>
-                <NavItem href="#introduction">{t("navigation.introduction")}</NavItem>
+                <NavItem href="#introduction">{t("navigation.about")}</NavItem>
                 <NavItem href="#education">{t("navigation.education")}</NavItem>
-                <NavItem href="/Resume">{t("navigation.resume")}</NavItem>
                 <NavItem href="/Projects">{t("navigation.projects")}</NavItem>
                 <NavItem href="#contact">{t("navigation.contact")}</NavItem>
             </NavLinks>
@@ -31,8 +30,8 @@ const NavBarContainer = styled.div`
     align-items: center;
     padding: 1em 10em;
     letter-spacing: 0.02em;
-    background-color: #efefef;
-    width: 100vw;
+    background-color:rgb(37, 107, 26);
+    width: 100%;
     position: sticky;
     top: 0;
     left: 0;
@@ -45,12 +44,13 @@ const NavLinks = styled.div`
 `;
 
 const NavItem = styled.a`
-    color: #6d6d6d;
+    color:rgb(255, 255, 255);
     text-decoration: none;
     padding: 1em;
     font-size: 1.2em;
     &:hover {
         text-decoration: underline;
+        color:rgb(255, 255, 255);
     }
 `;
 

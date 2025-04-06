@@ -1,36 +1,43 @@
 import React from "react";
-import SectionContainer from "../components/SectionContainer";
+import { Box1 } from "../components/SectionContainer";
 import ContentWrapper from "../components/ContentWrapper";
 import HorizontalWrapper from "../components/HorizontalWrapper";
 import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
-import SectionTitle from "../components/SectionTitle.jsx";
+import { SectionTitleIntro } from "../components/SectionTitle.jsx";
 import { useTranslation } from "react-i18next";
+import DownloadResume from "../components/DownloadResume.jsx";
+import GithubButton from "../components/GithubButton.jsx";
 
 const Introduction = () => {
     const { t } = useTranslation();
 
     return (
-        <SectionContainer id="introduction">
-             <ProfilePic src={Profile} alt="Profile picture" />
+        <Box1 id="introduction">
              <ContentWrapper>
-                 <SectionTitle>{t("introduction.title")}</SectionTitle>
+                 <SectionTitleIntro>{t("introduction.title")}</SectionTitleIntro>
                  <HorizontalWrapper>
                     <IntroText>{t("introduction.description")}</IntroText>
                  </HorizontalWrapper>
+                 <HorizontalWrapper>
+                    <GithubButton />
+                    <DownloadResume />
+                 </HorizontalWrapper>
              </ContentWrapper>
-         </SectionContainer>
+             <ProfilePic src={Profile} alt="Profile picture" />
+         </Box1>
     );
 }
 
 export default Introduction;
  
  const ProfilePic = styled.img`
-     overflow: visible;
-     width: 25%;
-     height: 25%;
+     overflow: hidden;
+     width: 25em;
+     height: 25em;
      object-fit: cover;
      border: 2px dotted red;
+     border-radius: 75%;
  
      &:hover {
      transform: scale(1.05);

@@ -1,10 +1,10 @@
 {
     "navigation": {
-        "introduction": "Om mig",
+        "about": "Om",
         "resume": "CV",
         "projects": "Projekter",
         "contact": "Kontakt",
-        "Education": "Uddannelse"
+        "education": "Uddannelse"
     },
     "footer": {
         "copyright": "af Tania Argot"
@@ -31,5 +31,11 @@
         "bachelor-title": "Bachelor i Kommunikation og digitale medier",
         "bachelor-year-institution": "2020-2023, Aalborg Universitet",
         "bachelor-description": "Hej."
+    },
+    "download": {
+        "resume": "CV"
+    },
+    "githubbutton": {
+        "seelink": "Github"
     }
 }

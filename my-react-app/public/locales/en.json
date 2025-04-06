@@ -1,6 +1,6 @@
 {
     "navigation": {
-        "introduction": "About Me",
+        "about": "About",
         "resume": "Resume",
         "projects": "Projects",
         "contact": "Contact",
@@ -31,5 +31,11 @@
         "bachelor-title": "BA in Communication and Digital Media",
         "bachelor-year-institution": "2020-2023, Aalborg University",
         "bachelor-description": "Hello."
+    },
+    "download": {
+        "resume": "Resume"
+    },
+    "githubbutton": {
+        "seelink": "Github"
     }
 }

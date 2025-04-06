@@ -11,4 +11,8 @@ const SectionTitle = styled.h1`
     border: 2px red dotted;
 `;
 
+export const SectionTitleIntro = styled(SectionTitle)`
+    text-align: left;
+`;
+
 export default SectionTitle;

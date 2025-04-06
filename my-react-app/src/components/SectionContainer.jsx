@@ -14,7 +14,7 @@ const SectionContainer = styled.section`
  `;
 
  export const Box1 = styled(SectionContainer)`
-    background-color: red;
+    height: 90vh;
 `;
 
 export const Box2 = styled(SectionContainer)`
