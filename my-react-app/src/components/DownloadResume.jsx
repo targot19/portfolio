@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import Github from "../assets/Github.svg";
 
 const DownloadResume = () => {
     const { t, i18n } = useTranslation();
@@ -14,6 +15,7 @@ const DownloadResume = () => {
 
     return (
         <Download onClick={downloadFile}>
+            <img src={Github} alt="Github. Source: https://icons8.com/icon/62856/github" />
             {t("download.resume")}
         </Download>
     );

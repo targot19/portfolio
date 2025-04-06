@@ -35,7 +35,7 @@
     "download": {
         "resume": "CV"
     },
-    "githubbutton": {
-        "seelink": "Github"
+    "github": {
+        "button": "Github"
     }
 }

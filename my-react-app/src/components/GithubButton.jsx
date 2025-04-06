@@ -10,7 +10,7 @@ const GithubButton = () => {
         <StyledButton>
             <a href='https://github.com/targot19' target='blank' rel='noopener noreferrer'>
                 <img src={Github} alt="Github. Source: https://icons8.com/icon/62856/github" />
-                {t("githubbutton.seelink")}
+                {t("github.button")}
             </a>
         </StyledButton>
     )
@@ -29,7 +29,7 @@ const StyledButton = styled.button`
     }
 
     img {
-        width: 2em; /* Adjust the size of the GitHub logo */
+        width: 2em;
         height: auto;
     }
 `;

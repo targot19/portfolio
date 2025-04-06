@@ -27,6 +27,7 @@ const FooterSection = styled.div`
   height: 5%;
   width: 100%;
   background-color: #efefef;
+  margin: auto;
 `;
 
 const FooterText = styled.p`
