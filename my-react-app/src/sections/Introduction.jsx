@@ -11,7 +11,7 @@ const Introduction = () => {
     const { t } = useTranslation();
 
     return (
-        <SectionContainer>
+        <SectionContainer id="introduction">
              <ProfilePic src={Profile} alt="Profile picture" />
              <ContentWrapper>
                  <SectionTitle>{t("introduction.title")}</SectionTitle>

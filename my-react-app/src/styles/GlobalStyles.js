@@ -17,6 +17,10 @@ const GlobalStyles = createGlobalStyle`
         font-color:rgb(37, 24, 24);
         background-color: #efefef;
     }
+    
+    html {
+        scroll-behavior: smooth;
+    }
 `
 
 export default GlobalStyles;

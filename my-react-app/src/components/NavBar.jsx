@@ -8,11 +8,12 @@ const NavBar = () => {
 
     return (
         <NavBarContainer>
-            <NavTitle href="/">{t("navigation.portfolio")}</NavTitle>
             <NavLinks>
+                <NavItem href="#introduction">{t("navigation.introduction")}</NavItem>
+                <NavItem href="#education">{t("navigation.education")}</NavItem>
                 <NavItem href="/Resume">{t("navigation.resume")}</NavItem>
                 <NavItem href="/Projects">{t("navigation.projects")}</NavItem>
-                <NavItem href="/Contact">{t("navigation.contact")}</NavItem>
+                <NavItem href="#contact">{t("navigation.contact")}</NavItem>
             </NavLinks>
             <TranslatorWrapper>
                 <Translator />
@@ -22,13 +23,14 @@ const NavBar = () => {
 };
 
 export default NavBar;
-export { NavBarContainer, NavLinks, NavTitle, NavItem, NavBar };
+export { NavBarContainer, NavLinks, NavItem, NavBar };
 
 const NavBarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1em 10em;
+    letter-spacing: 0.02em;
     background-color: #efefef;
     width: 100vw;
     position: sticky;
@@ -39,28 +41,16 @@ const NavBarContainer = styled.div`
 
 const NavLinks = styled.div`
     display: flex;
-    gap: 20px;
-`;
-
-const NavTitle = styled.a`
-    color: #6d6d6d;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    &:hover {
-        background-color: #ececec;
-        border-radius: 2px;
-    }
+    margin-left: auto;
 `;
 
 const NavItem = styled.a`
     color: #6d6d6d;
-    justify-content: flex-end;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 1em;
+    font-size: 1.2em;
     &:hover {
-        background-color: #ececec;
-        border-radius: 2px;
+        text-decoration: underline;
     }
 `;
 

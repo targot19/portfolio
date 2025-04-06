@@ -18,7 +18,6 @@ export default Footer;
 
 const FooterSection = styled.div`
   display: flex;
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;

@@ -2,7 +2,7 @@ import styled from "styled-components";
  
  const ContentWrapper = styled.div`
      display: inline-block;
-     width: 80%;
+     width: 50em;
      flex-direction: column;
      border: 2px solid blue;
  `

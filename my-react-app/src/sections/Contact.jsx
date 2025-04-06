@@ -8,7 +8,7 @@ import SectionTitle from "../components/SectionTitle.jsx";
 
 const Contact = () => {
     return (
-        <SectionContainer>
+        <SectionContainer id="contact">
             <ProfilePic src={Profile} alt="Profile picture" />
             <ContentWrapper>
                 <SectionTitle>Let's connect</SectionTitle>
@@ -25,7 +25,7 @@ export default Contact;
 
 const ProfilePic = styled.img`
     //visibility: hidden;
-    overflow: hidden;
+    overflow: visible;
     width: 25%;
     height: 25%;
     object-fit: cover;

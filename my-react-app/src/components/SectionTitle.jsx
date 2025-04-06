@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const SectionTitle = styled.h1`
-    font-size: 2.5rem;
+    font-size: 4em;
     color: #333;
     text-align: center;
-    margin: 0;
-    font-family: 'Georgia', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    padding: 0.1em;
+    font-weight: bold;
+    font-family: system-ui;
+    letter-spacing: 0.01em;
     border: 2px red dotted;
 `;
 

@@ -1,9 +1,10 @@
 {
     "navigation": {
-        "portfolio": "Portfolio",
+        "introduction": "Om mig",
         "resume": "CV",
         "projects": "Projekter",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "Education": "Uddannelse"
     },
     "footer": {
         "copyright": "af Tania Argot"
@@ -19,5 +20,16 @@
     "recommendations": {
         "title": "Anbefalinger",
         "multi-byg": "Hej"
+    },
+    "education": {
+        "master-title": "Kandidat i Digitalisering og applikationsudvikling",
+        "master-year-institution": "2023-2025, Aalborg Universitet",
+        "master-description": "2-årig kandidat.",
+        "exchange-title": "Erasmus+ udveksling i Litauen",
+        "exchange-year-institution": "Efterårssemestret 2024, Vilnius University",
+        "exchange-description": "Bla.",
+        "bachelor-title": "Bachelor i Kommunikation og digitale medier",
+        "bachelor-year-institution": "2020-2023, Aalborg Universitet",
+        "bachelor-description": "Hej."
     }
 }
