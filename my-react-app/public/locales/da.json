@@ -1,7 +1,7 @@
 {
     "navigation": {
         "about": "Om",
-        "resume": "CV",
+        "skillset": "Kompetencer",
         "projects": "Projekter",
         "contact": "Kontakt",
         "education": "Uddannelse",
@@ -15,8 +15,42 @@
         "description": "Uddannet humanist med interesse for at udvikle og sikre etisk korrekt IT med målgruppen inkluderet i hvert skridt i processen. Med en bachelor i kommunikation og en fremtidig kandidat i informationsteknologi kan jeg agere som både udvikler og integrator."
     },
     "skillset": {
-        "coding": "bleh",
-        "IDE": "VS Code"
+        "title": "Kompetencer",
+        "programming": [
+            "HTML 5",
+            "CSS3",
+            "C",
+            "SQL",
+            "Java",
+            "Python",
+            "JavaScript",
+            "Flask",
+            "React.js",
+            "Tailwind CSS",
+            "Material UI",
+            "Styled Components",
+            "Bootstrap",
+            "LaTeX"
+        ],
+        "toolbox": [
+            "Visual Studio Code",
+            "IntelliJ",
+            "GitHub",
+            "Figma",
+            "Canva",
+            "Jira",
+            "Overleaf"
+        ],
+        "languages": [
+            "Dansk: Modersmål",
+            "Engelsk: B2",
+            "Litauisk: A1",
+            "Tysk: A1"
+        ],
+        "softskills": [
+            "Scrum",
+            "Kommunikation"
+        ]
     },
     "recommendations": {
         "title": "Anbefalinger",

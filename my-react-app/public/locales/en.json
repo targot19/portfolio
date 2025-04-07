@@ -1,7 +1,7 @@
 {
     "navigation": {
         "about": "About",
-        "resume": "Resume",
+        "skillset": "Skillset",
         "projects": "Projects",
         "contact": "Contact",
         "education": "Education",
@@ -15,8 +15,42 @@
         "description": "To ensure ethical Human-Computer Interaction, IT needs to be developed with the target group in mind at all times - that’s where I come in. I’m a BA graduate in Communication who’s currently pursuing a MSc in Information Technology to be able to act as both developer and integrator."
     },
     "skillset": {
-        "coding": "bleh",
-        "IDE": "VS Code"
+        "title": "Skillset",
+        "programming": [
+            "HTML 5",
+            "CSS3",
+            "C",
+            "SQL",
+            "Java",
+            "Python",
+            "JavaScript",
+            "Flask",
+            "React.js",
+            "Tailwind CSS",
+            "Material UI",
+            "Styled Components",
+            "Bootstrap",
+            "LaTeX"
+        ],
+        "toolbox": [
+            "Visual Studio Code",
+            "IntelliJ",
+            "GitHub",
+            "Figma",
+            "Canva",
+            "Jira",
+            "Overleaf"
+        ],
+        "languages": [
+            "Danish: Native",
+            "English: B2",
+            "Lithuanian: A1",
+            "German: A1"
+        ],
+        "softskills": [
+            "Scrum",
+            "Communication"
+        ]
     },
     "recommendations": {
         "title": "Recommendations",
@@ -25,7 +59,7 @@
     "education": {
         "master-title": "Msc in Digitalisation and Application Development",
         "master-year-institution": "2023-2025, Aalborg University",
-        "master-description": "2 year master.",
+        "master-description": "Building upon a strong foundation in designing and communicating user-friendly technology, my desire to learn how to build it as well has been fulfilled through my master in Digitalisation and Application Development.",
         "exchange-title": "Erasmus+ Exchange in Lithuania",
         "exchange-year-institution": "Fall semester 2024, Vilnius University",
         "exchange-description": "Bla.",

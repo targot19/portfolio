@@ -11,7 +11,9 @@ const SectionContainer = styled.section`
      border: 2px solid black;
      padding: 20px;
      gap: 1em;
-     overflow: visible;
+     overflow: hidden;
+     background-image: ${({ bgImg }) => bgImg ? `url(${bgImg})` : "none"};
+     background-repeat: no-repeat;
  `;
 
  export const Box1 = styled(SectionContainer)`
@@ -19,7 +21,7 @@ const SectionContainer = styled.section`
 `;
 
 export const Box2 = styled(SectionContainer)`
-background-color: blue;
+background-color: #bca087;
 `;
 
 export const Box3 = styled(SectionContainer)`

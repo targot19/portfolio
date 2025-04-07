@@ -11,6 +11,7 @@ const NavBar = () => {
             <NavLinks>
                 <NavItem href="#introduction">{t("navigation.about")}</NavItem>
                 <NavItem href="#education">{t("navigation.education")}</NavItem>
+                <NavItem href="#skillset">{t("navigation.skillset")}</NavItem>
                 <NavItem href="#recommendations">{t("navigation.recommendations")}</NavItem>
                 <NavItem href="#contact">{t("navigation.contact")}</NavItem>
             </NavLinks>
@@ -30,13 +31,14 @@ const NavBarContainer = styled.div`
     align-items: center;
     padding: 1em 10em;
     letter-spacing: 0.02em;
-    background-color:rgb(37, 107, 26);
+    background-color: transparent;
     max-width: 100vw;
     width: 100vw;
-    position: sticky;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 `;
 
 const NavLinks = styled.div`
@@ -45,13 +47,15 @@ const NavLinks = styled.div`
 `;
 
 const NavItem = styled.a`
-    color:rgb(255, 255, 255);
+    color: #4e7479;
     text-decoration: none;
+    font-weight: bold;
     padding: 1em;
     font-size: 1.2em;
     &:hover {
         text-decoration: underline;
-        color:rgb(255, 255, 255);
+        color: #4e7479;
+        font-weight: bold;
     }
 `;
 

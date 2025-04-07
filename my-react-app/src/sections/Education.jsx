@@ -1,4 +1,4 @@
-import SectionContainer from "../components/SectionContainer";
+import { Box2 } from "../components/SectionContainer";
 import SectionTitle from "../components/SectionTitle";
 import ContentWrapper from "../components/ContentWrapper";
 import HorizontalWrapper from "../components/HorizontalWrapper";
@@ -10,7 +10,7 @@ const Education = () => {
     const { t } = useTranslation();
 
     return (
-        <SectionContainer id="education">
+        <Box2 id="education">
             <ContentWrapper>
             <SectionTitle>Education</SectionTitle>
                 <HorizontalWrapper>
@@ -29,26 +29,26 @@ const Education = () => {
                     <Description>{t("education.bachelor-description")}</Description>
                 </HorizontalWrapper>
             </ContentWrapper>
-        </SectionContainer>
+        </Box2>
     )
 }
 
 export default Education;
 
 const Title = styled.h3`
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-family: system-ui;
     font-weight: bold;
     `;
 
 const Year = styled.h4`
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: system-ui;
     font-weight: normal;
     `;
 
 const Description = styled.p`
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: system-ui;
     font-weight: normal;
     `;
