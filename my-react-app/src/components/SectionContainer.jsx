@@ -9,7 +9,7 @@ const SectionContainer = styled.section`
      align-self: center;
      border: 2px solid black;
      padding: 20px;
-     gap: 20px;
+     gap: 1em;
      overflow: visible;
  `;
 

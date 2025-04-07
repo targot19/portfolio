@@ -36,7 +36,7 @@ export default Introduction;
      width: 25em;
      height: 25em;
      object-fit: cover;
-     border: 2px dotted red;
+     //border: 2px dotted red;
      border-radius: 75%;
  
      &:hover {

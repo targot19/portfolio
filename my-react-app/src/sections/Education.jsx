@@ -12,8 +12,8 @@ const Education = () => {
     return (
         <SectionContainer id="education">
             <ContentWrapper>
+            <SectionTitle>Education</SectionTitle>
                 <HorizontalWrapper>
-                    <SectionTitle>Education</SectionTitle>
                     <Title>{t("education.master-title")}</Title>
                     <Year>{t("education.master-year-institution")}</Year>
                     <Description>{t("education.master-description")}</Description>

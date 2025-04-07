@@ -4,7 +4,6 @@ const SectionTitle = styled.h1`
     font-size: 4em;
     color: #333;
     text-align: center;
-    padding: 0.1em;
     font-weight: bold;
     font-family: system-ui;
     letter-spacing: 0.01em;
@@ -13,6 +12,8 @@ const SectionTitle = styled.h1`
 
 export const SectionTitleIntro = styled(SectionTitle)`
     text-align: left;
+    padding: none;
+    margin: none;
 `;
 
 export default SectionTitle;

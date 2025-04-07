@@ -24,14 +24,20 @@ const DownloadResume = () => {
 export default DownloadResume;
 
 const Download = styled.button`
-    width: 10em;
-    height: 4em;
+    width: 9em;
+    height: 3em;
     border-radius: 5%;
     background-color: red;
     color: black;
     font-size: 1em;
     cursor: pointer;
+    margin: 0 1em 0 0;
     &:hover {
         background-color: darkred;
+    }
+
+    img {
+        width: 2em;
+        height: auto;
     }
 `;
