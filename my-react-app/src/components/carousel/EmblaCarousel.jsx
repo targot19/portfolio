@@ -10,7 +10,7 @@ import {
 import useEmblaCarousel from 'embla-carousel-react';
 
 const EmblaCarousel = (props) => {
-  const { slides, options } = props;
+  const { slides, employer, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -27,12 +27,15 @@ const EmblaCarousel = (props) => {
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {Array.isArray(slides) && slides.map((slide, index) => (
+          {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
                 <p>{slide}</p>
+                </div>
+                <div className="embla__slide__employer">
+                  <p>- {employer[index]}</p>
+                </div>
               </div>
-            </div>
           ))}
         </div>
       </div>

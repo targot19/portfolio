@@ -1,9 +1,9 @@
 /** https://codesandbox.io/p/sandbox/7nky5w?file=%2Fsrc%2Fjs%2Findex.jsx%3A6%2C1-8%2C26 */
 
 .embla {
-    max-width: 70rem;
+    max-width: 90vw;
     margin: auto;
-    --slide-height: 19rem;
+    --slide-height: 60vh;
     --slide-spacing: 1rem;
     --slide-size: 100%;
     --slide-spacing-sm: 1.6rem;
@@ -50,13 +50,20 @@
   .embla__slide__number {
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
     border-radius: 1.8rem;
-    font-size: 4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
     height: var(--slide-height);
     user-select: none;
+  }
+  .embla__slide__employer {
+    font-size: 1rem;
+    color: gray;
+    margin-top: 0;
+    text-align: right;
+    display: grid;
   }
   .embla__controls {
     display: grid;
