@@ -24,10 +24,10 @@ const FooterSection = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 5%;
-  width: 100%;
+  height: 2em;
+  width: 100vw;
+  max-width: 100vw;
   background-color: #efefef;
-  margin: auto;
 `;
 
 const FooterText = styled.p`

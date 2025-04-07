@@ -3,6 +3,7 @@ import styled from "styled-components";
 const SectionContainer = styled.section`
      display: flex;
      width: 100vw;
+     max-width: 100vw;
      height: 100vh;
      justify-content: center;
      align-items: center;

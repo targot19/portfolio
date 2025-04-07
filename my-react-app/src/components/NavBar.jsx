@@ -11,7 +11,7 @@ const NavBar = () => {
             <NavLinks>
                 <NavItem href="#introduction">{t("navigation.about")}</NavItem>
                 <NavItem href="#education">{t("navigation.education")}</NavItem>
-                <NavItem href="/Projects">{t("navigation.projects")}</NavItem>
+                <NavItem href="#recommendations">{t("navigation.recommendations")}</NavItem>
                 <NavItem href="#contact">{t("navigation.contact")}</NavItem>
             </NavLinks>
             <TranslatorWrapper>
@@ -31,7 +31,8 @@ const NavBarContainer = styled.div`
     padding: 1em 10em;
     letter-spacing: 0.02em;
     background-color:rgb(37, 107, 26);
-    width: 100%;
+    max-width: 100vw;
+    width: 100vw;
     position: sticky;
     top: 0;
     left: 0;
