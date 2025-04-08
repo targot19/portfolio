@@ -22,7 +22,7 @@ const Introduction = () => {
 
     const handleVideoPlay = (event) => {
         const video = event.target;
-        video.playbackRate = 0.1; // Set playback rate to 50% (slower)
+        video.playbackRate = 0.5; // Set playback rate to 50% (slower)
     };
 
     return (
@@ -34,7 +34,6 @@ const Introduction = () => {
                 onPlay={handleVideoPlay}
             >
                 <source src={BackgroundVideo} type="video/mp4" />
-                Your browser does not support the video tag.
             </VideoBackground>
             <ContentWrapper>
             {title && (
