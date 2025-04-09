@@ -5,6 +5,7 @@ import SectionContainer from "../components/SectionContainer.jsx";
 import ContentWrapper from "../components/ContentWrapper.jsx";
 import HorizontalWrapper from "../components/HorizontalWrapper.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
+import ContactForm from "../components/ContactForm.jsx";
 
 const Contact = () => {
     return (
@@ -17,6 +18,7 @@ const Contact = () => {
                     </HorizontalWrapper>
                     <Icons />
             </ContentWrapper>
+            <ContactForm />
         </SectionContainer>
     );
 }
