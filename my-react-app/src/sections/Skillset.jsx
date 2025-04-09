@@ -4,44 +4,54 @@ import { ContentWrapper1 } from "../components/ContentWrapper";
 import { useTranslation } from "react-i18next";
 import SkillBox from "../components/SkillBox";
 import styled from "styled-components";
-import WebDevelopment from "../assets/web-development.svg";
+import FrontEnd from "../assets/frontend.svg";
+import BackEnd from "../assets/backend.svg";
+import ProjectManagement from "../assets/project.svg";
+import OtherSkills from "../assets/softskills.svg";
 
 const Skillset = () => {
     const { t } = useTranslation();
 
-    const frontEndSkills = t("skillbox.web-skills", { returnObjects: true }) || [];
-    const backEndSkills = t("skillbox.mobile-skills", { returnObjects: true }) || [];
+    const frontEndSkills = t("skillbox.frontend-skills", { returnObjects: true }) || [];
+    const backEndSkills = t("skillbox.backend-skills", { returnObjects: true }) || [];
+    const Management = t("skillbox.management-skills", { returnObjects: true }) || [];
+    const otherSkills = t("skillbox.other-skills", { returnObjects: true }) || [];
 
     return (
         <Box3 id="skillset">
                 <SkillBoxGrid>
                     <SkillBox
-                        title={t("skillbox.web")}
-                        description={t("skillbox.web-description")}
+                        title={t("skillbox.frontend")}
+                        description={t("skillbox.frontend-description")}
                         skills={frontEndSkills}
-                        image={WebDevelopment} // Optional custom image
-                        //source="https://www.svgrepo.com/svg/382780/application-coding-web-code-write"
+                        image={FrontEnd}
+                        //source: https://www.svgrepo.com/svg/16272/programming-code
                     />
                     <SkillBox
-                        title={t("skillbox.mobile")}
-                        description={t("skillbox.mobile-description")}
+                        title={t("skillbox.backend")}
+                        description={t("skillbox.backend-description")}
                         skills={backEndSkills}
-                        image={WebDevelopment} // Optional custom image
+                        image={BackEnd}
+                        // source: https://www.svgrepo.com/svg/1699/web-development
                     />
                     <SkillBox
-                        title="Other Skills"
-                        description="Some other skills I have."
-                        skills={["Skill 1", "Skill 2", "Skill 3"]}
+                        title={t("skillbox.management")}
+                        description={t("skillbox.management-description")}
+                        skills={Management}
+                        image={ProjectManagement}
+                        // source: https://www.svgrepo.com/svg/226785/dart-board
                         
                     />
                     <SkillBox
-                        title="Languages"
-                        description="Languages I speak."
-                        skills={t("skillset.languages", { returnObjects: true }) || []}
+                        title={t("skillbox.other")}
+                        description={t("skillbox.other-description")}
+                        skills={otherSkills}
+                        image={OtherSkills}
+                        // source: https://www.svgrepo.com/svg/226720/collaboration
                         
                     />
                 </SkillBoxGrid>
-                <SectionTitle>{t("skillset.title")}</SectionTitle>
+                <SectionTitle>{t("skillset")}</SectionTitle>
         </Box3>
     );
 };

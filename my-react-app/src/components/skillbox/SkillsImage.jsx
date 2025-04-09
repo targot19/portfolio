@@ -3,10 +3,9 @@ import styled from "styled-components";
 const SkillsImage = styled.img`
     overflow: hidden;
     display: block;
-    width: 8em;
-    height: 8em;
-    object-fit: cover;
-    z-index: 1;
+    width: 5em;
+    height: 5em;
+    //object-fit: cover;
     margin: auto;`
 
 export default SkillsImage;

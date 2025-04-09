@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SkillBoxContainer from "./SkillBoxContainer";
 
 const SkillsSpan = styled.div`
     position: absolute;
@@ -15,6 +16,10 @@ const SkillsSpan = styled.div`
     span {
         font-size: 0.9em;
         color: #333;
+    }
+
+    ${SkillBoxContainer}:hover & {
+        transform: translateY(0);
     }
 `;
 

@@ -15,63 +15,56 @@
         "description": "To ensure ethical Human-Computer Interaction, IT needs to be developed with the target group in mind at all times - that’s where I come in. I’m a BA graduate in Communication who’s currently pursuing a MSc in Information Technology to be able to act as both developer and integrator."
     },
     "skillbox": {
-        "web": "Front-end Development",
-        "web-description": "Through my master, I've become quite familiar with web development. With a practical approach, I strive to make functional websites.",
-        "web-skills": [
+        "frontend": "Front-end",
+        "frontend-description": "Building upon a solid theoretical knowledge in designing user-friendly technology from my bachelor programme, I've obtained practical skills in building them as well. I strive to build practical, navigateable, and user-engaging technology with a little touch of animation.",
+        "frontend-skills": [
             "HTML 5",
             "CSS3",
             "JavaScript",
-            "React.js",
-            "Flask",
-            "Tailwind CSS",
-            "Material UI",
+            "React",
             "Styled Components",
-            "Bootstrap"
-        ],
-        "mobile": "Back-end Development",
-        "mobile-description": "I used android studio.",
-        "mobile-skills": [
-            "SQL"
-        ]
-    },
-    "skillset": {
-        "title": "Skillset",
-        "programming": [
-            "HTML 5",
-            "CSS3",
-            "C",
-            "SQL",
-            "Java",
-            "Python",
-            "JavaScript",
+            "Figma",
+            "Canva",
             "Flask",
-            "React.js",
-            "Tailwind CSS",
             "Material UI",
-            "Styled Components",
+            "Tailwind CSS",
             "Bootstrap",
             "LaTeX"
         ],
-        "toolbox": [
-            "Visual Studio Code",
+        "backend": "Back-end",
+        "backend-description": "With C being the first language I learned, procedural programming and I were better friends for a long time. Now, that I've cracked the code to object-oriented programming, we're become better friends - for now at least.",
+        "backend-skills": [
+            "PostgreSQL",
+            "MySQL",
+            "Java",
+            "Python",
+            "C"
+        ],
+        "management": "Project Management",
+        "management-description": "Problem-based learning has taught me the importance of team work.",
+        "management-skills": [
+            "Github",
+            "Git",
+            "VSCode",
             "IntelliJ",
-            "GitHub",
-            "Figma",
-            "Canva",
+            "Android Studio",
             "Jira",
-            "Overleaf"
-        ],
-        "languages": [
-            "Danish: Native",
-            "English: B2",
-            "Lithuanian: A1",
-            "German: A1"
-        ],
-        "softskills": [
+            "Overleaf",
+            "Waterfall Methodology",
             "Scrum",
-            "Communication"
+            "Design Thinking",
+            "Kanban Methodology"
+        ],
+        "other": "Other Skills",
+        "other-description": "hej hej",
+        "other-skills": [
+            "Danish C2",
+            "English C1",
+            "Lithuanian A1",
+            "German A1"
         ]
     },
+    "skillset": "Skillset",
     "education": {
         "master-title": "Msc in Digitalisation and Application Development",
         "master-year-institution": "2023-2025, Aalborg University",
