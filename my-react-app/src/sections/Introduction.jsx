@@ -33,7 +33,7 @@ const Introduction = () => {
                 muted
                 onPlay={handleVideoPlay}
             >
-                <source src={BackgroundVideo} type="video/mp4" />
+                <source src={BackgroundVideo} type="video/mp4" alt="Video by Miguel Á. Padriñán from Pexels: https://www.pexels.com/video/interchanging-light-bokeh-1795912/" />
             </VideoBackground>
             <ContentWrapper>
             {title && (
