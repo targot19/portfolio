@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import DownloadResume from "../components/DownloadResume.jsx";
 import GithubButton from "../components/GithubButton.jsx";
 import { TypeAnimation } from "react-type-animation";
-import BackgroundVideo from "../assets/bg-video2.mp4";
+import BackgroundVideo from "../assets/bg-video3.mp4";
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();
@@ -22,7 +22,7 @@ const Introduction = () => {
 
     const handleVideoPlay = (event) => {
         const video = event.target;
-        video.playbackRate = 0.5; // Set playback rate to 50% (slower)
+        video.playbackRate = 1; // Set playback rate to 50% (slower)
     };
 
     return (
@@ -58,7 +58,6 @@ const Introduction = () => {
                     <DownloadResume />
                 </HorizontalWrapper>
             </ContentWrapper>
-            <ProfilePic src={Profile} alt="Profile picture" />
         </IntroSection>
     );
 };
@@ -89,20 +88,6 @@ const VideoBackground = styled.video`
     height: 100vh;
     object-fit: cover;
     z-index: 0; /* Place the video behind the content */
-`;
-
-const ProfilePic = styled.img`
-    overflow: hidden;
-    width: 25em;
-    height: 25em;
-    object-fit: cover;
-    border-radius: 75%;
-    z-index: 1;
-
-    &:hover {
-        transform: scale(1.05);
-        transition: all 0.35s linear;
-    }
 `;
 
 const IntroText = styled.p`

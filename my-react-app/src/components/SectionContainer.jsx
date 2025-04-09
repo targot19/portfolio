@@ -21,7 +21,7 @@ const SectionContainer = styled.section`
 `;
 
 export const Box2 = styled(SectionContainer)`
-background-color: #bca087;
+background-color: #fba47e;
 `;
 
 export const Box3 = styled(SectionContainer)`

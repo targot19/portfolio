@@ -47,14 +47,14 @@ const NavLinks = styled.div`
 `;
 
 const NavItem = styled.a`
-    color: #4e7479;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     padding: 1em;
     font-size: 1.2em;
     &:hover {
         text-decoration: underline;
-        color: #4e7479;
+        color: black;
         font-weight: bold;
     }
 `;

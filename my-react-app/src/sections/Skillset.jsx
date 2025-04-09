@@ -3,6 +3,8 @@ import SectionTitle from "../components/SectionTitle";
 import ContentWrapper from "../components/ContentWrapper";
 import VerticalWrapper from "../components/VerticalWrapper";
 import { useTranslation } from "react-i18next";
+import HorizontalWrapper from "../components/HorizontalWrapper";
+import SkillBox from "../components/SkillBox";
 
 const Skillset = () => {
     const { t } = useTranslation();
@@ -15,6 +17,7 @@ const Skillset = () => {
     return (
         <SectionContainer id="skillset">
             <ContentWrapper>
+                <SkillBox />
                 <SectionTitle>{t("skillset.title")}</SectionTitle>
                 <VerticalWrapper>
                     <div>

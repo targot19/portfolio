@@ -17,8 +17,8 @@ const Contact = () => {
                         <p>Contact me</p>
                     </HorizontalWrapper>
                     <Icons />
+                    <ContactForm />
             </ContentWrapper>
-            <ContactForm />
         </SectionContainer>
     );
 }
@@ -26,15 +26,15 @@ const Contact = () => {
 export default Contact;
 
 const ProfilePic = styled.img`
-    //visibility: hidden;
-    overflow: visible;
-    width: 25%;
-    height: 25%;
+    overflow: hidden;
+    width: 25em;
+    height: 25em;
     object-fit: cover;
-    border: 2px dotted red;
+    border-radius: 75%;
+    z-index: 1;
 
     &:hover {
-    transform: scale(1.05);
-    transition: all .35s linear;
+        transform: scale(1.05);
+        transition: all 0.35s linear;
     }
-    `
+`;
