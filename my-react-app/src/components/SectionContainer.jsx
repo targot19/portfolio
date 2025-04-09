@@ -8,7 +8,7 @@ const SectionContainer = styled.section`
      justify-content: center;
      align-items: center;
      align-self: center;
-     border: 2px solid black;
+     //border: 2px solid black;
      padding: 20px;
      gap: 1em;
      overflow: hidden;
@@ -26,6 +26,8 @@ background-color: #fba47e;
 
 export const Box3 = styled(SectionContainer)`
     margin: 0 auto; /* Remove margin */
+    flex-wrap: wrap;
+    display: inline-block;
     `
 
 export default SectionContainer;

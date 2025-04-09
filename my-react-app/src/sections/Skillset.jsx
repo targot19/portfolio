@@ -9,6 +9,8 @@ import BackEnd from "../assets/backend.svg";
 import ProjectManagement from "../assets/project.svg";
 import OtherSkills from "../assets/softskills.svg";
 
+{/* I strive to build practical, navigateable, and user-engaging technology with a little touch of animation. */}
+
 const Skillset = () => {
     const { t } = useTranslation();
 
@@ -19,6 +21,8 @@ const Skillset = () => {
 
     return (
         <Box3 id="skillset">
+            <ContentWrapper1>
+            <SectionTitle>{t("skillset")}</SectionTitle>
                 <SkillBoxGrid>
                     <SkillBox
                         title={t("skillbox.frontend")}
@@ -51,7 +55,7 @@ const Skillset = () => {
                         
                     />
                 </SkillBoxGrid>
-                <SectionTitle>{t("skillset")}</SectionTitle>
+                </ContentWrapper1>
         </Box3>
     );
 };
@@ -59,13 +63,13 @@ const Skillset = () => {
 export default Skillset;
 
 const SkillBoxGrid = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5em;
     justify-content: center;
-    align-items: flex-start;
-    border: 2px solid red;
+    align-items: center;
+    //border: 2px solid red;
     padding: 0;
     margin: 0;
-    max-width: 75vw;
+    max-width: 100%;
 `;

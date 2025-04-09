@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const SkillBoxContainer = styled.div`
     position: relative;
-    width: 32em;
-    height: 22em;
+    width: 40em;
+    height: 18em;
     padding: 0.2em;
     //border: 1px solid #ccc;
     border-radius: 0.8em;

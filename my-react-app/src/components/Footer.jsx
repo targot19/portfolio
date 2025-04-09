@@ -27,7 +27,7 @@ const FooterSection = styled.div`
   height: 2em;
   width: 100vw;
   max-width: 100vw;
-  background-color: #efefef;
+  background-color: transparent;
 `;
 
 const FooterText = styled.p`

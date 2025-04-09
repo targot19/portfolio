@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const SkillBoxTextContainer = styled.div`
     text-align: center;
-    padding: 1em;
+    padding: 1.2em;
     overflow: hidden;
 
     &:hover + div {
