@@ -14,6 +14,26 @@
         "title": "Meet Tania",
         "description": "To ensure ethical Human-Computer Interaction, IT needs to be developed with the target group in mind at all times - that’s where I come in. I’m a BA graduate in Communication who’s currently pursuing a MSc in Information Technology to be able to act as both developer and integrator."
     },
+    "skillbox": {
+        "web": "Front-end Development",
+        "web-description": "Through my master, I've become quite familiar with web development. With a practical approach, I strive to make functional websites.",
+        "web-skills": [
+            "HTML 5",
+            "CSS3",
+            "JavaScript",
+            "React.js",
+            "Flask",
+            "Tailwind CSS",
+            "Material UI",
+            "Styled Components",
+            "Bootstrap"
+        ],
+        "mobile": "Back-end Development",
+        "mobile-description": "I used android studio.",
+        "mobile-skills": [
+            "SQL"
+        ]
+    },
     "skillset": {
         "title": "Skillset",
         "programming": [
@@ -51,10 +71,6 @@
             "Scrum",
             "Communication"
         ]
-    },
-    "recommendations": {
-        "title": "Recommendations",
-        "multi-byg": "Hej"
     },
     "education": {
         "master-title": "Msc in Digitalisation and Application Development",

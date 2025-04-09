@@ -25,7 +25,7 @@ background-color: #fba47e;
 `;
 
 export const Box3 = styled(SectionContainer)`
-background-color: green;
-`;
+    margin: 0 auto; /* Remove margin */
+    `
 
 export default SectionContainer;

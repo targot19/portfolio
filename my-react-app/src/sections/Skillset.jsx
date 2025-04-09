@@ -1,53 +1,61 @@
-import SectionContainer from "../components/SectionContainer";
+import { Box3 } from "../components/SectionContainer";
 import SectionTitle from "../components/SectionTitle";
-import ContentWrapper from "../components/ContentWrapper";
-import VerticalWrapper from "../components/VerticalWrapper";
+import { ContentWrapper1 } from "../components/ContentWrapper";
 import { useTranslation } from "react-i18next";
-import HorizontalWrapper from "../components/HorizontalWrapper";
 import SkillBox from "../components/SkillBox";
+import styled from "styled-components";
+import WebDevelopment from "../assets/web-development.svg";
 
 const Skillset = () => {
     const { t } = useTranslation();
 
-    // Fetch arrays from translations with fallback
-    const programmingSkills = t("skillset.programming", { returnObjects: true }) || [];
-    const toolboxSkills = t("skillset.toolbox", { returnObjects: true }) || [];
-    const languages = t("skillset.languages", { returnObjects: true }) || [];
+    const frontEndSkills = t("skillbox.web-skills", { returnObjects: true }) || [];
+    const backEndSkills = t("skillbox.mobile-skills", { returnObjects: true }) || [];
 
     return (
-        <SectionContainer id="skillset">
-            <ContentWrapper>
-                <SkillBox />
+        <Box3 id="skillset">
+                <SkillBoxGrid>
+                    <SkillBox
+                        title={t("skillbox.web")}
+                        description={t("skillbox.web-description")}
+                        skills={frontEndSkills}
+                        image={WebDevelopment} // Optional custom image
+                        //source="https://www.svgrepo.com/svg/382780/application-coding-web-code-write"
+                    />
+                    <SkillBox
+                        title={t("skillbox.mobile")}
+                        description={t("skillbox.mobile-description")}
+                        skills={backEndSkills}
+                        image={WebDevelopment} // Optional custom image
+                    />
+                    <SkillBox
+                        title="Other Skills"
+                        description="Some other skills I have."
+                        skills={["Skill 1", "Skill 2", "Skill 3"]}
+                        
+                    />
+                    <SkillBox
+                        title="Languages"
+                        description="Languages I speak."
+                        skills={t("skillset.languages", { returnObjects: true }) || []}
+                        
+                    />
+                </SkillBoxGrid>
                 <SectionTitle>{t("skillset.title")}</SectionTitle>
-                <VerticalWrapper>
-                    <div>
-                        <h3>Programming</h3>
-                        <ul>
-                            {programmingSkills.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Toolbox</h3>
-                        <ul>
-                            {toolboxSkills.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Languages</h3>
-                        <ul>
-                            {languages.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
-                    </div>
-                </VerticalWrapper>
-            </ContentWrapper>
-        </SectionContainer>
+        </Box3>
     );
 };
 
 export default Skillset;
+
+const SkillBoxGrid = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid red;
+    padding: 0;
+    margin: 0;
+    max-width: 75vw;
+`;

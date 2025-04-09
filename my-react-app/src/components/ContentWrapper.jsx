@@ -8,5 +8,10 @@ import styled from "styled-components";
      border: 2px solid blue;
      z-index: 1;
  `
+
+ export const ContentWrapper1 = styled(ContentWrapper)`
+    width: 75vw;
+    margin: auto;
+ `;
  
  export default ContentWrapper;

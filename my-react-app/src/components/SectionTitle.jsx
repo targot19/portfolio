@@ -8,6 +8,7 @@ const SectionTitle = styled.h1`
     font-family: system-ui;
     letter-spacing: 0.01em;
     border: 2px red dotted;
+    margin: auto;
 `;
 
 export const SectionTitleIntro = styled(SectionTitle)`
