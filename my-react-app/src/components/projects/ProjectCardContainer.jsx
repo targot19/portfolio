@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SkillBoxContainer = styled.div`
+const ProjectCardContainer = styled.div`
     position: relative;
     width: 40em;
     height: 18em;
@@ -12,4 +12,4 @@ const SkillBoxContainer = styled.div`
     background-color: #dfba3a;
 `;
 
-export default SkillBoxContainer;
+export default ProjectCardContainer;

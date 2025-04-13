@@ -3,12 +3,12 @@
 .embla {
     max-width: 90vw;
     margin: auto;
-    --slide-height: 60vh;
-    --slide-spacing: 1rem;
+    --slide-height: 40vh;
+    --slide-spacing: 2rem;
     --slide-size: 100%;
     --slide-spacing-sm: 1.6rem;
     --slide-size-sm: 50%;
-    --slide-spacing-lg: 2rem;
+    --slide-spacing-lg: 1rem;
     --slide-size-lg: calc(100% / 3);
   }
   .embla__viewport {
@@ -50,7 +50,7 @@
   .embla__slide__number {
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
     border-radius: 1.8rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@
   }
   .embla__slide__employer {
     font-size: 1rem;
-    color: #c2c4c8;
+    color: #70737a;
     margin-top: 0;
     text-align: right;
     display: grid;
@@ -126,8 +126,8 @@
     border: 0.1rem solid black;
     padding: 0;
     margin: 0.1rem;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,6 +141,11 @@
     display: flex;
     align-items: center;
     content: '';
+    background-color: transparent;
+  }
+  .embla__dot--selected {
+    background-color: #007bff; /* Add a background color for the selected dot */
+    border-color: #007bff; /* Optional: Change the border color for the selected dot */
   }
   .embla__dot--selected:after {
     box-shadow: inset 0 0 0 0.2rem var(--text-body);

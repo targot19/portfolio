@@ -34,9 +34,4 @@ const ProfilePic = styled.img`
     object-fit: cover;
     border-radius: 50%;
     z-index: 1;
-
-    &:hover {
-        transform: scale(1.05);
-        transition: all 0.35s linear;
-    }
 `;

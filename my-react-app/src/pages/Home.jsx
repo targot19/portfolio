@@ -6,7 +6,8 @@ import Contact from "../sections/Contact";
 import EmblaCarousel from "../components/carousel/EmblaCarousel";
 import "../styles/Embla.css";
 import { useTranslation } from "react-i18next";
-import Skillset from "../sections/Skillset";
+import Skills from "../sections/Skills";
+import Projects from "../sections/Projects";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -19,7 +20,8 @@ const Home = () => {
       <NavBar />
       <Introduction />
       <Education />
-      <Skillset />
+      <Skills />
+      <Projects />
       <EmblaCarousel slides={SLIDES} employer={EMPLOYER} options={OPTIONS} />
       <Contact />
       <Footer />

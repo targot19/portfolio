@@ -1,7 +1,7 @@
 {
     "navigation": {
         "about": "About",
-        "skillset": "Skillset",
+        "skills": "Skills",
         "projects": "Projects",
         "contact": "Contact",
         "education": "Education",
@@ -84,11 +84,11 @@
         "button": "Github"
     },
     "slides": [
-        "Tania has understood and taken responsibility for her assigned tasks, met deadlines, and thereby built trust with management.",
-        "During her time with me, she has demonstrated flexibility during busy periods, commitment - also when it came to new work tasks - and the ability to structure her tasks according to priority.",
-        "Tania has been incredibly committed and empathetic since day one, and has made a responsible and dedicated effort to get the local club community up and running.",
-        "I strongly recommend Tania to any company, who wish for a fast learner, intelligent and energetic employee.",
-        "I know Tania as a capable, responsible employee who never shys away from new tasks. She is good at seeing where a hand is needed and otherwise she asks."
+        "“Tania has understood and taken responsibility for her assigned tasks, met deadlines, and thereby built trust with management.”",
+        "“During her time with me, she has demonstrated flexibility during busy periods, commitment - also when it came to new work tasks - and the ability to structure her tasks according to priority.”",
+        "“Tania has been incredibly committed and empathetic since day one, and has made a responsible and dedicated effort to get the local club community up and running.”",
+        "“I strongly recommend Tania to any company, who wish for a fast learner, intelligent and energetic employee.”",
+        "“I know Tania as a capable, responsible employee who never shys away from new tasks. She is good at seeing where a hand is needed and otherwise she asks.”"
     ],
     "employer": [
         "Anders Skagen, Multi-Byg A/S",
@@ -103,5 +103,24 @@
         "mail": "Enter Mail",
         "message": "Enter Message",
         "submit": "Submit"
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "titleAll": "Projects",
+        "more": "More Projects",
+        "projectList": [
+            {
+                "title": "EcoHour",
+                "image": "/projects/ecohour.png",
+                "labels": ["Java",  "Android", "API calls"],
+                "description": "EcoHour er en Android-app udviklet i samarbejde med MinStrøms API. Den fungerer som et planlægningsværktøj, der gør det muligt for brugere at planlægge huslige opgaver baseret på de aktuelle elpriser. Appen blev udviklet som en prototype i forbindelse med et semesterprojekt."
+            },
+            {
+                "title": "UI til eksperiment omkring tillid til AI",
+                "image": "/projects/ai.jpg",
+                "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+            }
+        ]
     }
 }

@@ -11,7 +11,7 @@ import OtherSkills from "../assets/softskills.svg";
 
 {/* I strive to build practical, navigateable, and user-engaging technology with a little touch of animation. */}
 
-const Skillset = () => {
+const Skills = () => {
     const { t } = useTranslation();
 
     const frontEndSkills = t("skillbox.frontend-skills", { returnObjects: true }) || [];
@@ -20,7 +20,7 @@ const Skillset = () => {
     const otherSkills = t("skillbox.other-skills", { returnObjects: true }) || [];
 
     return (
-        <Box3 id="skillset">
+        <Box3 id="skills">
             <ContentWrapper1>
             <SectionTitle>{t("skillset")}</SectionTitle>
                 <SkillBoxGrid>
@@ -55,12 +55,12 @@ const Skillset = () => {
                         
                     />
                 </SkillBoxGrid>
-                </ContentWrapper1>
+            </ContentWrapper1>
         </Box3>
     );
 };
 
-export default Skillset;
+export default Skills;
 
 const SkillBoxGrid = styled.div`
     display: grid;
@@ -72,4 +72,4 @@ const SkillBoxGrid = styled.div`
     padding: 0;
     margin: 0;
     max-width: 100%;
-`;
+`

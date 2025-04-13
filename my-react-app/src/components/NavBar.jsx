@@ -11,7 +11,8 @@ const NavBar = () => {
             <NavLinks>
                 <NavItem href="#introduction">{t("navigation.about")}</NavItem>
                 <NavItem href="#education">{t("navigation.education")}</NavItem>
-                <NavItem href="#skillset">{t("navigation.skillset")}</NavItem>
+                <NavItem href="#skills">{t("navigation.skills")}</NavItem>
+                <NavItem href="#projects">{t("navigation.projects")}</NavItem>
                 <NavItem href="#recommendations">{t("navigation.recommendations")}</NavItem>
                 <NavItem href="#contact">{t("navigation.contact")}</NavItem>
             </NavLinks>
