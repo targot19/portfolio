@@ -5,9 +5,11 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { useTranslation } from 'react-i18next';
 
 export const ContactForm = () => {
   const form = useRef();
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,20 +31,20 @@ export const ContactForm = () => {
   return (
     <Form ref={form} onSubmit={sendEmail}>
       <Form.Group className="mb-3 mt-2">
-				<Form.Control type="text" placeholder="Enter Name" />
+				<Form.Control type="text" placeholder={t("contact.name")} />
 				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
 			</Form.Group>
 			<Form.Group className="mb-3 mt-2">
-				<Form.Control type="email" placeholder="Enter Email" />
+				<Form.Control type="email" placeholder={t("contact.mail")} />
 				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
 			</Form.Group>
 			<Form.Group className="mb-3">
-				<Form.Control as="textarea" rows={3} placeholder="Enter Message" />
+				<Form.Control as="textarea" rows={3} placeholder={t("contact.message")} />
 				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
 			</Form.Group>
 			<div className="text-end">
 				<Button variant="primary" type="submit" className="ezy__contact6-btn">
-					Submit
+          {t("contact.submit")}
 				</Button>
 			</div>
 		</Form>

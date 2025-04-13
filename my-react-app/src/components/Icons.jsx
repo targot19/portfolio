@@ -27,15 +27,20 @@ export default Icons;
 
 const IconsWrapper = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
-    gap: 30px;
+    flex-wrap: nowrap;
+    //justify-content: center;
+    //align-items: center;
+    border: 2px solid black;
+    //gap: 1rem;
+    padding-top: 1rem;
+    width: auto;
+    height: auto;
+    flex-direction: row;
     `
 
 const Icon = styled.img`
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 3rem;
     border: 2px dotted red;
-    gap: 20px;    
+    //gap: 20px;    
     `

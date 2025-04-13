@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 const SectionContainer = styled.section`
      display: flex;
-     width: 100vw;
+     overflow: hidden;
+     flex-direction: column;
+     width: 100%;
      max-width: 100vw;
-     height: 100vh;
+     height: auto;
      justify-content: center;
      align-items: center;
-     align-self: center;
-     //border: 2px solid black;
+     //align-self: center;
+     border: 2px solid black;
      padding: 20px;
      flex-direction: row;
      gap: 1em;
@@ -32,10 +34,9 @@ export const Box3 = styled(SectionContainer)`
     `
 
 export const Box4 = styled(SectionContainer)`
-    margin: 0 auto; /* Remove margin */
     flex-wrap: nowrap;
     display: flex;
-    height: 50vh;
+    height: 100vh;
     flex-direction: row;
     `
 

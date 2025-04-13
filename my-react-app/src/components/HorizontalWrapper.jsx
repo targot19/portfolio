@@ -1,13 +1,20 @@
 import styled from "styled-components";
  
  const HorizontalWrapper = styled.div`
-     //display: inline-block;
+     display: flex;
      //overflow: hidden;
      width: 100%;
-     flex-direction: row;
+     flex-direction: column;
+     justify-content: center;
      border: 2px dotted purple;
      flex: 1;
-     min-width: 8em;
+     height: auto;
+     box-sizing: border-box;
+     align-items: center;
+     //min-width: 8em;
+     flex-wrap: wrap;
+     //gap: 1em;
+     
  `
  
  export default HorizontalWrapper;

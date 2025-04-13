@@ -6,17 +6,19 @@ import ContentWrapper from "../components/ContentWrapper.jsx";
 import HorizontalWrapper from "../components/HorizontalWrapper.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
 import ContactForm from "../components/ContactForm.jsx";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     return (
         <SectionContainer id="contact">
-            <ProfilePic src={Profile} alt="Profile picture" />
+            <HorizontalWrapper>
+                <ProfilePic src={Profile} alt="Profile picture" />
+                <Icons />
+            </HorizontalWrapper>
             <ContentWrapper>
-                <SectionTitle>Let's connect</SectionTitle>
-                    <HorizontalWrapper>
-                        <p>Contact me</p>
-                    </HorizontalWrapper>
-                    <Icons />
+                <SectionTitle>{t("contact.title")}</SectionTitle>
                     <ContactForm />
             </ContentWrapper>
         </SectionContainer>
@@ -30,7 +32,7 @@ const ProfilePic = styled.img`
     width: 25em;
     height: 25em;
     object-fit: cover;
-    border-radius: 75%;
+    border-radius: 50%;
     z-index: 1;
 
     &:hover {

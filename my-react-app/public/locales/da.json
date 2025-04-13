@@ -96,5 +96,12 @@
         "Claire Mourier, SIND Ungdom Aalborg",
         "Mie Nielsen, Kikkertland ApS",
         "Linda Granlie, Børnehuset Jægergårdsgade 68"
-    ]
+    ],
+    "contact": {
+        "title": "Lad os tage en snak!",
+        "name": "Indtast Navn",
+        "mail": "Indtast Mail",
+        "message": "Indtast Besked",
+        "submit": "Send"
+    }
 }

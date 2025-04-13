@@ -11,8 +11,8 @@ const Education = () => {
 
     return (
         <Box4 id="education">
-            <SectionTitle>Education</SectionTitle>
             <ContentWrapper1>
+            <SectionTitle>Education</SectionTitle>
                 <HorizontalWrapper>
                     <Title>{t("education.master-title")}</Title>
                     <Year>{t("education.master-year-institution")}</Year>
