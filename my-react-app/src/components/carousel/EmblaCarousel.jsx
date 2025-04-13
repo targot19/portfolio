@@ -9,10 +9,13 @@ import {
 } from './EmblaCarouselArrowButtons';
 import useEmblaCarousel from 'embla-carousel-react';
 import SectionContainer from '../SectionContainer';
+import { useTranslation } from 'react-i18next';
+import SectionTitle from '../SectionTitle';
 
 const EmblaCarousel = (props) => {
   const { slides, employer, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const { t } = useTranslation();
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
@@ -27,6 +30,7 @@ const EmblaCarousel = (props) => {
   return (
     <SectionContainer id="recommendations">
         <section className="embla">
+        <SectionTitle>{t("navigation.recommendations")}</SectionTitle>
         <div className="embla__viewport" ref={emblaRef}>
             <div className="embla__container">
             {slides.map((slide, index) => (

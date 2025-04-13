@@ -51,4 +51,5 @@ const Description = styled.p`
     font-size: 1.2em;
     font-family: system-ui;
     font-weight: normal;
+    text-align: justify;
     `;

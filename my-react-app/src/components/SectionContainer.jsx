@@ -36,7 +36,7 @@ export const Box3 = styled(SectionContainer)`
 export const Box4 = styled(SectionContainer)`
     flex-wrap: nowrap;
     display: flex;
-    height: 100vh;
+    height: auto;
     flex-direction: row;
     `
 
