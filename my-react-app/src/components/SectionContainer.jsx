@@ -10,6 +10,7 @@ const SectionContainer = styled.section`
      align-self: center;
      //border: 2px solid black;
      padding: 20px;
+     flex-direction: row;
      gap: 1em;
      overflow: hidden;
      background-image: ${({ bgImg }) => bgImg ? `url(${bgImg})` : "none"};
@@ -21,13 +22,21 @@ const SectionContainer = styled.section`
 `;
 
 export const Box2 = styled(SectionContainer)`
-background-color: #fba47e;
+background-color: #dfba3a;
 `;
 
 export const Box3 = styled(SectionContainer)`
     margin: 0 auto; /* Remove margin */
     flex-wrap: wrap;
     display: inline-block;
+    `
+
+export const Box4 = styled(SectionContainer)`
+    margin: 0 auto; /* Remove margin */
+    flex-wrap: nowrap;
+    display: flex;
+    height: 50vh;
+    flex-direction: row;
     `
 
 export default SectionContainer;

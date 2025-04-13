@@ -12,11 +12,16 @@ import styled from "styled-components";
     max-width: 100vw; /* Prevent it from exceeding the parent container */
     box-sizing: border-box; /* Include padding and border in the width/height */
     x-index: 1;
+    flex-wrap: wrap;
  `
 
  export const ContentWrapper1 = styled(ContentWrapper)`
     flex-wrap: wrap;
     margin: auto;
+    flex-direction: row;
+    gap: 2em;
+    align-items: flex-start;
+    justify-content: flex-start;
  `;
  
  export default ContentWrapper;

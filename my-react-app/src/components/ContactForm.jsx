@@ -1,7 +1,10 @@
 /** https://www.emailjs.com/docs/examples/reactjs/ */
+/** https://easyfrontend.com/component-details/bootstrap-contact-form?lang=react-js&frame=react-bootstrap&mode=sources&colorScheme=light */
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import styled from 'styled-components';
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 export const ContactForm = () => {
   const form = useRef();
@@ -24,15 +27,25 @@ export const ContactForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <Form ref={form} onSubmit={sendEmail}>
+      <Form.Group className="mb-3 mt-2">
+				<Form.Control type="text" placeholder="Enter Name" />
+				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
+			</Form.Group>
+			<Form.Group className="mb-3 mt-2">
+				<Form.Control type="email" placeholder="Enter Email" />
+				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
+			</Form.Group>
+			<Form.Group className="mb-3">
+				<Form.Control as="textarea" rows={3} placeholder="Enter Message" />
+				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
+			</Form.Group>
+			<div className="text-end">
+				<Button variant="primary" type="submit" className="ezy__contact6-btn">
+					Submit
+				</Button>
+			</div>
+		</Form>
   );
 };
 

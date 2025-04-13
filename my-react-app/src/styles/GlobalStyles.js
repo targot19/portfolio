@@ -17,8 +17,8 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         display: block;
         overflow-x: hidden;
-        font-color:rgb(37, 24, 24);
-        background-color:rgb(135, 174, 196);
+        font-color: black;
+        background-color: white;
     }
     
     html {

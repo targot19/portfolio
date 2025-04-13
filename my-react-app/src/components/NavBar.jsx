@@ -47,7 +47,7 @@ const NavLinks = styled.div`
 `;
 
 const NavItem = styled.a`
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 1em;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import Github from "../assets/Github.svg";
+import Resume from "../assets/resume.svg";
 
 const DownloadResume = () => {
     const { t, i18n } = useTranslation();
@@ -15,8 +15,8 @@ const DownloadResume = () => {
 
     return (
         <Download onClick={downloadFile}>
-            <img src={Github} alt="Github. Source: https://icons8.com/icon/62856/github" />
-            {t("download.resume")}
+            <img src={Resume} alt="Github. Source: https://www.svgrepo.com/svg/290046/curriculum-resume" />
+            {/*{t("download.resume")}*/}
         </Download>
     );
 };
@@ -24,20 +24,22 @@ const DownloadResume = () => {
 export default DownloadResume;
 
 const Download = styled.button`
-    width: 9em;
-    height: 3em;
+    width: auto;
+    max-width: 3rem;
+    height: 3rem;
+    max-height: 3rem;
     border-radius: 5%;
-    background-color: red;
-    color: black;
-    font-size: 1em;
+    background-color: transparent;
     cursor: pointer;
-    margin: 0 1em 0 0;
-    &:hover {
-        background-color: darkred;
-    }
+    border: black;
+    
 
-    img {
-        width: 2em;
-        height: auto;
+    .img {
+    width: 3rem;
+    height: 3rem;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.35s linear;
     }
-`;
+}`;

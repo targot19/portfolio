@@ -1,6 +1,6 @@
-import { Box2 } from "../components/SectionContainer";
+import { Box4 } from "../components/SectionContainer";
 import SectionTitle from "../components/SectionTitle";
-import ContentWrapper from "../components/ContentWrapper";
+import { ContentWrapper1 } from "../components/ContentWrapper";
 import HorizontalWrapper from "../components/HorizontalWrapper";
 import { useTranslation } from "react-i18next";
 import React from "react";
@@ -10,9 +10,9 @@ const Education = () => {
     const { t } = useTranslation();
 
     return (
-        <Box2 id="education">
-            <ContentWrapper>
+        <Box4 id="education">
             <SectionTitle>Education</SectionTitle>
+            <ContentWrapper1>
                 <HorizontalWrapper>
                     <Title>{t("education.master-title")}</Title>
                     <Year>{t("education.master-year-institution")}</Year>
@@ -28,8 +28,8 @@ const Education = () => {
                     <Year>{t("education.bachelor-year-institution")}</Year>
                     <Description>{t("education.bachelor-description")}</Description>
                 </HorizontalWrapper>
-            </ContentWrapper>
-        </Box2>
+            </ContentWrapper1>
+        </Box4>
     )
 }
 

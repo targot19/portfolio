@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import DownloadResume from "../components/DownloadResume.jsx";
 import GithubButton from "../components/GithubButton.jsx";
 import { TypeAnimation } from "react-type-animation";
-import BackgroundVideo from "../assets/bg-video3.mp4";
+import BackgroundVideo from "../assets/bg-video4.mp4";
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();
@@ -22,7 +22,7 @@ const Introduction = () => {
 
     const handleVideoPlay = (event) => {
         const video = event.target;
-        video.playbackRate = 1; // Set playback rate to 50% (slower)
+        video.playbackRate = 0.5; // Set playback rate to 50% (slower)
     };
 
     return (
@@ -91,7 +91,7 @@ const VideoBackground = styled.video`
 `;
 
 const IntroText = styled.p`
-    color: black;
+    color: white;
     font-size: large;
     place-content: center;
 `;
