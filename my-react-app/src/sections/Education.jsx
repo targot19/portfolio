@@ -52,4 +52,7 @@ const Description = styled.p`
     font-family: system-ui;
     font-weight: normal;
     text-align: justify;
+    word-break: break-word;
+    padding: 0.5rem;
+    line-height: 2rem;
     `;

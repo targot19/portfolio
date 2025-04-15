@@ -64,7 +64,7 @@ const SkillBoxTitle = styled.h4`
 
 const SkillBoxText = styled.p`
     font-family: system-ui;
-    font-size: 1.3em;
+    font-size: 1.1rem;
     text-align: center;
 `
 

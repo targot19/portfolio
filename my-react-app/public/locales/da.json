@@ -16,7 +16,7 @@
     },
     "skillbox": {
         "frontend": "Front-end",
-        "frontend-description": "Med udgangspunkt i en solid teoretisk viden om at designe brugervenlig IT, har jeg derudover også opnået praktiske færdigheder i at opbygge dem.",
+        "frontend-description": "Med viden og kompetencer i at både designe og bygge brugervenlig IT, har jeg evnerne til at agere som både UX/UI-designer og front-end udvikler.",
         "frontend-skills": [
             "HTML 5",
             "CSS3",
@@ -29,19 +29,22 @@
             "Material UI",
             "Tailwind CSS",
             "Bootstrap",
+            "Balsamiq",
             "LaTeX"
         ],
         "backend": "Back-end",
-        "backend-description": "With C being the first language I learned, procedural programming and I were better friends for a long time. Now, that I've cracked the code to object-oriented programming, we're become better friends - for now at least.",
+        "backend-description": "Med erfaring i både procedural- og objektorienteret programmering kan jeg administrere serveren, applikationen og databasen.",
         "backend-skills": [
             "PostgreSQL",
             "MySQL",
             "Java",
             "Python",
-            "C"
+            "C",
+            "Linux kernel",
+            "IPv4/IPv6 adressehåndtering"
         ],
         "management": "Projektledelse",
-        "management-description": "Problem-based learning has taught me how to structure a project and the importance of team work.",
+        "management-description": "Problembaseret læring har lært mig, hvordan man strukturerer et teambaseret projekt på en række forskellige måder sammen med diverse sæt værktøjskasser.",
         "management-skills": [
             "Github",
             "Git",
@@ -57,25 +60,28 @@
             "Wrike"
         ],
         "other": "Andre Kompetencer",
-        "other-description": "hej hej",
+        "other-description": "Tværkulturelt teamwork og kommunikation i alle dens former er meget værdifuldt for mig, og jeg bestræber mig altid på at holde mig opdateret med min humanistiske baggrund såvel som min tekniske.",
         "other-skills": [
             "Dansk C2",
             "Engelsk C1",
             "Litauisk A1",
-            "Tysk A1"
+            "Tysk A1",
+            "Brugercentrerede metoder",
+            "B2B",
+            "B2C"
         ]
     },
     "skillset": "Kompetencer",
     "education": {
         "master-title": "Kandidat i Digitalisering og applikationsudvikling",
         "master-year-institution": "2023-2025, Aalborg Universitet",
-        "master-description": "2-årig kandidat.",
+        "master-description": "En kandidat rettet mod humaniora, fokuseret på at bygge videre på eksisterende viden med softwareudvikling, interaktionsdesign og brugercentrerede metoder. At arbejde projektorienteret med problemstillinger i den virkelige verden på tværs af mange forskellige teknologier og programmeringssprog har givet mig mulighed for at bygge et solidt fundament i programmering, hvilket gør det nemmere at lære nye sprog hurtigere. Ved at udvide min allerede-eksisterende viden og færdigheder i at designe og bygge brugercentreret teknologi, har jeg evnerne til at fungere som både integrator og udvikler.",
         "exchange-title": "Erasmus+ udveksling i Litauen",
         "exchange-year-institution": "Efterårssemestret 2024, Vilnius University",
         "exchange-description": "For at udvide min personlige og uddannelsesmæssige horisont tog jeg på fem måneders udveksling til Vilnius Universitet i Litauen. At arbejde med administration af IPv4/IPv6-adresser, Linux kernel og relationel algebra styrkede mine færdigheder inden for datastrukturer, algoritmedesign og databaseudvikling. Gennem tværkulturelt gruppearbejde blev min forståelse af kulturelle forskelle forstærket, hvilket yderligere øgede mine kommunikationsevner og tilpasningsevne. For at integrere og opbygge et professionelt netværk gennemførte jeg et A1 litauisk sprogkursus.",
         "bachelor-title": "Bachelor i Kommunikation og digitale medier",
         "bachelor-year-institution": "2020-2023, Aalborg Universitet",
-        "bachelor-description": "Hej."
+        "bachelor-description": "En bachelor, der giver en stærk viden om menneskers sproglige og kommunikative adfærd, hvordan de interagerer med hinanden i sociale, organisatoriske og kulturelle sammenhænge, ​​og hvordan kommunikation udvikler sig, når IKT inkorporeres. At dykke ned i kommunikationsteorier og -strategier med etik og videnskabelige teorier taget i betragtning, hjalp mig med at opbygge en solid base i at analysere auditiv, visuel, skriftlig og talt kommunikation og transformere dem til design lavet til mennesker, af mennesker."
     },
     "download": {
         "resume": "CV"
