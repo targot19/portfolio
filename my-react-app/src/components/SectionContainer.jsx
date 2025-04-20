@@ -11,8 +11,8 @@ const SectionContainer = styled.section`
      align-items: center;
      //align-self: center;
      border: 2px solid black;
-     padding: 20px;
-     flex-direction: row;
+     //padding: 20px;
+     //flex-direction: row;
      gap: 1em;
      overflow: hidden;
      background-image: ${({ bgImg }) => bgImg ? `url(${bgImg})` : "none"};
@@ -28,16 +28,22 @@ background-color: #dfba3a;
 `;
 
 export const Box3 = styled(SectionContainer)`
-    margin: 0 auto; /* Remove margin */
-    flex-wrap: wrap;
+    margin: 0 auto;
+    //flex-wrap: wrap;
     display: inline-block;
+    height: 100vh;
     `
 
 export const Box4 = styled(SectionContainer)`
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0;
+    height: auto;
+    `
+
+export const Box5 = styled(SectionContainer)`
     display: flex;
     height: auto;
-    flex-direction: row;
-    `
+    flex-direction: row;`
 
 export default SectionContainer;

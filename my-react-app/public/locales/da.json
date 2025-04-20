@@ -126,6 +126,18 @@
                 "image": "/projects/ai.jpg",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
                 "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+            },
+            {
+                "title": "Online Portfolio",
+                "image": "/projects/portfolio.jpg",
+                "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+            },
+            {
+                "title": "Tom and Jerry",
+                "image": "/assets/tom-and-jerry.mp4",
+                "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
             }
         ]
     }

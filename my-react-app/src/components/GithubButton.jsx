@@ -18,11 +18,11 @@ const StyledButton = styled.button`
     border-radius: 5%;
     background-color: transparent;
     cursor: pointer;
-    border: black;
+    border: 3px solid yellow;
 
     .img {
-    width: 3em;
-    height: 3em;
+    width: 1rem;
+    height: 1rem;
 
     &:hover {
         transform: scale(1.05);

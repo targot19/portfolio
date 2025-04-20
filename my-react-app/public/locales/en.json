@@ -14,74 +14,95 @@
         "title": "Meet Tania",
         "description": "To ensure ethical Human-Computer Interaction, IT needs to be developed with the target group in mind at all times - that’s where I come in. I’m a BA graduate in Communication who’s currently pursuing a MSc in Information Technology to be able to act as both developer and integrator."
     },
-    "skillbox": {
-        "frontend": "Front-end",
-        "frontend-description": "With knowledge and skills in both designing and building user-friendly IT, I have the abilities to act as both UX/UI-designer and front-end developer.",
-        "frontend-skills": [
-            "HTML 5",
-            "CSS3",
-            "JavaScript",
-            "React",
-            "Styled Components",
-            "Figma",
-            "Canva",
-            "Flask",
-            "Material UI",
-            "Tailwind CSS",
-            "Bootstrap",
-            "Balsamiq",
-            "LaTeX"
-        ],
-        "backend": "Back-end",
-        "backend-description": "Having experience with both procedural and object-oriented programming, I can manage the server, application, and database.",
-        "backend-skills": [
-            "PostgreSQL",
-            "MySQL",
-            "Java",
-            "Python",
-            "C",
-            "Linux kernel",
-            "IPv4/IPv6 Address Management"
-        ],
-        "management": "Project Management",
-        "management-description": "Problem-based learning has taught me how to structure a team-based project in a variety of ways, along with different sets of toolboxes.",
-        "management-skills": [
-            "Github",
-            "Git",
-            "VSCode",
-            "IntelliJ",
-            "Android Studio",
-            "Jira",
-            "Overleaf",
-            "Waterfall Methodology",
-            "Scrum",
-            "Design Thinking",
-            "Kanban Methodology",
-            "Wrike"
-        ],
-        "other": "Other Skills",
-        "other-description": "Cross-cultural teamwork and communication in all its forms are highly valuable to me, and I always strive to stay updated with my humanities’ background as well as my technical one.",
-        "other-skills": [
-            "Danish C2",
-            "English C1",
-            "Lithuanian A1",
-            "German A1",
-            "User-centered methods",
-            "B2B",
-            "B2C"
-        ]
-    },
+    "skillboxList": [
+        {
+            "title": "Front-end",
+            "description": "With knowledge and skills in both designing and building user-friendly IT, I have the abilities to act as both UX/UI-designer and front-end developer.",
+            "skills": [
+                "HTML 5",
+                "CSS3",
+                "JavaScript",
+                "React",
+                "Styled Components",
+                "Figma",
+                "Canva",
+                "Flask",
+                "Material UI",
+                "Tailwind CSS",
+                "Bootstrap",
+                "Balsamiq",
+                "LaTeX"
+            ],
+            "image": "../src/assets/frontend.svg"
+        },
+        {
+            "title": "Back-end",
+            "description": "Having experience with both procedural and object-oriented programming, I can manage the server, application, and database.",
+            "skills": [
+                "PostgreSQL",
+                "MySQL",
+                "Java",
+                "Python",
+                "C",
+                "Linux kernel",
+                "IPv4/IPv6 Address Management"
+            ],
+            "image": "../src/assets/backend.svg"
+        },
+        {
+            "title": "Project Management",
+            "description": "Problem-based learning has taught me how to structure a team-based project in a variety of ways, along with different sets of toolboxes.",
+            "skills": [
+                "Github",
+                "Git",
+                "VSCode",
+                "IntelliJ",
+                "Android Studio",
+                "Jira",
+                "Overleaf",
+                "Waterfall Methodology",
+                "Scrum",
+                "Design Thinking",
+                "Kanban Methodology",
+                "Wrike"
+            ],
+            "image": "../src/assets/project.svg"
+        },
+        {
+            "title": "Other Skills",
+            "description": "Cross-cultural teamwork and communication in all its forms are highly valuable to me, and I always strive to stay updated with my humanities’ background as well as my technical one.",
+            "skills": [
+                "Danish C2",
+                "English C1",
+                "Lithuanian A1",
+                "German A1",
+                "User-centered methods",
+                "B2B",
+                "B2C"
+            ],
+            "image": "../src/assets/softskills.svg"
+        }
+
+    ],
     "skillset": "Skills",
     "education": {
-        "master-title": "Msc in Digitalisation and Application Development",
-        "master-year-institution": "2023-2025, Aalborg University",
-        "master-description": "A master targeted towards humanities, focused on building upon existing knowledge with software development, interaction design, and user-centered methodologies. Working project-oriented with real-world issues across many different technologies and programming languages has allowed me to build a solid foundation in programming, making it easier to learn new languages faster. Expanding my already-existing knowledge and skills in designing and building user-centered technology, I have the capabilities to act as both integrator and developer.",
-        "exchange-title": "Erasmus+ Exchange in Lithuania",
-        "exchange-year-institution": "Fall semester 2024, Vilnius University",
-        "exchange-description": "To broaden my personal and educational horizon, I went on a five month exchange to Vilnius University in Lithuania. Working with IPv4/IPv6 address management, Linux kernel, and relational algebra strengthened my skills in data structures, algorithm design, and database development. Through cross-cultural teamwork, my understanding of cultural differences deepened, further augmenting my communication skills and adaptability. To integrate and build a professional network, I completed an A1 Lithuanian language course.",
-        "bachelor-title": "BA in Communication and Digital Media",
-        "bachelor-year-institution": "2020-2023, Aalborg University",
-        "bachelor-description": "A bachelor providing a strong knowledge in people’s linguistic and communicative behaviour, how they interact with each other in social, organisational, and cultural contexts, and how communication evolves when ICT is incorporated. Diving into communication theories and strategies while taking ethics and scientific theories into consideration helped me build a solid base in analysing auditorial, visual, written, and spoken communication and transform them into designs made for humans, by humans."
+        "educationsList": [
+            {
+                "title": "Msc in Digitalisation and Application Development",
+                "year": "2023-2025, Aalborg University",
+                "description": "A master targeted towards humanities, focused on building upon existing knowledge with software development, interaction design, and user-centered methodologies. Working project-oriented with real-world issues across many different technologies and programming languages has allowed me to build a solid foundation in programming, making it easier to learn new languages faster. Expanding my already-existing knowledge and skills in designing and building user-centered technology, I have the capabilities to act as both integrator and developer."
+            },
+            {
+                "title": "Erasmus+ Exchange in Lithuania",
+                "year": "Fall semester 2024, Vilnius University",
+                "description": "To broaden my personal and educational horizon, I went on a five month exchange to Vilnius University in Lithuania. Working with IPv4/IPv6 address management, Linux kernel, and relational algebra strengthened my skills in data structures, algorithm design, and database development. Through cross-cultural teamwork, my understanding of cultural differences deepened, further augmenting my communication skills and adaptability. To integrate and build a professional network, I completed an A1 Lithuanian language course."
+            },
+            {
+                "title": "BA in Communication and Digital Media",
+                "year": "2020-2023, Aalborg University",
+                "description": "A bachelor providing a strong knowledge in people’s linguistic and communicative behaviour, how they interact with each other in social, organisational, and cultural contexts, and how communication evolves when ICT is incorporated. Diving into communication theories and strategies while taking ethics and scientific theories into consideration helped me build a solid base in analysing auditorial, visual, written, and spoken communication and transform them into designs made for humans, by humans."
+            }
+        ]
     },
     "download": {
         "resume": "Resume"
@@ -89,19 +110,27 @@
     "github": {
         "button": "Github"
     },
-    "slides": [
-        "“Tania has understood and taken responsibility for her assigned tasks, met deadlines, and thereby built trust with management.”",
-        "“During her time with me, she has demonstrated flexibility during busy periods, commitment - also when it came to new work tasks - and the ability to structure her tasks according to priority.”",
-        "“Tania has been incredibly committed and empathetic since day one, and has made a responsible and dedicated effort to get the local club community up and running.”",
-        "“I strongly recommend Tania to any company, who wish for a fast learner, intelligent and energetic employee.”",
-        "“I know Tania as a capable, responsible employee who never shys away from new tasks. She is good at seeing where a hand is needed and otherwise she asks.”"
-    ],
-    "employer": [
-        "Anders Skagen, Multi-Byg A/S",
-        "Jonas Holm, jonasholm.dk",
-        "Claire Mourier, SIND Ungdom Aalborg",
-        "Mie Nielsen, Kikkertland ApS",
-        "Linda Granlie, Børnehuset Jægergårdsgade 68"
+    "recommendationsList": [
+        {
+            "quote": "“Tania has understood and taken responsibility for her assigned tasks, met deadlines, and thereby built trust with management.”",
+            "employer": "Anders Skagen, Multi-Byg A/S"
+        },
+        {
+            "quote": "“During her time with me, she has demonstrated flexibility during busy periods, commitment - also when it came to new work tasks - and the ability to structure her tasks according to priority.”",
+            "employer": "Jonas Holm, jonasholm.dk"
+        },
+        {
+            "quote": "“Tania has been incredibly committed and empathetic since day one, and has made a responsible and dedicated effort to get the local club community up and running.”",
+            "employer": "Claire Mourier, SIND Ungdom Aalborg"
+        },
+        {
+            "quote": "“I strongly recommend Tania to any company, who wish for a fast learner, intelligent and energetic employee.”",
+            "employer": "Mie Nielsen, Kikkertland ApS"
+        },
+        {
+            "quote": "“I know Tania as a capable, responsible employee who never shys away from new tasks. She is good at seeing where a hand is needed and otherwise she asks.”",
+            "employer": "Linda Granlie, Børnehuset Jægergårdsgade 68"
+        }
     ],
     "contact": {
         "title": "Let's have a talk!",
@@ -124,6 +153,18 @@
             {
                 "title": "UI til eksperiment omkring tillid til AI",
                 "image": "/projects/ai.jpg",
+                "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+            },
+            {
+                "title": "Online Portfolio",
+                "image": "/projects/portfolio.jpg",
+                "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+            },
+            {
+                "title": "Tom and Jerry",
+                "image": "/assets/tom-and-jerry.jpg",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
                 "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
             }

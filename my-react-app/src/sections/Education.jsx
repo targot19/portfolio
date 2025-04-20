@@ -1,32 +1,29 @@
 import { Box4 } from "../components/SectionContainer";
-import SectionTitle from "../components/SectionTitle";
+import { SectionTitleEducation } from "../components/SectionTitle";
 import { ContentWrapper1 } from "../components/ContentWrapper";
 import HorizontalWrapper from "../components/HorizontalWrapper";
 import { useTranslation } from "react-i18next";
 import React from "react";
 import styled from 'styled-components';
+import EducationCard from "../components/EducationCard";
 
 const Education = () => {
     const { t } = useTranslation();
+    const educationsList = t("education.educationsList", { returnObjects: true }).slice(0);
 
     return (
         <Box4 id="education">
             <ContentWrapper1>
-            <SectionTitle>Education</SectionTitle>
+            <SectionTitleEducation>Education</SectionTitleEducation>
                 <HorizontalWrapper>
-                    <Title>{t("education.master-title")}</Title>
-                    <Year>{t("education.master-year-institution")}</Year>
-                    <Description>{t("education.master-description")}</Description>
-                </HorizontalWrapper>
-                <HorizontalWrapper>
-                    <Title>{t("education.exchange-title")}</Title>
-                    <Year>{t("education.exchange-year-institution")}</Year>
-                    <Description>{t("education.exchange-description")}</Description>
-                </HorizontalWrapper>
-                <HorizontalWrapper>
-                    <Title>{t("education.bachelor-title")}</Title>
-                    <Year>{t("education.bachelor-year-institution")}</Year>
-                    <Description>{t("education.bachelor-description")}</Description>
+                {educationsList.map((educationsList, index) => (
+                <EducationCard
+                    key={index}
+                    title={educationsList.title}
+                    year={educationsList.year}
+                    description={educationsList.description}
+                />
+            ))}
                 </HorizontalWrapper>
             </ContentWrapper1>
         </Box4>
@@ -34,25 +31,3 @@ const Education = () => {
 }
 
 export default Education;
-
-const Title = styled.h3`
-    font-size: 1.6em;
-    font-family: system-ui;
-    font-weight: bold;
-    `;
-
-const Year = styled.h4`
-    font-size: 1em;
-    font-family: system-ui;
-    font-weight: normal;
-    `;
-
-const Description = styled.p`
-    font-size: 1.2em;
-    font-family: system-ui;
-    font-weight: normal;
-    text-align: justify;
-    word-break: break-word;
-    padding: 0.5rem;
-    line-height: 2rem;
-    `;

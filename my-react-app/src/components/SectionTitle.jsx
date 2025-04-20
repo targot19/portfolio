@@ -17,4 +17,7 @@ export const SectionTitleIntro = styled(SectionTitle)`
     margin: none;
 `;
 
+export const SectionTitleEducation = styled(SectionTitle)`
+    margin-bottom: 3rem;`
+
 export default SectionTitle;

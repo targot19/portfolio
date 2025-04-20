@@ -13,9 +13,10 @@ import { useTranslation } from 'react-i18next';
 import SectionTitle from '../SectionTitle';
 
 const EmblaCarousel = (props) => {
-  const { slides, employer, options } = props;
+  const { options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const { t } = useTranslation();
+  const recommendationsList = t("recommendationsList", { returnObjects: true }).slice(0); //returns array of projects (only first n)
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
@@ -33,13 +34,13 @@ const EmblaCarousel = (props) => {
         <SectionTitle>{t("navigation.recommendations")}</SectionTitle>
         <div className="embla__viewport" ref={emblaRef}>
             <div className="embla__container">
-            {slides.map((slide, index) => (
+            {recommendationsList.map((recommendationsList, index) => (
                 <div className="embla__slide" key={index}>
                 <div className="embla__slide__number">
-                    <p>{slide}</p>
+                    <p>{recommendationsList.quote}</p>
                     </div>
                     <div className="embla__slide__employer">
-                    <p>- {employer[index]}</p>
+                    <p>- {recommendationsList.employer}</p>
                     </div>
                 </div>
             ))}

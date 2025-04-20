@@ -1,61 +1,36 @@
 import { Box3 } from "../components/SectionContainer";
 import SectionTitle from "../components/SectionTitle";
-import { ContentWrapper1 } from "../components/ContentWrapper";
+import { ContentWrapper2 } from "../components/ContentWrapper";
 import { useTranslation } from "react-i18next";
 import SkillBox from "../components/SkillBox";
 import styled from "styled-components";
-import FrontEnd from "../assets/frontend.svg";
-import BackEnd from "../assets/backend.svg";
-import ProjectManagement from "../assets/project.svg";
-import OtherSkills from "../assets/softskills.svg";
+import FrontEnd from "../assets/frontend.svg"; //source: https://www.svgrepo.com/svg/16272/programming-code
+import BackEnd from "../assets/backend.svg"; // source: https://www.svgrepo.com/svg/1699/web-development
+import ProjectManagement from "../assets/project.svg"; // source: https://www.svgrepo.com/svg/226785/dart-board
+import OtherSkills from "../assets/softskills.svg"; // source: https://www.svgrepo.com/svg/226720/collaboration
 
 {/* I strive to build practical, navigateable, and user-engaging technology with a little touch of animation. */}
 
 const Skills = () => {
     const { t } = useTranslation();
-
-    const frontEndSkills = t("skillbox.frontend-skills", { returnObjects: true }) || [];
-    const backEndSkills = t("skillbox.backend-skills", { returnObjects: true }) || [];
-    const Management = t("skillbox.management-skills", { returnObjects: true }) || [];
-    const otherSkills = t("skillbox.other-skills", { returnObjects: true }) || [];
-
+    const SkillboxList = t("skillboxList", { returnObjects: true });
+    
     return (
         <Box3 id="skills">
-            <ContentWrapper1>
+            <ContentWrapper2>
             <SectionTitle>{t("skillset")}</SectionTitle>
                 <SkillBoxGrid>
-                    <SkillBox
-                        title={t("skillbox.frontend")}
-                        description={t("skillbox.frontend-description")}
-                        skills={frontEndSkills}
-                        image={FrontEnd}
-                        //source: https://www.svgrepo.com/svg/16272/programming-code
-                    />
-                    <SkillBox
-                        title={t("skillbox.backend")}
-                        description={t("skillbox.backend-description")}
-                        skills={backEndSkills}
-                        image={BackEnd}
-                        // source: https://www.svgrepo.com/svg/1699/web-development
-                    />
-                    <SkillBox
-                        title={t("skillbox.management")}
-                        description={t("skillbox.management-description")}
-                        skills={Management}
-                        image={ProjectManagement}
-                        // source: https://www.svgrepo.com/svg/226785/dart-board
-                        
-                    />
-                    <SkillBox
-                        title={t("skillbox.other")}
-                        description={t("skillbox.other-description")}
-                        skills={otherSkills}
-                        image={OtherSkills}
-                        // source: https://www.svgrepo.com/svg/226720/collaboration
-                        
-                    />
+                    {SkillboxList.map((skill, index) => (
+                        <SkillBox
+                            key={index}
+                            title={skill.title}
+                            description={skill.description}
+                            skills={skill.skills}
+                            image={skill.image}
+                        />
+                    ))}
                 </SkillBoxGrid>
-            </ContentWrapper1>
+            </ContentWrapper2>
         </Box3>
     );
 };

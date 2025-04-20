@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box1 } from "../components/SectionContainer";
-import ContentWrapper from "../components/ContentWrapper";
+import { ContentWrapper1 } from "../components/ContentWrapper";
 import HorizontalWrapper from "../components/HorizontalWrapper";
 import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
@@ -35,7 +35,7 @@ const Introduction = () => {
             >
                 <source src={BackgroundVideo} type="video/mp4" alt="Video by Miguel Á. Padriñán from Pexels: https://www.pexels.com/video/interchanging-light-bokeh-1795912/" />
             </VideoBackground>
-            <ContentWrapper>
+            <ContentWrapper1>
             {title && (
                     <TypeAnimation
                         key={title}
@@ -57,7 +57,7 @@ const Introduction = () => {
                     <GithubButton />
                     <DownloadResume />
                 </HorizontalWrapper>
-            </ContentWrapper>
+            </ContentWrapper1>
         </IntroSection>
     );
 };

@@ -31,12 +31,12 @@ const Download = styled.button`
     border-radius: 5%;
     background-color: transparent;
     cursor: pointer;
-    border: black;
-    
+    border: 3px solid yellow;
+    overflow: hidden;
 
     .img {
-    width: 3rem;
-    height: 3rem;
+    width: 1rem;
+    height: 1rem;
 
     &:hover {
         transform: scale(1.05);

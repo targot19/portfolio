@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
 import Icons from "../components/Icons.jsx";
-import SectionContainer from "../components/SectionContainer.jsx";
+import { Box5 } from "../components/SectionContainer.jsx";
 import ContentWrapper from "../components/ContentWrapper.jsx";
 import HorizontalWrapper from "../components/HorizontalWrapper.jsx";
 import SectionTitle from "../components/SectionTitle.jsx";
@@ -12,7 +12,7 @@ const Contact = () => {
     const { t } = useTranslation();
 
     return (
-        <SectionContainer id="contact">
+        <Box5 id="contact">
             <HorizontalWrapper>
                 <ProfilePic src={Profile} alt="Profile picture" />
                 <Icons />
@@ -21,7 +21,7 @@ const Contact = () => {
                 <SectionTitle>{t("contact.title")}</SectionTitle>
                     <ContactForm />
             </ContentWrapper>
-        </SectionContainer>
+        </Box5>
     );
 }
 
