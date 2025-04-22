@@ -27,14 +27,14 @@ const Introduction = () => {
 
     return (
         <IntroSection id="introduction">
-            <VideoBackground
+            {/*<VideoBackground
                 autoPlay
                 loop
                 muted
                 onPlay={handleVideoPlay}
             >
                 <source src={BackgroundVideo} type="video/mp4" alt="Video by Miguel Á. Padriñán from Pexels: https://www.pexels.com/video/interchanging-light-bokeh-1795912/" />
-            </VideoBackground>
+            </VideoBackground>*/}
             <ContentWrapper1>
             {title && (
                     <TypeAnimation
@@ -91,7 +91,7 @@ const VideoBackground = styled.video`
 `;
 
 const IntroText = styled.p`
-    color: white;
+    color: black;
     font-size: large;
     place-content: center;
 `;

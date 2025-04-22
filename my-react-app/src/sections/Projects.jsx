@@ -24,11 +24,11 @@ const Projects = () => {
                     description={project.description}
                     labels={project.labels}
                     image={project.image}
-                    demo="Live Demo"
-                    sourceCode="Source Code"
+                    demo={project.demo}
+                    sourceCode={project.sourcecode}
                 />
             ))}
-            <MoreProjects>{t("projects.more")}</MoreProjects>
+            {/*<MoreProjects>{t("projects.more")}</MoreProjects>*/}
             </ContentWrapper2>
         </Box5>
     )

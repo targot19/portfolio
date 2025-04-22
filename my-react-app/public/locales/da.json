@@ -73,15 +73,23 @@
     },
     "skillset": "Kompetencer",
     "education": {
-        "master-title": "Kandidat i Digitalisering og applikationsudvikling",
-        "master-year-institution": "2023-2025, Aalborg Universitet",
-        "master-description": "En kandidat rettet mod humaniora, fokuseret på at bygge videre på eksisterende viden med softwareudvikling, interaktionsdesign og brugercentrerede metoder. At arbejde projektorienteret med problemstillinger i den virkelige verden på tværs af mange forskellige teknologier og programmeringssprog har givet mig mulighed for at bygge et solidt fundament i programmering, hvilket gør det nemmere at lære nye sprog hurtigere. Ved at udvide min allerede-eksisterende viden og færdigheder i at designe og bygge brugercentreret teknologi, har jeg evnerne til at fungere som både integrator og udvikler.",
-        "exchange-title": "Erasmus+ udveksling i Litauen",
-        "exchange-year-institution": "Efterårssemestret 2024, Vilnius University",
-        "exchange-description": "For at udvide min personlige og uddannelsesmæssige horisont tog jeg på fem måneders udveksling til Vilnius Universitet i Litauen. At arbejde med administration af IPv4/IPv6-adresser, Linux kernel og relationel algebra styrkede mine færdigheder inden for datastrukturer, algoritmedesign og databaseudvikling. Gennem tværkulturelt gruppearbejde blev min forståelse af kulturelle forskelle forstærket, hvilket yderligere øgede mine kommunikationsevner og tilpasningsevne. For at integrere og opbygge et professionelt netværk gennemførte jeg et A1 litauisk sprogkursus.",
-        "bachelor-title": "Bachelor i Kommunikation og digitale medier",
-        "bachelor-year-institution": "2020-2023, Aalborg Universitet",
-        "bachelor-description": "En bachelor, der giver en stærk viden om menneskers sproglige og kommunikative adfærd, hvordan de interagerer med hinanden i sociale, organisatoriske og kulturelle sammenhænge, ​​og hvordan kommunikation udvikler sig, når IKT inkorporeres. At dykke ned i kommunikationsteorier og -strategier med etik og videnskabelige teorier taget i betragtning, hjalp mig med at opbygge en solid base i at analysere auditiv, visuel, skriftlig og talt kommunikation og transformere dem til design lavet til mennesker, af mennesker."
+        "educationsList": [
+            {
+                "title": "Kandidat i Digitalisering og applikationsudvikling",
+                "year": "2023-2025, Aalborg Universitet",
+                "description": "En kandidat rettet mod humaniora, fokuseret på at bygge videre på eksisterende viden med softwareudvikling, interaktionsdesign og brugercentrerede metoder. At arbejde projektorienteret med problemstillinger i den virkelige verden på tværs af mange forskellige teknologier og programmeringssprog har givet mig mulighed for at bygge et solidt fundament i programmering, hvilket gør det nemmere at lære nye sprog hurtigere. Ved at udvide min allerede-eksisterende viden og færdigheder i at designe og bygge brugercentreret teknologi, har jeg evnerne til at fungere som både integrator og udvikler."
+            },
+            {
+                "title": "Erasmus+ udveksling i Litauen",
+                "year": "Efterårssemestret 2024, Vilnius University",
+                "description": "For at udvide min personlige og uddannelsesmæssige horisont tog jeg på fem måneders udveksling til Vilnius Universitet i Litauen. At arbejde med administration af IPv4/IPv6-adresser, Linux kernel og relationel algebra styrkede mine færdigheder inden for datastrukturer, algoritmedesign og databaseudvikling. Gennem tværkulturelt gruppe-arbejde blev min forståelse af kulturelle forskelle forstærket, hvilket yderligere øgede mine kommunikationsevner og tilpasningsevne. For at integrere og opbygge et professionelt netværk gennemførte jeg et A1 litauisk sprogkursus."
+            },
+            {
+                "title": "Bachelor i Kommunikation og digitale medier",
+                "year": "2020-2023, Aalborg Universitet",
+                "description": "En bachelor, der giver en stærk viden om menneskers sproglige og kommunikative adfærd, hvordan de interagerer med hinanden i sociale, organisatoriske og kulturelle sammenhænge, ​​og hvordan kommunikation udvikler sig, når IKT inkorporeres. At dykke ned i kommunikationsteorier og -strategier med etik og videnskabelige teorier taget i betragtning, hjalp mig med at opbygge en solid base i at analysere auditiv, visuel, skriftlig og talt kommunikation og transformere dem til design lavet til mennesker, af mennesker."
+            }
+        ]
     },
     "download": {
         "resume": "CV"
@@ -119,25 +127,25 @@
                 "title": "EcoHour",
                 "image": "/projects/ecohour.png",
                 "labels": ["Java",  "Android", "API calls"],
-                "description": "EcoHour er en Android-app udviklet i samarbejde med MinStrøms API. Den fungerer som et planlægningsværktøj, der gør det muligt for brugere at planlægge huslige opgaver baseret på de aktuelle elpriser. Appen blev udviklet som en prototype i forbindelse med et semesterprojekt."
+                "description": "EcoHour er en Android-applikation, udviklet som en del af et semesterprojekt. I samarbejde med MinStrøms API, samlede vi en kalender, to-do liste, og elpris-app i ét planlægningsværktøj. EcoHour gør det muligt at planlægge husholdningsopgaver omkring elpriserne."
             },
             {
-                "title": "UI til eksperiment omkring tillid til AI",
+                "title": "Eksperiment omkring tillid til AI",
                 "image": "/projects/ai.jpg",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment, der udforskede tillid til AI, specifikt i LLM'er. Med to uafhængige variabler, blev fire forskellige forhold specificeret med dét formål at undersøge, hvordan de påvirker brugertillid. Ved at bruge OpenAIs API (også kendt som ChatGPT) brugte vi prompt engineering til at designe vores eksperiment. Efterhånden som emnet AI bliver mere fremtrædende i vores hverdag, byggede hovedideen på at kalibrere ens tillid for at undgå at blive både over- og underafhængig. Brugergrænsefladen tjente som forskning gennem design og blev bygget med React, Material UI og Tailwind CSS."
             },
             {
-                "title": "Online Portfolio",
+                "title": "Portfolio",
                 "image": "/projects/portfolio.jpg",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+                "description": "."
             },
             {
                 "title": "Tom and Jerry",
                 "image": "/assets/tom-and-jerry.mp4",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+                "description": "Spillet er baseret på den populære 'Tom and Jerry' tv-serie og er udviklet i Java til mit objektorienterede programmeringskursus. Så simpelt som brugergrænsefladen kan se ud, lige så enkelt er spillet. Dette var min første Java-applikation, og opbygningen af ​​den hjalp mig med at udvikle en grundlæggende forståelse af objektorienterede programmeringskoncepter såsom arv, polymorfi og indkapsling."
             }
         ]
     }

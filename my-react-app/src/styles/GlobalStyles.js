@@ -20,6 +20,25 @@ const GlobalStyles = createGlobalStyle`
         font-color: black;
         background-color: white;
     }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Stack elements vertically on smaller screens */
+        }
+    }
+
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
     
     html {
         scroll-behavior: smooth;

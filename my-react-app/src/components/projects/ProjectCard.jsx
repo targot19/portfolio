@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectCard = ({ title, description, labels = [], image, demo, sourceCode }) => {
+const ProjectCard = ({ title, description, labels = [], image, demo, demoLink, sourceCode, sourceCodeLink }) => {
 
     return (
         <ProjectCardContainer>
@@ -16,8 +16,8 @@ const ProjectCard = ({ title, description, labels = [], image, demo, sourceCode 
                         <ProjectCardTitle>{title}</ProjectCardTitle>
                         <ProjectCardText>{description}</ProjectCardText>
                         <ButtonContainer>
-                        <CodeButtons>{sourceCode}</CodeButtons>
-                        <CodeButtons>{demo}</CodeButtons>
+                            {sourceCode && <ButtonContainer><a target="_blank" rel="noopener noreferrer" href={sourceCodeLink}><CodeButtons>{sourceCode}</CodeButtons></a></ButtonContainer>}  {/* Render only if `code` exists */}
+                            {demo && <ButtonContainer><a target="_blank" rel="noopener noreferrer" href={demoLink}><CodeButtons>{demo}</CodeButtons></a></ButtonContainer>}  {/* Render only if `demo` exists */}
                         </ButtonContainer>
                 </ProjectCardTextContainer>
         </ProjectCardContainer>
@@ -29,6 +29,7 @@ export default ProjectCard;
 const ProjectCardContainer = styled.div`
     position: relative;
     display: flex;
+    margin-bottom: 1rem;
     flex-direction: row;
     width: 70rem;
     height: 25rem;

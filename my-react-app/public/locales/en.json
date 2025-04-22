@@ -148,25 +148,25 @@
                 "title": "EcoHour",
                 "image": "/projects/ecohour.png",
                 "labels": ["Java",  "Android", "API calls"],
-                "description": "EcoHour er en Android-app udviklet i samarbejde med MinStrøms API. Den fungerer som et planlægningsværktøj, der gør det muligt for brugere at planlægge huslige opgaver baseret på de aktuelle elpriser. Appen blev udviklet som en prototype i forbindelse med et semesterprojekt."
+                "description": "EcoHour is an Android application developed as part of a semester project. In collaboration with MinStrøm’s API, we created a calendar, to-do list, and electricity price app all in one planning tool. EcoHour makes it possible to plan household tasks around electricity prices."
             },
             {
-                "title": "UI til eksperiment omkring tillid til AI",
+                "title": "Experiment on Trust in AI",
                 "image": "/projects/ai.jpg",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+                "description": "As part of my master’s thesis, we developed a user interface for an experiment exploring trust in AI, specifically in LLMs. With two independent variables, four different conditions were specified with the purpose of examining how they influence user trust. By using OpenAI’s API (also known as ChatGPT), we used prompt engineering to design our experiment. As the topic of AI becomes more prominent in our everyday lives, the main idea built upon calibrating one's trust to avoid becoming both overreliant and underreliant. The UI served as research through design and was built with React, Material UI, and Tailwind CSS."
             },
             {
-                "title": "Online Portfolio",
+                "title": "Portfolio",
                 "image": "/projects/portfolio.jpg",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+                "description": "This is the project you’re currently looking at! This portfolio is a built-from-scratch web application, developed using React, Styled Components, and CSS frameworks like Material UI and Embla Carousel. To both showcase my work and practice building a React application, this portfolio was made at the end of my Master."
             },
             {
                 "title": "Tom and Jerry",
                 "image": "/assets/tom-and-jerry.jpg",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment omkring tillid til AI. Ved hjælp af OpenAI's API og prompt engineering skabte vi forskellige betingelser for at undersøge, hvordan disse påvirker brugerens tillid til AI-systemet. Den centrale tanke bag eksperimentet var,  at hvis systemer hjælper brugeren med at kalibrere deres tillid – så de hverken overvurderer eller undervurderer systemets evner – kan AI forhåbentligt anvendes mere effektivt og sikkert."
+                "description": "The game is based on the popular “Tom and Jerry” TV series and was developed in Java for my object-oriented programming course. As simple as the UI may look, just as simple is the game. This was my first Java application, and building it helped me develop a fundamental understanding of object-oriented programming concepts such as inheritance, polymorphism, and encapsulation."
             }
         ]
     }
