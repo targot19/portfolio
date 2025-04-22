@@ -146,7 +146,7 @@
         "projectList": [
             {
                 "title": "EcoHour",
-                "image": "/projects/ecohour.png",
+                "image": "./src/assets/ecohour.png",
                 "labels": ["Java",  "Android", "API calls"],
                 "description": "EcoHour is an Android application developed as part of a semester project. In collaboration with MinStrøm’s API, we created a calendar, to-do list, and electricity price app all in one planning tool. EcoHour makes it possible to plan household tasks around electricity prices."
             },
@@ -164,7 +164,7 @@
             },
             {
                 "title": "Tom and Jerry",
-                "image": "/assets/tom-and-jerry.jpg",
+                "image": "./src/assets/tomandjerry.png",
                 "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
                 "description": "The game is based on the popular “Tom and Jerry” TV series and was developed in Java for my object-oriented programming course. As simple as the UI may look, just as simple is the game. This was my first Java application, and building it helped me develop a fundamental understanding of object-oriented programming concepts such as inheritance, polymorphism, and encapsulation."
             }

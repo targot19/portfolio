@@ -33,5 +33,14 @@ import styled from "styled-components";
     justify-content: flex-start;
     border: 3px solid green;
  `;
+
+ export const EducationWrapper = styled(ContentWrapper)`
+    flex-wrap: no-wrap;
+    margin: 5rem 20rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+ `;
  
  export default ContentWrapper;

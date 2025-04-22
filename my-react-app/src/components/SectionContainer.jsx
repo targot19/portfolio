@@ -34,7 +34,7 @@ export const Box3 = styled(SectionContainer)`
     height: 100vh;
     `
 
-export const Box4 = styled(SectionContainer)`
+export const EducationBox = styled(SectionContainer)`
     flex-wrap: wrap;
     display: flex;
     margin: 0;

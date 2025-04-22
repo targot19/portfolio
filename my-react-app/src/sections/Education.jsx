@@ -1,7 +1,7 @@
-import { Box4 } from "../components/SectionContainer";
+import { EducationBox } from "../components/SectionContainer";
 import { SectionTitleEducation } from "../components/SectionTitle";
-import { ContentWrapper1 } from "../components/ContentWrapper";
-import HorizontalWrapper from "../components/HorizontalWrapper";
+import { EducationWrapper } from "../components/ContentWrapper";
+import { EducationWrapperHorizon } from "../components/HorizontalWrapper";
 import { useTranslation } from "react-i18next";
 import React from "react";
 import styled from 'styled-components';
@@ -12,10 +12,10 @@ const Education = () => {
     const educationsList = t("education.educationsList", { returnObjects: true }).slice(0);
 
     return (
-        <Box4 id="education">
-            <ContentWrapper1>
+        <EducationBox id="education">
+            <EducationWrapper>
             <SectionTitleEducation>Education</SectionTitleEducation>
-                <HorizontalWrapper>
+                <EducationWrapperHorizon>
                 {educationsList.map((educationsList, index) => (
                 <EducationCard
                     key={index}
@@ -24,9 +24,9 @@ const Education = () => {
                     description={educationsList.description}
                 />
             ))}
-                </HorizontalWrapper>
-            </ContentWrapper1>
-        </Box4>
+                </EducationWrapperHorizon>
+            </EducationWrapper>
+        </EducationBox>
     )
 }
 

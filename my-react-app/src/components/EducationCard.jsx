@@ -1,8 +1,3 @@
-import { Box4 } from "../components/SectionContainer";
-import SectionTitle from "../components/SectionTitle";
-import { ContentWrapper1 } from "../components/ContentWrapper";
-import HorizontalWrapper from "../components/HorizontalWrapper";
-import { useTranslation } from "react-i18next";
 import React from "react";
 import styled from 'styled-components';
 
