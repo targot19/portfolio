@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box5 } from '../components/SectionContainer';
+import { ProjectSection } from '../components/SectionContainer';
 import { ContentWrapper2 } from '../components/ContentWrapper';
 import HorizontalWrapper from '../components/HorizontalWrapper';
 import SectionTitle from '../components/SectionTitle';
@@ -14,7 +14,7 @@ const Projects = () => {
     const projectsList = t("projects.projectList", { returnObjects: true }).slice(0, n); //returns array of projects (only first n)
 
     return (
-        <Box5 id="projects">
+        <ProjectSection id="projects">
             <ContentWrapper2>
                 <SectionTitle>{t("projects.title")}</SectionTitle>
                 {projectsList.map((project, index) => (
@@ -25,12 +25,14 @@ const Projects = () => {
                     labels={project.labels}
                     image={project.image}
                     demo={project.demo}
+                    demoLink={project.demolink}
                     sourceCode={project.sourcecode}
+                    sourceCodeLink={project.sourcecodelink}
                 />
             ))}
             {/*<MoreProjects>{t("projects.more")}</MoreProjects>*/}
             </ContentWrapper2>
-        </Box5>
+        </ProjectSection>
     )
 }
 

@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
 
     * {
-        margin: 0;
         box-sizing: border-box;
     }
 
@@ -18,7 +17,16 @@ const GlobalStyles = createGlobalStyle`
         display: block;
         overflow-x: hidden;
         font-color: black;
-        background-color: white;
+        background-color: #F4F1DE;
+        overflow-y: scroll;
+    }
+
+    body::-webkit-scrollbar {
+        width: 10px; /* Set scrollbar width */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #CB997E; /* Style the scrollbar thumb */
     }
 
     .container {
@@ -28,25 +36,18 @@ const GlobalStyles = createGlobalStyle`
         gap: 1rem;
         padding: 2rem;
     }
-
-    @media (max-width: 768px) {
-        .container {
-            flex-direction: column; /* Stack elements vertically on smaller screens */
-        }
-    }
-
-    img, video {
-        max-width: 100%;
-        height: auto;
-    }
     
     html {
         scroll-behavior: smooth;
         margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .p {
+        font-family: "Verdana", sans-serif;
     }
 `
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Box1 } from "../components/SectionContainer";
-import { ContentWrapper1 } from "../components/ContentWrapper";
-import HorizontalWrapper from "../components/HorizontalWrapper";
+import { IntroSection } from "../components/SectionContainer";
+import { IntroWrapper } from "../components/ContentWrapper";
+import { IntroWrapperHorizon } from "../components/HorizontalWrapper";
 import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
 import { useTranslation } from "react-i18next";
@@ -9,6 +9,7 @@ import DownloadResume from "../components/DownloadResume.jsx";
 import GithubButton from "../components/GithubButton.jsx";
 import { TypeAnimation } from "react-type-animation";
 import BackgroundVideo from "../assets/bg-video4.mp4";
+import Resume from "../assets/resume.svg";
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();
@@ -19,6 +20,18 @@ const Introduction = () => {
         const translatedTitle = t("introduction.title", { defaultValue: "Meet Tania" });
         setTitle(translatedTitle);
     }, [t, i18n.language]);
+
+    const handleOnClick = () => {
+        window.open('https://github.com/targot19', '_blank');
+    };
+
+    const downloadFile = () => {
+        if (i18n.language === "en") {
+            window.open('/src/assets/EN-CV.pdf', '_blank');
+        } else if (i18n.language === "da") {
+            window.open('/src/assets/DA-CV.pdf', '_blank');
+        }
+    };
 
     const handleVideoPlay = (event) => {
         const video = event.target;
@@ -35,7 +48,7 @@ const Introduction = () => {
             >
                 <source src={BackgroundVideo} type="video/mp4" alt="Video by Miguel Á. Padriñán from Pexels: https://www.pexels.com/video/interchanging-light-bokeh-1795912/" />
             </VideoBackground>*/}
-            <ContentWrapper1>
+            <IntroWrapper>
             {title && (
                     <TypeAnimation
                         key={title}
@@ -46,39 +59,31 @@ const Introduction = () => {
                         ]}
                         wrapper="span"
                         speed={5}
-                        style={{ fontSize: "2em", display: "inline-block", fontWeight: "bold" }}
+                        style={{ fontSize: "3rem", display: "inline-block", fontWeight: "bold" }}
                         repeat={Infinity}
                     />
                 )}
-                <HorizontalWrapper>
+                <IntroWrapperHorizon>
                     <IntroText>{t("introduction.description")}</IntroText>
-                </HorizontalWrapper>
-                <HorizontalWrapper>
-                    <GithubButton />
-                    <DownloadResume />
-                </HorizontalWrapper>
-            </ContentWrapper1>
+                </IntroWrapperHorizon>
+                <IntroWrapperHorizon>
+                    <StyledButton>
+                        <a onClick={handleOnClick}>
+                            {t("download.github")}
+                        </a>
+                    </StyledButton>
+                    <StyledButton>
+                        <a onClick={downloadFile}>
+                            {t("download.resume")}
+                        </a>
+                    </StyledButton>
+                </IntroWrapperHorizon>
+            </IntroWrapper>
         </IntroSection>
     );
 };
 
 export default Introduction;
-
-const IntroSection = styled.section`
-    position: relative; /* Create a stacking context */
-    display: flex;
-     width: 100vw;
-     max-width: 100vw;
-     height: 100vh;
-     justify-content: center;
-     align-items: center;
-     align-self: center;
-     //border: 2px solid black;
-     padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-     overflow: hidden;
-     background-size: cover;
-    `
 
 const VideoBackground = styled.video`
     position: absolute;
@@ -92,6 +97,30 @@ const VideoBackground = styled.video`
 
 const IntroText = styled.p`
     color: black;
-    font-size: large;
+    font-size: 1.5rem;
+    padding-right: 1rem;
     place-content: center;
+    font-family: "Verdana", sans-serif;
 `;
+
+const StyledButton = styled.button`
+    background-color: #3D405B;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    border: none;
+    transition: border 0.3s ease-in-out;
+    //font-family: "Poppins", serif;
+    font-weight: bold;
+    padding: 0.2rem 0.8rem;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.2rem;
+
+    .a {
+        all: unset;}
+
+    &:hover {
+        border-bottom: 5px solid #81B29A;
+        border-left: 4px solid #81B29A;
+    }
+}`;

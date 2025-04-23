@@ -40,7 +40,7 @@ export default Skills;
 const SkillBoxGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5em;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     //border: 2px solid red;

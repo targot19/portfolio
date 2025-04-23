@@ -34,12 +34,12 @@ const SkillBoxContainer = styled.div`
     border-radius: 0.8em;
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background-color: #dfba3a;
+    background-color: #CB997E;
 `
 
 const SkillBoxTextContainer = styled.div`
     text-align: center;
-    padding: 1.2em;
+    padding: 1.2rem;
     overflow: hidden;
 
     &:hover + div {
@@ -63,7 +63,7 @@ const SkillBoxTitle = styled.h4`
 `
 
 const SkillBoxText = styled.p`
-    font-family: system-ui;
+    font-family: "Verdana", sans-serif;
     font-size: 1.1rem;
     text-align: center;
 `
@@ -73,7 +73,7 @@ const SkillsSpan = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #F4F1DE;
     padding: 10px;
     border-top: 1px solid #ccc;
     transform: translateY(100%);

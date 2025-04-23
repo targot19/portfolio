@@ -30,19 +30,19 @@ const Translator = () => {
 export default Translator;
 
 const Button = styled.button`
-    background-color: #efefef;
+    background-color: #CB997E;
     color: black;
     font-family: 'Georgia', sans-serif;
     border: none;
     cursor: pointer;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
     border-radius: 5px;
     transform: rotateY(${(props) => (props.isRotated ? "180deg" : "0deg")});
     transition: transform 0.5s ease, background-color 0.5s ease;
 
     &:hover {
-        background-color: transparent;
+        background-color: #CB997E;
     }
 `;
 

@@ -57,11 +57,16 @@
     justify-content: center;
     height: var(--slide-height);
     user-select: none;
+    margin-right: 1rem;
+    margin-left: 2rem;
   }
   .embla__slide__employer {
-    font-size: 1rem;
-    color: #70737a;
-    margin-top: 0;
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    font-size: 1.1rem;
+    color: #E07A5F;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
     text-align: right;
     display: grid;
   }
@@ -69,8 +74,11 @@
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
-    gap: 1.2rem;
+    gap: 1rem;
     margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
   .embla__buttons {
     display: grid;
@@ -93,7 +101,7 @@
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
     width: 3.6rem;
     height: 3.6rem;
-    z-index: 1;
+    z-index: 0;
     border-radius: 50%;
     color: var(--text-body);
     display: flex;
@@ -112,7 +120,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+    margin-right: calc((0rem - 1.4rem) / 2 * -1);
   }
   .embla__dot {
     -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
@@ -133,6 +141,9 @@
     justify-content: center;
     border-radius: 50%;
   }
+  .embla__dot:hover {
+    border-color: #81B29A;
+  }
   .embla__dot:after {
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
     width: 1.4rem;
@@ -144,8 +155,8 @@
     background-color: transparent;
   }
   .embla__dot--selected {
-    background-color: #007bff; /* Add a background color for the selected dot */
-    border-color: #007bff; /* Optional: Change the border color for the selected dot */
+    background-color: #81B29A; /* Add a background color for the selected dot */
+    border-color: #81B29A; /* Optional: Change the border color for the selected dot */
   }
   .embla__dot--selected:after {
     box-shadow: inset 0 0 0 0.2rem var(--text-body);

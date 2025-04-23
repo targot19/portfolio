@@ -30,16 +30,20 @@ const NavBarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 10em;
+    padding: 1rem 1rem;
     letter-spacing: 0.02em;
-    background-color: transparent;
-    max-width: 100vw;
-    width: 100vw;
+    background-color: #81B29A;
+    max-width: 100%;
+    width: calc(100% - 10px);
     position: absolute;
+    //border: 2px dotted blue;
+    box-sizing: border-box;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
 `;
 
 const NavLinks = styled.div`
@@ -50,9 +54,10 @@ const NavLinks = styled.div`
 const NavItem = styled.a`
     color: black;
     text-decoration: none;
-    font-weight: bold;
-    padding: 1em;
-    font-size: 1.2em;
+    font-weight: normal;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    //border: 2px dotted blue;
     &:hover {
         text-decoration: underline;
         color: black;
@@ -64,4 +69,5 @@ const TranslatorWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0.5rem;
 `;

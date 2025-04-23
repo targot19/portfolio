@@ -32,12 +32,12 @@ const ProjectCardContainer = styled.div`
     margin-bottom: 1rem;
     flex-direction: row;
     width: 70rem;
-    height: 25rem;
-    border: 1px solid red;
+    height: 30rem;
+    //border: 1px solid red;
     border-radius: 0.8em;
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background-color: transparent;
+    background-color: #F4F1DE;
 `
 
 const ProjectCardTextContainer = styled.div`
@@ -47,8 +47,8 @@ const ProjectCardTextContainer = styled.div`
     //align-items: start;
     //justify-content: start;
     flex-direction: column;
-    gap: 0.1rem;
-    border: 3px solid black;
+    //gap: 0.5rem;
+    //border: 3px solid black;
     width: 40rem;
 `
 
@@ -57,7 +57,8 @@ const ProjectImage = styled.img`
     display: flex;
     //align-items: start;
     //justify-content: start;
-    border: 2px solid green;
+    //border: 2px solid green;
+    border-radius: 5%;
     width: 25rem;
     max-height: 30rem;
     margin: 1rem;
@@ -69,41 +70,42 @@ const ProjectCardTitle = styled.h4`
     text-align: left;
     padding: 0.1em;
     font-weight: bold;
-    border: 1px dotted red;
+    //border: 1px dotted red;
 `
 
 const ProjectCardText = styled.p`
-    font-family: system-ui;
+    font-family: "Verdana", sans-serif;
     font-size: 1rem;
     text-align: justify;
-    border: 2px dotted black;
+    //border: 2px dotted black;
 `
 
 const ProjectList = styled.ul`
     list-style-type: none;
     padding: 0;
-    display: inline-block;
+    margin-bottom: 2rem;
+    display: flex;
     flex-wrap: wrap;
-    border: 2px dotted blue;
+    gap: 0.5em;
     
     li {
         display: inline-block;
-        font-size: 0.9rem;
-        padding: 0.2rem;
-        margin: 0 0.5rem 0.5rem 0;
-        border: 2px solid black;
+        font-size: 1em;
+        padding: 0.3em 0.3em;
+        border: 1px solid black;
         border-radius: 5px;
+        gap: 1em;
     }
 `
 
 const ButtonContainer = styled.div`
     display: flex;
     gap: 1rem;
-    border: 2px solid green;
+    //border: 2px solid green;
 `
 
 const CodeButtons = styled.button`
-    background-color: grey;
+    background-color: #3D405B;
     border-radius: 5px;
     justify-content: space-evenly;
     border: none;
@@ -113,7 +115,7 @@ const CodeButtons = styled.button`
     padding: 0.2rem 0.8rem;
 
     &:hover {
-        border-bottom: 4px solid blue;
-        border-left: 3px solid blue;
+        border-bottom: 4px solid #81B29A;
+        border-left: 3px solid #81B29A;
     }
 `

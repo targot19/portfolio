@@ -7,6 +7,6 @@ const VerticalWrapper = styled.div`
     justify-content: space-between; /* Distribute space between items */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     align-items: flex-start; /* Align items at the top */
-    border: 2px dotted green;
+    //border: 2px dotted green;
 `;
 export default VerticalWrapper;

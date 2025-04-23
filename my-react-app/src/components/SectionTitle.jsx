@@ -7,7 +7,7 @@ const SectionTitle = styled.h1`
     font-weight: bold;
     font-family: system-ui;
     letter-spacing: 0.01em;
-    border: 2px red dotted;
+    //border: 2px red dotted;
     margin: auto;
 `;
 
@@ -18,6 +18,6 @@ export const SectionTitleIntro = styled(SectionTitle)`
 `;
 
 export const SectionTitleEducation = styled(SectionTitle)`
-    margin-bottom: 3rem;`
+    margin-bottom: 2rem;`
 
 export default SectionTitle;

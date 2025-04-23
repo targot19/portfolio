@@ -14,63 +14,77 @@
         "title": "Mød Tania",
         "description": "Uddannet humanist med interesse for at udvikle og sikre etisk korrekt IT med målgruppen inkluderet i hvert skridt i processen. Med en bachelor i kommunikation og en fremtidig kandidat i informationsteknologi kan jeg agere som både udvikler og integrator."
     },
-    "skillbox": {
-        "frontend": "Front-end",
-        "frontend-description": "Med viden og kompetencer i at både designe og bygge brugervenlig IT, har jeg evnerne til at agere som både UX/UI-designer og front-end udvikler.",
-        "frontend-skills": [
-            "HTML 5",
-            "CSS3",
-            "JavaScript",
-            "React",
-            "Styled Components",
-            "Figma",
-            "Canva",
-            "Flask",
-            "Material UI",
-            "Tailwind CSS",
-            "Bootstrap",
-            "Balsamiq",
-            "LaTeX"
-        ],
-        "backend": "Back-end",
-        "backend-description": "Med erfaring i både procedural- og objektorienteret programmering kan jeg administrere serveren, applikationen og databasen.",
-        "backend-skills": [
-            "PostgreSQL",
-            "MySQL",
-            "Java",
-            "Python",
-            "C",
-            "Linux kernel",
-            "IPv4/IPv6 adressehåndtering"
-        ],
-        "management": "Projektledelse",
-        "management-description": "Problembaseret læring har lært mig, hvordan man strukturerer et teambaseret projekt på en række forskellige måder sammen med diverse sæt værktøjskasser.",
-        "management-skills": [
-            "Github",
-            "Git",
-            "VSCode",
-            "IntelliJ",
-            "Android Studio",
-            "Jira",
-            "Overleaf",
-            "Waterfall Methodology",
-            "Scrum",
-            "Design Thinking",
-            "Kanban Methodology",
-            "Wrike"
-        ],
-        "other": "Andre Kompetencer",
-        "other-description": "Tværkulturelt teamwork og kommunikation i alle dens former er meget værdifuldt for mig, og jeg bestræber mig altid på at holde mig opdateret med min humanistiske baggrund såvel som min tekniske.",
-        "other-skills": [
-            "Dansk C2",
-            "Engelsk C1",
-            "Litauisk A1",
-            "Tysk A1",
-            "Brugercentrerede metoder",
-            "B2B",
-            "B2C"
-        ]
-    },
+    "skillboxList": [
+        {
+            "title": "Front-end",
+            "description": "Med viden og kompetencer i at både designe og bygge brugervenlig IT, har jeg evnerne til at agere som både UX/UI-designer og front-end udvikler.",
+            "skills": [
+                "HTML 5",
+                "CSS3",
+                "JavaScript",
+                "React",
+                "Styled Components",
+                "Figma",
+                "Canva",
+                "Flask",
+                "Material UI",
+                "Tailwind CSS",
+                "Bootstrap",
+                "Balsamiq",
+                "LaTeX"
+            ],
+            "image": "../src/assets/frontend.svg"
+        },
+        {
+            "title": "Back-end",
+            "description": "Med erfaring i både procedural- og objektorienteret programmering kan jeg administrere serveren, applikationen og databasen.",
+            "skills": [
+                "PostgreSQL",
+                "MySQL",
+                "Java",
+                "Python",
+                "API calls",
+                "C",
+                "Linux kernel",
+                "IPv4/IPv6 adressehåndtering"
+            ],
+            "image": "../src/assets/backend.svg"
+        },
+        {
+            "title": "Projektledelse",
+            "description": "Problembaseret læring har lært mig, hvordan man strukturerer et teambaseret projekt på en række forskellige måder sammen med diverse sæt værktøjskasser.",
+            "skills": [
+                "Github",
+                "Git",
+                "VSCode",
+                "IntelliJ",
+                "Android Studio",
+                "Jira",
+                "Overleaf",
+                "Waterfall Methodology",
+                "Scrum",
+                "Design Thinking",
+                "Kanban Methodology",
+                "Wrike"
+            ],
+            "image": "../src/assets/project.svg"
+        },
+        {
+            "title": "Andre Kompetencer",
+            "description": "Tværkulturelt teamwork og kommunikation i alle dens former er meget værdifuldt for mig, og jeg bestræber mig altid på at holde mig opdateret med min humanistiske baggrund såvel som min tekniske.",
+            "skills": [
+                "Dansk C2",
+                "Engelsk C1",
+                "Litauisk A1",
+                "Tysk A1",
+                "Brugercentrerede metoder",
+                "B2B",
+                "B2C"
+            ],
+            "image": "../src/assets/softskills.svg"
+        }
+
+    ],
     "skillset": "Kompetencer",
     "education": {
         "educationsList": [
@@ -92,24 +106,30 @@
         ]
     },
     "download": {
-        "resume": "CV"
+        "resume": "CV",
+        "github": "Github"
     },
-    "github": {
-        "button": "Github"
-    },
-    "slides": [
-    "“Tania har forstået og løftet ansvaret for hendes tildelte opgaver, overholdt deadlines, og derved opbygget tillid hos ledelsen.”",
-    "“I sin tid med mig har hun udvist fleksibilitet i travle perioder, engagement - også når det gjaldt nye arbejdsopgaver - og evnen til at strukturere sine opgaver efter prioritet.”",
-    "“Tania har siden første dag været utrolig engageret og empatisk, og har lagt en ansvarsfuld og dedikeret indsats i at få det lokale klubfællesskab på benene.”",
-    "“Jeg anbefaler stærkt Tania til enhver virksomhed, der ønsker en hurtig lærende, intelligent og energisk medarbejder.”",
-    "“Jeg kender Tania som en dygtig ansvarsfuld medarbejder, der aldrig går af vejen for nye opgaver. Hun er god til at se, hvor der mangler en hånd og ellers spørger hun.”"
-  ],
-  "employer": [
-        "Anders Skagen, Multi-Byg A/S",
-        "Jonas Holm, jonasholm.dk",
-        "Claire Mourier, SIND Ungdom Aalborg",
-        "Mie Nielsen, Kikkertland ApS",
-        "Linda Granlie, Børnehuset Jægergårdsgade 68"
+    "recommendationsList": [
+        {
+            "quote": "“Tania har forstået og løftet ansvaret for hendes tildelte opgaver, overholdt deadlines, og derved opbygget tillid hos ledelsen.”",
+            "employer": "Anders Skagen, Multi-Byg A/S"
+        },
+        {
+            "quote": "“I sin tid med mig har hun udvist fleksibilitet i travle perioder, engagement - også når det gjaldt nye arbejdsopgaver - og evnen til at strukturere sine opgaver efter prioritet.”",
+            "employer": "Jonas Holm, jonasholm.dk"
+        },
+        {
+            "quote": "“Tania har siden første dag været utrolig engageret og empatisk, og har lagt en ansvarsfuld og dedikeret indsats i at få det lokale klubfællesskab på benene.”",
+            "employer": "Claire Mourier, SIND Ungdom Aalborg"
+        },
+        {
+            "quote": "“Jeg anbefaler stærkt Tania til enhver virksomhed, der ønsker en hurtig lærende, intelligent og energisk medarbejder.”",
+            "employer": "Mie Nielsen, Kikkertland ApS"
+        },
+        {
+            "quote": "“Jeg kender Tania som en dygtig ansvarsfuld medarbejder, der aldrig går af vejen for nye opgaver. Hun er god til at se, hvor der mangler en hånd og ellers spørger hun.”",
+            "employer": "Linda Granlie, Børnehuset Jægergårdsgade 68"
+        }
     ],
     "contact": {
         "title": "Lad os tage en snak!",
@@ -119,33 +139,41 @@
         "submit": "Send"
     },
     "projects": {
-        "title": "Udvalgte Projekter",
+        "title": "Projekter",
         "titleAll": "Projekter",
         "more": "Flere projekter",
         "projectList": [
             {
                 "title": "EcoHour",
-                "image": "/projects/ecohour.png",
+                "image": "./src/assets/ecohour.png",
                 "labels": ["Java",  "Android", "API calls"],
-                "description": "EcoHour er en Android-applikation, udviklet som en del af et semesterprojekt. I samarbejde med MinStrøms API, samlede vi en kalender, to-do liste, og elpris-app i ét planlægningsværktøj. EcoHour gør det muligt at planlægge husholdningsopgaver omkring elpriserne."
+                "description": "EcoHour er en Android-applikation, udviklet som en del af et semesterprojekt. I samarbejde med MinStrøms API, samlede vi en kalender, to-do liste, og elpris-app i ét planlægningsværktøj. EcoHour gør det muligt at planlægge husholdningsopgaver omkring elpriserne.",
+                "sourcecode": "Se kode",
+                "sourcecodelink": "https://github.com/targot19/P8.git"
             },
             {
                 "title": "Eksperiment omkring tillid til AI",
-                "image": "/projects/ai.jpg",
-                "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment, der udforskede tillid til AI, specifikt i LLM'er. Med to uafhængige variabler, blev fire forskellige forhold specificeret med dét formål at undersøge, hvordan de påvirker brugertillid. Ved at bruge OpenAIs API (også kendt som ChatGPT) brugte vi prompt engineering til at designe vores eksperiment. Efterhånden som emnet AI bliver mere fremtrædende i vores hverdag, byggede hovedideen på at kalibrere ens tillid for at undgå at blive både over- og underafhængig. Brugergrænsefladen tjente som forskning gennem design og blev bygget med React, Material UI og Tailwind CSS."
+                "image": "./src/assets/thesis.png",
+                "labels": ["API calls", "Prompt Engineering", "React", "Vite", "Tailwind CSS", "Material UI"],
+                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment, der udforskede tillid til AI, specifikt i LLM'er. Med to uafhængige variabler, blev fire forskellige forhold specificeret med dét formål at undersøge, hvordan de påvirker brugertillid. Ved at bruge OpenAIs API (også kendt som ChatGPT) brugte vi prompt engineering til at designe vores eksperiment. Efterhånden som emnet AI bliver mere fremtrædende i vores hverdag, byggede hovedideen på at kalibrere ens tillid for at undgå at blive både over- og underafhængig. Brugergrænsefladen tjente som forskning gennem design og blev bygget med React, Material UI og Tailwind CSS.",
+                "sourcecode": "Se kode",
+                "sourcecodelink": "https://github.com/targot19/speciale-P10.git"
             },
             {
                 "title": "Portfolio",
                 "image": "/projects/portfolio.jpg",
-                "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "."
+                "labels": ["React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+                "description": ".",
+                "sourcecode": "Se kode",
+                "sourcecodelink": "https://github.com/targot19/portfolio.git"
             },
             {
                 "title": "Tom and Jerry",
-                "image": "/assets/tom-and-jerry.mp4",
-                "labels": ["API calls", "Prompt Engineering", "React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Spillet er baseret på den populære 'Tom and Jerry' tv-serie og er udviklet i Java til mit objektorienterede programmeringskursus. Så simpelt som brugergrænsefladen kan se ud, lige så enkelt er spillet. Dette var min første Java-applikation, og opbygningen af ​​den hjalp mig med at udvikle en grundlæggende forståelse af objektorienterede programmeringskoncepter såsom arv, polymorfi og indkapsling."
+                "image": "./src/assets/tomandjerry.png",
+                "labels": ["Java"],
+                "description": "Spillet er baseret på den populære 'Tom and Jerry' tv-serie og er udviklet i Java til mit objektorienterede programmeringskursus. Så simpelt som brugergrænsefladen kan se ud, lige så enkelt er spillet. Dette var min første Java-applikation, og opbygningen af ​​den hjalp mig med at udvikle en grundlæggende forståelse af objektorienterede programmeringskoncepter såsom arv, polymorfi og indkapsling.",
+                "sourcecode": "Se kode",
+                "sourcecodelink": "https://github.com/targot19/GOOP-EXAM.git"
             }
         ]
     }
