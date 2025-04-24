@@ -1,5 +1,4 @@
 import Introduction from "../sections/Introduction";
-import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Education from "../sections/Education";
 import Contact from "../sections/Contact";
@@ -8,6 +7,7 @@ import "../styles/Embla.css";
 import { useTranslation } from "react-i18next";
 import Skills from "../sections/Skills";
 import Projects from "../sections/Projects";
+import Upcoming from "../sections/Upcoming";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -20,11 +20,11 @@ const Home = () => {
       <NavBar />
       <Introduction />
       <Education />
-      <Skills />
       <Projects />
+      <Upcoming />
+      <Skills />
       <EmblaCarousel slides={SLIDES} employer={EMPLOYER} options={OPTIONS} />
       <Contact />
-      <Footer />
     </>
   )
 }

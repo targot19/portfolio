@@ -26,6 +26,16 @@ import styled from "styled-components";
 
  export const ContentWrapper2 = styled(ContentWrapper)`
     flex-wrap: no-wrap;
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    //border: 3px solid green;
+ `;
+
+ export const ContentWrapper3 = styled(ContentWrapper)`
+    flex-wrap: no-wrap;
     margin: auto;
     flex-direction: column;
     gap: 2rem;
@@ -59,8 +69,8 @@ import styled from "styled-components";
     flex-direction: column;
     //align-items: center; /* Center children horizontally */
     justify-content: center;
-    border: 2px solid blue; /* Optional: For debugging layout */
-    padding: 1em;
+    //border: 2px solid blue; /* Optional: For debugging layout */
+    padding: 1rem;
     width: auto /* Allow the width to adjust to the content */
     max-width: 100vw;
     box-sizing: border-box;

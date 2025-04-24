@@ -1,9 +1,7 @@
 import React from 'react';
 import { ProjectSection } from '../components/SectionContainer';
 import { ContentWrapper2 } from '../components/ContentWrapper';
-import HorizontalWrapper from '../components/HorizontalWrapper';
-import SectionTitle from '../components/SectionTitle';
-import SectionTitleWrapper from '../components/SectionTitleWrapper';
+import { SectionTitleProjects } from '../components/SectionTitle';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import ProjectCard from '../components/projects/ProjectCard';
@@ -16,7 +14,7 @@ const Projects = () => {
     return (
         <ProjectSection id="projects">
             <ContentWrapper2>
-                <SectionTitle>{t("projects.title")}</SectionTitle>
+                <SectionTitleProjects>{t("projects.title")}</SectionTitleProjects>
                 {projectsList.map((project, index) => (
                 <ProjectCard
                     key={index}

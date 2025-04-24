@@ -15,27 +15,27 @@ const SectionContainer = styled.section`
      //border: 2px solid black;
      //padding: 20px;
      //flex-direction: row;
-     margin-top: 2rem;
-     margin-bottom: 2rem;
+     //margin-top: -4rem;
+     //margin-bottom: 2rem;
+     //padding-top: 4rem;
      gap: 1em;
-     overflow: hidden;
-     background-image: ${({ bgImg }) => bgImg ? `url(${bgImg})` : "none"};
-     background-repeat: no-repeat;
+     //overflow: hidden;
  `;
 
  export const Box1 = styled(SectionContainer)`
-    height: 90vh;
-`;
-
-export const Box2 = styled(SectionContainer)`
-background-color: #dfba3a;
+    height: 30vh;
+    background-image: url(${EducationBg}); /* Set the background image */ // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100%;
 `;
 
 export const Box3 = styled(SectionContainer)`
     margin: 0 auto;
     //flex-wrap: wrap;
     display: inline-block;
-    height: 100vh;
+    height: calc(100vh - 4rem);
     `
 
 export const EducationBox = styled(SectionContainer)`
@@ -54,12 +54,26 @@ export const EducationBox = styled(SectionContainer)`
     box-sizing: border-box;
     `
 
+ export const RecommendationBox = styled(SectionContainer)`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //padding: 2rem;
+    background-image: url(${EducationBg}); // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    //box-sizing: border-box;
+    `
+
 export const Box5 = styled(SectionContainer)`
     display: flex;
-    height: auto;
     flex-direction: row;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    height: calc(100vh - 4rem);
+    width: 100%;
     `
 
 export const IntroSection = styled(SectionContainer)`
@@ -80,17 +94,14 @@ export const IntroSection = styled(SectionContainer)`
 
 export const ProjectSection = styled(SectionContainer)`
     display: flex;
-    height: auto;
+    //height: calc(auto - 4rem);
     flex-direction: row;
-    margin-top: 5rem;
+    //margin: auto;
     margin-bottom: 5rem;
-    background-color: #81B29A;
-    background-image: url(${ProjectsBg}); /* Set the background image */ // Photo by Ben Mack: https://www.pexels.com/photo/colorful-background-with-glowing-stripes-of-rainbow-6775241/
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    //background-color: #81B29A;
     width: 100%;
-    min-height: 100vh; /* Ensure the section takes up the full viewport height */
+    min-height: calc(150vh - 4rem); /* Ensure the section takes up the full viewport height */
+    //border: 1px solid black;
     `
 
 export default SectionContainer;

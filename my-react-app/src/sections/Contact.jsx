@@ -34,4 +34,14 @@ const ProfilePic = styled.img`
     object-fit: cover;
     border-radius: 50%;
     z-index: 1;
+
+    @media (max-width: 768px) {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    @media (max-width: 480px) {
+        width: 10rem;
+        height: 10rem;
+    }
 `;

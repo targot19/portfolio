@@ -1,6 +1,6 @@
 import { Box3 } from "../components/SectionContainer";
 import SectionTitle from "../components/SectionTitle";
-import { ContentWrapper2 } from "../components/ContentWrapper";
+import { ContentWrapper3 } from "../components/ContentWrapper";
 import { useTranslation } from "react-i18next";
 import SkillBox from "../components/SkillBox";
 import styled from "styled-components";
@@ -17,7 +17,7 @@ const Skills = () => {
     
     return (
         <Box3 id="skills">
-            <ContentWrapper2>
+            <ContentWrapper3>
             <SectionTitle>{t("skillset")}</SectionTitle>
                 <SkillBoxGrid>
                     {SkillboxList.map((skill, index) => (
@@ -30,7 +30,7 @@ const Skills = () => {
                         />
                     ))}
                 </SkillBoxGrid>
-            </ContentWrapper2>
+            </ContentWrapper3>
         </Box3>
     );
 };
@@ -47,4 +47,8 @@ const SkillBoxGrid = styled.div`
     padding: 0;
     margin: 0;
     max-width: 100%;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
 `

@@ -59,6 +59,7 @@
     user-select: none;
     margin-right: 1rem;
     margin-left: 2rem;
+    margin-top: 2rem;
   }
   .embla__slide__employer {
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
@@ -68,6 +69,7 @@
     align-items: center;
     margin-right: 1rem;
     text-align: right;
+    font-style: italic;
     display: grid;
   }
   .embla__controls {
@@ -142,7 +144,7 @@
     border-radius: 50%;
   }
   .embla__dot:hover {
-    border-color: #81B29A;
+    border-color: #E07A5F;
   }
   .embla__dot:after {
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
@@ -155,8 +157,8 @@
     background-color: transparent;
   }
   .embla__dot--selected {
-    background-color: #81B29A; /* Add a background color for the selected dot */
-    border-color: #81B29A; /* Optional: Change the border color for the selected dot */
+    background-color: #E07A5F; /* Add a background color for the selected dot */
+    border-color: #E07A5F; /* Optional: Change the border color for the selected dot */
   }
   .embla__dot--selected:after {
     box-shadow: inset 0 0 0 0.2rem var(--text-body);

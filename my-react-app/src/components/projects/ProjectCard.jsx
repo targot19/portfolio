@@ -35,9 +35,9 @@ const ProjectCardContainer = styled.div`
     height: 30rem;
     //border: 1px solid red;
     border-radius: 0.8em;
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.1);
+    //box-shadow: 5px 15px 15px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background-color: #F4F1DE;
+    background-color: transparent;
 `
 
 const ProjectCardTextContainer = styled.div`

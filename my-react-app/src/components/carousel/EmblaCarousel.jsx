@@ -8,9 +8,9 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons';
 import useEmblaCarousel from 'embla-carousel-react';
-import SectionContainer from '../SectionContainer';
+import { RecommendationBox } from '../SectionContainer';
 import { useTranslation } from 'react-i18next';
-import SectionTitle from '../SectionTitle';
+import { SectionTitleRecommendation } from '../SectionTitle';
 
 const EmblaCarousel = (props) => {
   const { options } = props;
@@ -29,9 +29,9 @@ const EmblaCarousel = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <SectionContainer id="recommendations">
+    <RecommendationBox id="recommendations">
         <section className="embla">
-        <SectionTitle>{t("navigation.recommendations")}</SectionTitle>
+        <SectionTitleRecommendation>{t("navigation.recommendations")}</SectionTitleRecommendation>
         <div className="embla__viewport" ref={emblaRef}>
             <div className="embla__container">
             {recommendationsList.map((recommendationsList, index) => (
@@ -66,7 +66,7 @@ const EmblaCarousel = (props) => {
             </div>
         </div>
         </section>
-    </SectionContainer>
+    </RecommendationBox>
   )
 }
 

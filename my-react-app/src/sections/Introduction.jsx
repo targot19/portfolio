@@ -5,8 +5,6 @@ import { IntroWrapperHorizon } from "../components/HorizontalWrapper";
 import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
 import { useTranslation } from "react-i18next";
-import DownloadResume from "../components/DownloadResume.jsx";
-import GithubButton from "../components/GithubButton.jsx";
 import { TypeAnimation } from "react-type-animation";
 import BackgroundVideo from "../assets/bg-video4.mp4";
 import Resume from "../assets/resume.svg";

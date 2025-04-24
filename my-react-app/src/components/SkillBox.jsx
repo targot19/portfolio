@@ -27,12 +27,12 @@ export default SkillBox;
 
 const SkillBoxContainer = styled.div`
     position: relative;
-    width: 40em;
-    height: 18em;
+    width: 45rem;
+    height: 17rem;
     padding: 0.2em;
     //border: 1px solid #ccc;
     border-radius: 0.8em;
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: #CB997E;
 `

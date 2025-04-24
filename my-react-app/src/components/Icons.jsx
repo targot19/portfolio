@@ -41,5 +41,10 @@ const IconsWrapper = styled.div`
 const Icon = styled.img`
     width: 5rem;
     height: 4rem;
-    //border: 2px dotted red;  
+    //border: 2px dotted red; 
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+    } 
     `

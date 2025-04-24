@@ -7,6 +7,16 @@ import styled from 'styled-components';
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 
+const SubmitButton = styled(Button)`
+    background-color: #CB997E;
+    border: none;
+    color: white;
+    &:hover {
+        background-color:rgb(203, 144, 112);
+        color: black;
+    }
+`;
+
 export const ContactForm = () => {
   const form = useRef();
   const { t } = useTranslation();
@@ -43,9 +53,9 @@ export const ContactForm = () => {
 				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
 			</Form.Group>
 			<div className="text-end">
-				<Button variant="primary" type="submit" className="ezy__contact6-btn">
-          {t("contact.submit")}
-				</Button>
+          <SubmitButton type="submit">
+            {t("contact.submit")}
+          </SubmitButton>
 			</div>
 		</Form>
   );
