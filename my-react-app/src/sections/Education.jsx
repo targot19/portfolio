@@ -13,7 +13,7 @@ const Education = () => {
     return (
         <EducationBox id="education">
             <EducationWrapper>
-            <SectionTitleEducation>Education</SectionTitleEducation>
+            <SectionTitleEducation>{t("educations")}</SectionTitleEducation>
                 <EducationWrapperHorizon>
                 {educationsList.map((educationsList, index) => (
                 <EducationCard
