@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import EducationBg from "../assets/education.jpg";
+import EducationBg from "../assets/education.jpg"; // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
 
 const SectionContainer = styled.section`
      display: flex;
@@ -15,8 +15,8 @@ const SectionContainer = styled.section`
  `;
 
  export const Box1 = styled(SectionContainer)`
-    height: 30vh;
-    background-image: url(${EducationBg}); // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
+    height: 38vh;
+    background-image: url(${EducationBg});
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -35,14 +35,14 @@ export const EducationBox = styled(SectionContainer)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(${EducationBg}); // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
+    background-image: url(${EducationBg});
     background-size: cover;
     background-position: center;
     width: 100%;
     min-height: 100vh;
 
     @media (max-width: 1600px) {
-        padding: 2rem;
+        padding: 3rem;
     }
 
     @media (max-width: 1024px) {
@@ -64,7 +64,7 @@ export const EducationBox = styled(SectionContainer)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(${EducationBg}); // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
+    background-image: url(${EducationBg});
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -77,15 +77,18 @@ export const Box5 = styled(SectionContainer)`
     height: calc(100vh - 4rem);
     width: 100%;
 
+    @media (max-width: 1024px) {
+        gap: 0;
+    }
+
     @media (max-width: 768px) {
-        
         flex-direction: column;
     }
 
     @media (max-width: 480px) {
         flex-direction: column;
     }
-    `
+`
 
 export const IntroSection = styled(SectionContainer)`
     position: relative;

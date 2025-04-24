@@ -30,6 +30,20 @@ import styled from "styled-components";
     align-items: center;
     justify-content: flex-start;
     //border: 3px solid green;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        margin-top: 0;
+        gap: 0;
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media (max-width: 420px) {
+        width: 80%;
+    }
  `;
 
  export const ContentWrapper3 = styled(ContentWrapper)`
@@ -68,23 +82,15 @@ import styled from "styled-components";
  `;
 
  export const IntroWrapper = styled(ContentWrapper)`
-    flex-wrap: no-wrap;
     margin: 10rem 40rem 10rem 5rem;
     flex-direction: column;
-    //gap: 2rem;
     align-items: flex-start;
     justify-content: center;
-    //border: 2px red dotted;
-
-    @media (max-width: 1600px) {
-        width: 80%;
-        margin: 20rem 30rem 20rem 30rem;
-    }
 
     @media (max-width: 1024px) {
-        width: 100%;
-        margin: 20rem 40rem 20rem 40rem;
-        align-items: center;
+        //width: 100%;
+        margin: 5rem 20rem 5rem 5rem;
+        align-items: left;
     }
 
     @media (max-width: 768px) {
@@ -100,18 +106,23 @@ import styled from "styled-components";
     position: relative;
     display: flex;
     flex-direction: column;
-    //align-items: center; /* Center children horizontally */
     justify-content: center;
-    //border: 2px solid blue; /* Optional: For debugging layout */
     padding: 1rem;
-    width: auto /* Allow the width to adjust to the content */
+    width: auto;
     max-width: 100vw;
     box-sizing: border-box;
     x-index: 1;
-    //flex-wrap: wrap;
+
+    @media (max-width: 1024px) {
+        padding: 0;
+    }
 
     @media (max-width: 768px) {
-        margin-top: 1rem;
+        width: 90%;
+    }
+
+    @media (max-width: 420px) {
+        width: 80%;
     }
  `;
  

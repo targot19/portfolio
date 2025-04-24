@@ -41,6 +41,19 @@ export const SectionTitleRecommendation = styled(SectionTitle)`
 export const SectionTitleProjects = styled(SectionTitle)`
     //margin-top: 4rem;
     margin-bottom: 4rem;
+
+    @media (max-width: 1024px) {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1.9rem;
+    }
 `
 
 export default SectionTitle;

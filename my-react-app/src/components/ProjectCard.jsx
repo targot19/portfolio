@@ -39,7 +39,7 @@ const ProjectCardContainer = styled.div`
 
     @media (max-width: 1024px) {
         width: 60rem;
-        height: 40rem;
+        height: 28rem;
     }
 
     @media (max-width: 768px) {

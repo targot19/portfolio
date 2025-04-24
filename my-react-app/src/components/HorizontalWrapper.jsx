@@ -48,14 +48,9 @@ import styled from "styled-components";
      flex-wrap: wrap;
      gap: 1rem;
 
-    @media (max-width: 1600px) {
-        width: 100%;
-    }
-
     @media (max-width: 1024px) {
         width: 100%;
-        //margin: 20rem 40rem 20rem 40rem;
-        justify-content: center;
+        justify-content: left;
     }
 
     @media (max-width: 768px) {
@@ -69,23 +64,30 @@ import styled from "styled-components";
 
  export const ContactWrapperHorizon = styled(HorizontalWrapper)`
     display: flex;
-     //overflow: hidden;
-     width: 100%;
-     flex-direction: column;
-     justify-content: center;
-     //border: 2px dotted red;
-     flex: 1;
-     height: auto;
-     //box-sizing: border-box;
-     align-items: center;
-     //min-width: 8em;
-     flex-wrap: wrap;
-     //gap: 1rem;
-     max-width: 30rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: auto;
+    align-items: center;
+    //min-width: 8em;
+    flex-wrap: wrap;
+    //gap: 1rem;
+    max-width: 30rem;
 
-     @media (max-width: 768px) {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+    @media (max-width: 1024px) {
+        width: 100%;
+        justify-content: left;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
         gap: 1rem;
+    }
+
+    @media (max-width: 420px) {
+        flex-direction: column;
+        gap: 0.5rem;
     }
  `;
  

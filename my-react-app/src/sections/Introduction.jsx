@@ -75,18 +75,18 @@ const IntroText = styled.p`
     place-content: center;
 
     @media (max-width: 1024px) {
-        font-size: 1.3rem;
-        padding-right: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
         font-size: 1.2rem;
         padding-right: 0.8rem;
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 768px) {
         font-size: 1.1rem;
         padding-right: 0.7rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1rem;
+        padding-right: 0.6rem;
     }
 `;
 
@@ -96,7 +96,6 @@ const StyledButton = styled.button`
     justify-content: space-evenly;
     border: none;
     transition: border 0.3s ease-in-out;
-    //font-family: "Poppins", serif;
     font-weight: bold;
     padding: 0.2rem 0.8rem;
     width: 8rem;
