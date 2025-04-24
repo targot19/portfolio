@@ -50,11 +50,6 @@ const Icon = styled.img`
         transform: scale(1.1, 1.1);
     }
 
-    @media (max-width: 1600px) {
-        width: 6rem;
-        height: 5rem;
-    }
-
     @media (max-width: 1024px) {
         width: 5rem;
         height: 4rem;

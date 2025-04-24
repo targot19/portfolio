@@ -70,28 +70,23 @@ export default Introduction;
 
 const IntroText = styled.p`
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding-right: 1rem;
     place-content: center;
 
-    @media (max-width: 1600px) {
-        font-size: 1.5rem;
-        padding-right: 1rem;
-    }
-
     @media (max-width: 1024px) {
-        font-size: 1.4rem;
-        padding-right: 1rem;
-    }
-
-    @media (max-width: 768px) {
         font-size: 1.3rem;
         padding-right: 0.9rem;
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 768px) {
         font-size: 1.2rem;
         padding-right: 0.8rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1.1rem;
+        padding-right: 0.7rem;
     }
 `;
 
@@ -113,27 +108,21 @@ const StyledButton = styled.button`
         border-left: 4px solid #81B29A;
     }
 
-    @media (max-width: 1600px) {
-        width: 9rem;
-        height: 4rem;
-        font-size: 1.4rem;
-    }
-
     @media (max-width: 1024px) {
         width: 8rem;
         height: 3rem;
-        font-size: 1.2rem;
-    }
-
-    @media (max-width: 768px) {
-        width: 7rem;
-        height: 2rem;
         font-size: 1.1rem;
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 768px) {
         width: 6rem;
         height: 1rem;
+        font-size: 1rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 5rem;
+        height: 0.9rem;
         font-size: 1rem;
     }
 }`;

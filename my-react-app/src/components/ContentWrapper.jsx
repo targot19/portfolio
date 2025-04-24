@@ -77,8 +77,8 @@ import styled from "styled-components";
     //border: 2px red dotted;
 
     @media (max-width: 1600px) {
-        width: 100%;
-        margin: 10rem 40rem 10rem 5rem;
+        width: 80%;
+        margin: 20rem 30rem 20rem 30rem;
     }
 
     @media (max-width: 1024px) {

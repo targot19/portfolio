@@ -36,14 +36,9 @@ const SkillBoxContainer = styled.div`
     overflow: hidden;
     background-color: #CB997E;
 
-    @media (max-width: 1600px) {
-        width: 45rem;
-        height: 17rem;
-    }
-
     @media (max-width: 1024px) {
         width: 31rem;
-        height: 14rem;
+        height: 15rem;
     }
 
     @media (max-width: 768px) {
@@ -86,10 +81,6 @@ const SkillBoxText = styled.p`
     font-family: "Verdana", sans-serif;
     font-size: 1.1rem;
     text-align: center;
-
-    @media (max-width: 1600px) {
-        font-size: 1.1rem;
-    }
 
     @media (max-width: 1024px) {
         font-size: 1rem;

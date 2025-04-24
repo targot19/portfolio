@@ -10,10 +10,6 @@ const SectionTitle = styled.h1`
     //border: 2px red dotted;
     margin: auto;
 
-    @media (max-width: 1600px) {
-        font-size: 5rem;
-    }
-
     @media (max-width: 1024px) {
         font-size: 3rem;
     }
@@ -23,7 +19,7 @@ const SectionTitle = styled.h1`
     }
 
     @media (max-width: 420px) {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 `;
 
@@ -34,14 +30,17 @@ export const SectionTitleIntro = styled(SectionTitle)`
 `;
 
 export const SectionTitleEducation = styled(SectionTitle)`
-    margin-bottom: 2rem;`
+    margin-bottom: 2rem;
+`
 
 export const SectionTitleRecommendation = styled(SectionTitle)`
     margin-top: 4rem;
-    margin-bottom: 1rem;`
+    margin-bottom: 1rem;
+`
 
 export const SectionTitleProjects = styled(SectionTitle)`
     //margin-top: 4rem;
-    margin-bottom: 4rem;`
+    margin-bottom: 4rem;
+`
 
 export default SectionTitle;

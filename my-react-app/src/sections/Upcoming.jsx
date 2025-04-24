@@ -5,6 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import { ContentWrapper1 } from "../components/ContentWrapper";
 
 const Upcoming = () => {
+    const { t } = useTranslation();
     const upcomingSkills = ["Typescript", "Next.js", "Vue", ".NET"]
 
     return (
@@ -12,7 +13,7 @@ const Upcoming = () => {
         <GlobalKeyframes />
         <Box1 id="upcoming">
             <ContentWrapper1>
-                <SectionTitle>Upcoming</SectionTitle>
+                <SectionTitle>{t("navigation.upcoming")}</SectionTitle>
                 <Slider>
                     <Dunno>
                         <Text>
@@ -45,6 +46,18 @@ const Slider = styled.div`
 const Text = styled.div`
     white-space: nowrap;
     font-size: 1.5rem;
+
+    @media (max-width: 1024px) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1.2rem;
+    }
 `;
 
 const Dunno = styled.div`

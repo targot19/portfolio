@@ -75,11 +75,6 @@ const NavBarContainer = styled.nav`
     z-index: 1;
     height: 4rem;
 
-    @media (max-width: 1600px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     @media (max-width: 1024px) {
         flex-direction: row;
         justify-content: space-between;

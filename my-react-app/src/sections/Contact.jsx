@@ -35,11 +35,6 @@ const ProfilePic = styled.img`
     border-radius: 50%;
     z-index: 1;
 
-    @media (max-width: 1600px) {
-        width: 30rem;
-        height: 30rem;
-    }
-
     @media (max-width: 1024px) {
         width: 20rem;
         height: 20rem;

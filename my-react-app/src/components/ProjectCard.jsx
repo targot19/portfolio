@@ -33,25 +33,18 @@ const ProjectCardContainer = styled.div`
     flex-direction: row;
     width: 70rem;
     height: 30rem;
-    //border: 1px solid red;
     border-radius: 0.8em;
-    //box-shadow: 5px 15px 15px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: transparent;
 
-    @media (max-width: 1600px) {
-        width: 80rem;
+    @media (max-width: 1024px) {
+        width: 60rem;
         height: 40rem;
     }
 
-    @media (max-width: 1024px) {
-        width: 70rem;
-        height: 30rem;
-    }
-
     @media (max-width: 768px) {
-        width: 50rem;
-        height: 25rem;
+        width: 45rem;
+        height: 30rem;
     }
 
     @media (max-width: 420px) {
@@ -64,90 +57,65 @@ const ProjectCardTextContainer = styled.div`
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    //gap: 0.5rem;
-    //border: 3px solid black;
     width: 40rem;
 
-    @media (max-width: 1600px) {
-        width: 50rem;
-    }
-
     @media (max-width: 1024px) {
-        width: 40rem;
-    }
-
-    @media (max-width: 768px) {
         width: 35rem;
     }
 
+    @media (max-width: 768px) {
+        width: 25rem;
+    }
+
     @media (max-width: 420px) {
-        width: 30rem;
+        width: 15rem;
     }
 `
 
 const ProjectImage = styled.img`
-    //overflow: hidden;
     display: flex;
-    //align-items: start;
-    //justify-content: start;
-    //border: 2px solid green;
     border-radius: 5%;
     width: 25rem;
     max-height: 30rem;
     margin: 1rem;
 
-    @media (max-width: 1600px) {
-        width: 30rem;
-        max-height: 35rem;
-    }
-
     @media (max-width: 1024px) {
-        width: 25rem;
-        max-height: 30rem;
-    }
-
-    @media (max-width: 768px) {
         width: 20rem;
         max-height: 25rem;
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 768px) {
         width: 15rem;
         max-height: 20rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 10rem;
+        max-height: 15rem;
     }
 `
 
 const ProjectCardTitle = styled.h4`
     font-size: 1.5rem;
     text-align: left;
-    //padding: 0.1em;
     font-weight: bold;
-    //border: 1px dotted red;
-
-    @media (max-width: 1600px) {
-        font-size: 1.6rem;
-    }
 
     @media (max-width: 1024px) {
-        font-size: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
         font-size: 1.4rem;
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 768px) {
         font-size: 1.3rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1.2rem;
     }
 `
 
 const ProjectCardText = styled.p`
     font-size: 1rem;
     text-align: justify;
-
-    @media (max-width: 1600px) {
-        font-size: 1.2rem;
-    }
 
     @media (max-width: 1024px) {
         font-size: 1rem;
@@ -179,27 +147,21 @@ const ProjectList = styled.ul`
         gap: 1rem;
     }
 
-    @media (max-width: 1600px) {
-        li {
-            font-size: 1.2rem;
-        }
-    }
-
     @media (max-width: 1024px) {
-        li {
-            font-size: 1rem;
-        }
-    }
-
-    @media (max-width: 768px) {
         li {
             font-size: 0.9rem;
         }
     }
 
-    @media (max-width: 420px) {
+    @media (max-width: 768px) {
         li {
             font-size: 0.8rem;
+        }
+    }
+
+    @media (max-width: 420px) {
+        li {
+            font-size: 0.7rem;
         }
     }
 `
@@ -207,7 +169,6 @@ const ProjectList = styled.ul`
 const ButtonContainer = styled.div`
     display: flex;
     gap: 1rem;
-    //border: 2px solid green;
 `
 
 const CodeButtons = styled.button`
@@ -218,6 +179,7 @@ const CodeButtons = styled.button`
     transition: border 0.3s ease-in-out;
     font-weight: bold;
     padding: 0.2rem 0.8rem;
+    font-size: 1rem;
 
     &:hover {
         border-bottom: 4px solid #81B29A;
