@@ -6,7 +6,6 @@ import styled from "styled-components";
 import Profile from "../assets/Profile.jpg";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
-import BackgroundVideo from "../assets/bg-video4.mp4";
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();
@@ -30,21 +29,8 @@ const Introduction = () => {
         }
     };
 
-    const handleVideoPlay = (event) => {
-        const video = event.target;
-        video.playbackRate = 0.5; // Set playback rate to 50% (slower)
-    };
-
     return (
         <IntroSection id="introduction">
-            {/*<VideoBackground
-                autoPlay
-                loop
-                muted
-                onPlay={handleVideoPlay}
-            >
-                <source src={BackgroundVideo} type="video/mp4" alt="Video by Miguel Á. Padriñán from Pexels: https://www.pexels.com/video/interchanging-light-bokeh-1795912/" />
-            </VideoBackground>*/}
             <IntroWrapper>
             {title && (
                     <TypeAnimation
@@ -82,16 +68,6 @@ const Introduction = () => {
 
 export default Introduction;
 
-const VideoBackground = styled.video`
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: 0; /* Place the video behind the content */
-`;
-
 const IntroText = styled.p`
     color: black;
     font-size: 1.5rem;
@@ -113,13 +89,8 @@ const StyledButton = styled.button`
     height: 3rem;
     font-size: 1.2rem;
 
-    .a {
-        all: unset;}
-
     &:hover {
         border-bottom: 5px solid #81B29A;
         border-left: 4px solid #81B29A;
-        //border-top: 4px solid #81B29A;
-        //border-right: 4px solid #81B29A;
     }
 }`;

@@ -32,13 +32,13 @@ const GlobalStyles = createGlobalStyle`
 
     @media (max-width: 768px) {
         body {
-            font-size: 14px; /* Adjust font size for tablets */
+            font-size: 14px;
         }
     }
 
     @media (max-width: 480px) {
         body {
-            font-size: 12px; /* Adjust font size for mobile */
+            font-size: 12px;
         }
     }
 
