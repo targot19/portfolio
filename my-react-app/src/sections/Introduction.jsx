@@ -122,5 +122,7 @@ const StyledButton = styled.button`
     &:hover {
         border-bottom: 5px solid #81B29A;
         border-left: 4px solid #81B29A;
+        //border-top: 4px solid #81B29A;
+        //border-right: 4px solid #81B29A;
     }
 }`;
