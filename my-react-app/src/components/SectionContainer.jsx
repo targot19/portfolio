@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import EducationBg from "../assets/education.jpg";
-import ProjectsBg from "../assets/projects.jpg";
 
 const SectionContainer = styled.section`
      display: flex;
@@ -11,15 +10,7 @@ const SectionContainer = styled.section`
      height: auto;
      justify-content: center;
      align-items: center;
-     //align-self: center;
-     //border: 2px solid black;
-     //padding: 20px;
-     //flex-direction: row;
-     //margin-top: -4rem;
-     //margin-bottom: 2rem;
-     //padding-top: 4rem;
      gap: 1em;
-     //overflow: hidden;
  `;
 
  export const Box1 = styled(SectionContainer)`
@@ -33,7 +24,6 @@ const SectionContainer = styled.section`
 
 export const Box3 = styled(SectionContainer)`
     margin: 0 auto;
-    //flex-wrap: wrap;
     display: inline-block;
     height: calc(100vh - 4rem);
     `
@@ -60,13 +50,11 @@ export const EducationBox = styled(SectionContainer)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //padding: 2rem;
     background-image: url(${EducationBg}); // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
     background-size: cover;
     background-position: center;
     width: 100%;
     height: calc(100vh - 4rem);
-    //box-sizing: border-box;
     `
 
 export const Box5 = styled(SectionContainer)`
@@ -94,11 +82,8 @@ export const IntroSection = styled(SectionContainer)`
 
 export const ProjectSection = styled(SectionContainer)`
     display: flex;
-    //height: calc(auto - 4rem);
     flex-direction: row;
-    //margin: auto;
     margin-bottom: 5rem;
-    //background-color: #81B29A;
     width: 100%;
     min-height: calc(150vh - 4rem); /* Ensure the section takes up the full viewport height */
     //border: 1px solid black;

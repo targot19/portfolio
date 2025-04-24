@@ -7,7 +7,6 @@ import Profile from "../assets/Profile.jpg";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 import BackgroundVideo from "../assets/bg-video4.mp4";
-import Resume from "../assets/resume.svg";
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();

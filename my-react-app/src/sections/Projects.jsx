@@ -4,7 +4,7 @@ import { ContentWrapper2 } from '../components/ContentWrapper';
 import { SectionTitleProjects } from '../components/SectionTitle';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import ProjectCard from '../components/projects/ProjectCard';
+import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => {
     const { t } = useTranslation();
