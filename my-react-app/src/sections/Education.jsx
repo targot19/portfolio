@@ -4,7 +4,6 @@ import { EducationWrapper } from "../components/ContentWrapper";
 import { EducationWrapperHorizon } from "../components/HorizontalWrapper";
 import { useTranslation } from "react-i18next";
 import React from "react";
-import styled from 'styled-components';
 import EducationCard from "../components/EducationCard";
 
 const Education = () => {

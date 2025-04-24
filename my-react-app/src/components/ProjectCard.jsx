@@ -38,18 +38,51 @@ const ProjectCardContainer = styled.div`
     //box-shadow: 5px 15px 15px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: transparent;
+
+    @media (max-width: 1600px) {
+        width: 80rem;
+        height: 40rem;
+    }
+
+    @media (max-width: 1024px) {
+        width: 70rem;
+        height: 30rem;
+    }
+
+    @media (max-width: 768px) {
+        width: 50rem;
+        height: 25rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 25rem;
+        height: 15rem;
+    }
 `
 
 const ProjectCardTextContainer = styled.div`
     margin: 1rem;
-    //overflow: hidden;
     display: flex;
-    //align-items: start;
-    //justify-content: start;
     flex-direction: column;
     //gap: 0.5rem;
     //border: 3px solid black;
     width: 40rem;
+
+    @media (max-width: 1600px) {
+        width: 50rem;
+    }
+
+    @media (max-width: 1024px) {
+        width: 40rem;
+    }
+
+    @media (max-width: 768px) {
+        width: 35rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 30rem;
+    }
 `
 
 const ProjectImage = styled.img`
@@ -62,22 +95,71 @@ const ProjectImage = styled.img`
     width: 25rem;
     max-height: 30rem;
     margin: 1rem;
+
+    @media (max-width: 1600px) {
+        width: 30rem;
+        max-height: 35rem;
+    }
+
+    @media (max-width: 1024px) {
+        width: 25rem;
+        max-height: 30rem;
+    }
+
+    @media (max-width: 768px) {
+        width: 20rem;
+        max-height: 25rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 15rem;
+        max-height: 20rem;
+    }
 `
 
 const ProjectCardTitle = styled.h4`
-    font-family: "Libre Franklin", serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: left;
-    padding: 0.1em;
+    //padding: 0.1em;
     font-weight: bold;
     //border: 1px dotted red;
+
+    @media (max-width: 1600px) {
+        font-size: 1.6rem;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1.3rem;
+    }
 `
 
 const ProjectCardText = styled.p`
-    font-family: "Verdana", sans-serif;
     font-size: 1rem;
     text-align: justify;
-    //border: 2px dotted black;
+
+    @media (max-width: 1600px) {
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1rem;
+    }
 `
 
 const ProjectList = styled.ul`
@@ -86,15 +168,39 @@ const ProjectList = styled.ul`
     margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 0.5rem;
     
     li {
         display: inline-block;
-        font-size: 1em;
+        font-size: 1rem;
         padding: 0.3em 0.3em;
         border: 1px solid black;
         border-radius: 5px;
-        gap: 1em;
+        gap: 1rem;
+    }
+
+    @media (max-width: 1600px) {
+        li {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        li {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        li {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 420px) {
+        li {
+            font-size: 0.8rem;
+        }
     }
 `
 
@@ -110,7 +216,6 @@ const CodeButtons = styled.button`
     justify-content: space-evenly;
     border: none;
     transition: border 0.3s ease-in-out;
-    //font-family: "Poppins", serif;
     font-weight: bold;
     padding: 0.2rem 0.8rem;
 

@@ -27,24 +27,46 @@ export default Icons;
 
 const IconsWrapper = styled.div`
     display: flex;
-    //flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    //border: 2px solid black;
-    //gap: 0.2rem;
     padding-top: 1rem;
-    //width: auto;
-    //height: auto;
     flex-direction: row;
+
+    @media (max-width: 768px) {
+        padding-top: 0;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 0;
+    }
     `
 
 const Icon = styled.img`
     width: 5rem;
     height: 4rem;
-    //border: 2px dotted red; 
     transition: 0.2s ease-in-out;
 
     &:hover {
         transform: scale(1.1, 1.1);
-    } 
+    }
+
+    @media (max-width: 1600px) {
+        width: 6rem;
+        height: 5rem;
+    }
+
+    @media (max-width: 1024px) {
+        width: 5rem;
+        height: 4rem;
+    }
+
+    @media (max-width: 768px) {
+        width: 4rem;
+        height: 3rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 3rem;
+        height: 2rem;
+    }
     `

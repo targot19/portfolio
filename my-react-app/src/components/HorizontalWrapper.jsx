@@ -47,6 +47,24 @@ import styled from "styled-components";
      //min-width: 8em;
      flex-wrap: wrap;
      gap: 1rem;
+
+    @media (max-width: 1600px) {
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        //margin: 20rem 40rem 20rem 40rem;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media (max-width: 420px) {
+        width: 80%;
+    }
  `;
 
  export const ContactWrapperHorizon = styled(HorizontalWrapper)`
@@ -64,6 +82,11 @@ import styled from "styled-components";
      flex-wrap: wrap;
      //gap: 1rem;
      max-width: 30rem;
+
+     @media (max-width: 768px) {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 1rem;
+    }
  `;
  
  export default HorizontalWrapper;

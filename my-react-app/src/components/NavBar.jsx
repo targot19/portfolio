@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 const NavBar = () => {
     const { t } = useTranslation();
     const [activeSection, setActiveSection] = useState("");
+    const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the menu
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,8 +32,10 @@ const NavBar = () => {
 
     return (
         <NavBarContainer>
-            <NavLinks>
-                
+            <HamburgerMenu onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                ☰
+            </HamburgerMenu>
+            <NavLinks isMenuOpen={isMenuOpen}>
                 <NavItem href="#education" className={activeSection === "education" ? "active" : ""}>
                     {t("navigation.education")}
                 </NavItem>
@@ -60,30 +63,31 @@ const NavBar = () => {
 };
 
 export default NavBar;
-export { NavBarContainer, NavLinks, NavItem, NavBar };
 
 const NavBarContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1rem;
-    letter-spacing: 0.02em;
     background-color: #81B29A;
-    max-width: 100%;
-    width: calc(100% - 10px);
     position: sticky;
-    //border: 2px dotted blue;
-    box-sizing: border-box;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
-    overflow: hidden;
-    box-sizing: border-box;
     height: 4rem;
 
+    @media (max-width: 1600px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     @media (max-width: 768px) {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
 `;
 
@@ -94,6 +98,12 @@ const NavLinks = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        background-color: #81B29A;
+        display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
     }
 `;
 
@@ -103,18 +113,50 @@ const NavItem = styled.a`
     font-weight: bold;
     padding: 0.5rem;
     font-size: 1.2rem;
-    //border: 2px dotted blue;
-    
+
     &:hover {
-        //text-decoration: underline;
         color: #E07A5F;
-        font-weight: bold;
     }
 
     &.active {
-        color: #E07A5F; /* Highlight color for the active section */
-        font-weight: bold;
-        //text-decoration: underline;
+        color: #E07A5F;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 1.3rem;
+        padding: 0.8rem;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.1rem;
+        padding: 0.4rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+`;
+
+const HamburgerMenu = styled.div`
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #F4F1DE;
+
+    @media (max-width: 768px) {
+        display: block;
+        z-index: 10;
+    }
+
+    @media (max-width: 420px) {
+        display: block;
+        z-index: 10;
     }
 `;
 

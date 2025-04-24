@@ -10,11 +10,20 @@ const SectionTitle = styled.h1`
     //border: 2px red dotted;
     margin: auto;
 
-    @media (max-width: 768px) {
-        font-size: 3rem; /* Smaller size for tablets */
+    @media (max-width: 1600px) {
+        font-size: 5rem;
     }
-    @media (max-width: 480px) {
-        font-size: 2rem; /* Smaller size for mobile */
+
+    @media (max-width: 1024px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 1.8rem;
     }
 `;
 

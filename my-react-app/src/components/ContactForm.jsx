@@ -4,7 +4,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { useTranslation } from 'react-i18next';
 
 const SubmitButton = styled(Button)`

@@ -11,14 +11,14 @@ const SectionContainer = styled.section`
      justify-content: center;
      align-items: center;
      gap: 1em;
+     box-sizing: border-box;
  `;
 
  export const Box1 = styled(SectionContainer)`
     height: 30vh;
-    background-image: url(${EducationBg}); /* Set the background image */ // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-image: url(${EducationBg}); // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
+    background-size: cover;
+    background-position: center;
     width: 100%;
 `;
 
@@ -26,6 +26,7 @@ export const Box3 = styled(SectionContainer)`
     margin: 0 auto;
     display: inline-block;
     height: calc(100vh - 4rem);
+    width: 100%;
     `
 
 export const EducationBox = styled(SectionContainer)`
@@ -34,14 +35,27 @@ export const EducationBox = styled(SectionContainer)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    background-image: url(${EducationBg}); /* Set the background image */ // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-image: url(${EducationBg}); // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    min-height: 100vh; /* Ensure the section takes up the full viewport height */
-    box-sizing: border-box;
+    min-height: 100vh;
+
+    @media (max-width: 1600px) {
+        padding: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 1rem;
+    }
+
+    @media (max-width: 420px) {
+        padding: 0.5rem;
+    }
     `
 
  export const RecommendationBox = styled(SectionContainer)`
@@ -62,30 +76,55 @@ export const Box5 = styled(SectionContainer)`
     flex-direction: row;
     height: calc(100vh - 4rem);
     width: 100%;
+
+    @media (max-width: 768px) {
+        
+        flex-direction: column;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
     `
 
 export const IntroSection = styled(SectionContainer)`
-    position: relative; /* Create a stacking context */
+    position: relative;
     display: flex;
-     width: 100vw;
-     max-width: 100vw;
-     height: 100vh;
-     justify-content: center;
-     align-items: center;
-     align-self: center;
-     //border: 2px solid black;
-     padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-     overflow: hidden;
-     background-size: cover;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    //border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-size: cover;
+
+    @media (max-width: 1600px) {
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media (max-width: 420px) {
+        width: 80%;
+    }
     `
 
 export const ProjectSection = styled(SectionContainer)`
     display: flex;
     flex-direction: row;
-    margin-bottom: 5rem;
+    //margin-bottom: 5rem;
     width: 100%;
-    min-height: calc(150vh - 4rem); /* Ensure the section takes up the full viewport height */
+    min-height: calc(150vh - 4rem);
     //border: 1px solid black;
     `
 

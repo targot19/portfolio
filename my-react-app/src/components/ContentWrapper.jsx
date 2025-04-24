@@ -4,15 +4,13 @@ import styled from "styled-components";
     position: relative;
     display: flex;
     flex-direction: column;
-    //align-items: center; /* Center children horizontally */
     justify-content: center;
     //border: 2px solid blue;
     padding: 1em;
-    width: auto /* Allow the width to adjust to the content */
+    width: auto;
     max-width: 100vw;
     box-sizing: border-box;
     x-index: 1;
-    //flex-wrap: wrap;
  `
 
  export const ContentWrapper1 = styled(ContentWrapper)`
@@ -51,6 +49,22 @@ import styled from "styled-components";
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
+
+    @media (max-width: 1600px) {
+        margin: 2rem 15rem;
+    }
+
+    @media (max-width: 1024px) {
+        margin: 1.5rem 10rem;
+    }
+
+    @media (max-width: 768px) {
+        margin: 1rem 5rem;
+    }
+
+    @media (max-width: 420px) {
+        margin: 0.5rem 2rem;
+    }
  `;
 
  export const IntroWrapper = styled(ContentWrapper)`
@@ -61,6 +75,25 @@ import styled from "styled-components";
     align-items: flex-start;
     justify-content: center;
     //border: 2px red dotted;
+
+    @media (max-width: 1600px) {
+        width: 100%;
+        margin: 10rem 40rem 10rem 5rem;
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        margin: 20rem 40rem 20rem 40rem;
+        align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+
+    @media (max-width: 420px) {
+        width: 80%;
+    }
  `;
 
  export const ContactWrapper = styled(ContentWrapper)`
@@ -76,6 +109,10 @@ import styled from "styled-components";
     box-sizing: border-box;
     x-index: 1;
     //flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        margin-top: 1rem;
+    }
  `;
  
  export default ContentWrapper;

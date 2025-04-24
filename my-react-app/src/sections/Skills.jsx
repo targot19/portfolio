@@ -43,12 +43,23 @@ const SkillBoxGrid = styled.div`
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    //border: 2px solid red;
     padding: 0;
     margin: 0;
     max-width: 100%;
 
+    @media (max-width: 1600px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     @media (max-width: 768px) {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width: 420px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 `

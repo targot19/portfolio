@@ -35,12 +35,22 @@ const ProfilePic = styled.img`
     border-radius: 50%;
     z-index: 1;
 
+    @media (max-width: 1600px) {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    @media (max-width: 1024px) {
+        width: 20rem;
+        height: 20rem;
+    }
+
     @media (max-width: 768px) {
         width: 15rem;
         height: 15rem;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 420px) {
         width: 10rem;
         height: 10rem;
     }

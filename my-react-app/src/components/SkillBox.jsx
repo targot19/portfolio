@@ -35,6 +35,26 @@ const SkillBoxContainer = styled.div`
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: #CB997E;
+
+    @media (max-width: 1600px) {
+        width: 45rem;
+        height: 17rem;
+    }
+
+    @media (max-width: 1024px) {
+        width: 31rem;
+        height: 14rem;
+    }
+
+    @media (max-width: 768px) {
+        width: 30rem;
+        height: 12rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 25rem;
+        height: 8rem;
+    }
 `
 
 const SkillBoxTextContainer = styled.div`
@@ -50,22 +70,38 @@ const SkillBoxTextContainer = styled.div`
 const SkillsImage = styled.img`
     overflow: hidden;
     display: block;
-    width: 4em;
-    height: 4em;
+    width: 4rem;
+    height: 4rem;
     margin: auto;
 `
 
 const SkillBoxTitle = styled.h4`
     font-family: system-ui;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 0.1em;
+    padding: 0.1rem;
 `
 
 const SkillBoxText = styled.p`
     font-family: "Verdana", sans-serif;
     font-size: 1.1rem;
     text-align: center;
+
+    @media (max-width: 1600px) {
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 0.8rem;
+    }
 `
 
 const SkillsSpan = styled.div`
@@ -81,7 +117,7 @@ const SkillsSpan = styled.div`
     text-align: center;
 
     span {
-        font-size: 0.9em;
+        font-size: 0.9rem;
         color: #333;
     }
 

@@ -38,7 +38,7 @@ const Button = styled.button`
     padding: 0.3rem 0.8rem;
     font-size: 1rem;
     border-radius: 5px;
-    transform: rotateY(${(props) => (props.isRotated ? "180deg" : "0deg")});
+    //transform: rotateY(${(props) => (props.isRotated ? "180deg" : "0deg")});
     transition: transform 0.5s ease, background-color 0.5s ease;
 
     &:hover {
@@ -48,7 +48,7 @@ const Button = styled.button`
 
 const ButtonText = styled.span`
     display: inline-block;
-    transform: rotateY(${(props) => (props.isRotated ? "180deg" : "0deg")});
+    //transform: rotateY(${(props) => (props.isRotated ? "180deg" : "0deg")});
     transition: transform 0.5s ease;
 `;
 
