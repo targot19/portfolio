@@ -3,7 +3,6 @@ import { IntroSection } from "../components/SectionContainer";
 import { IntroWrapper } from "../components/ContentWrapper";
 import { IntroWrapperHorizon } from "../components/HorizontalWrapper";
 import styled from "styled-components";
-import Profile from "../assets/Profile.jpg";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 

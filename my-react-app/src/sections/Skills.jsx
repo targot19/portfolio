@@ -4,10 +4,10 @@ import { ContentWrapper3 } from "../components/ContentWrapper";
 import { useTranslation } from "react-i18next";
 import SkillBox from "../components/SkillBox";
 import styled from "styled-components";
-import FrontEnd from "../assets/frontend.svg"; //source: https://www.svgrepo.com/svg/16272/programming-code
-import BackEnd from "../assets/backend.svg"; // source: https://www.svgrepo.com/svg/1699/web-development
-import ProjectManagement from "../assets/project.svg"; // source: https://www.svgrepo.com/svg/226785/dart-board
-import OtherSkills from "../assets/softskills.svg"; // source: https://www.svgrepo.com/svg/226720/collaboration
+//source: https://www.svgrepo.com/svg/16272/programming-code
+// source: https://www.svgrepo.com/svg/1699/web-development
+// source: https://www.svgrepo.com/svg/226785/dart-board
+// source: https://www.svgrepo.com/svg/226720/collaboration
 
 {/* I strive to build practical, navigateable, and user-engaging technology with a little touch of animation. */}
 
