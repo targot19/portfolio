@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import Github from "../assets/Github.svg";
+import Github from "../assets/github.svg";
 import LinkedIn from "../assets/LinkedIn.svg";
-import Phone from "../assets/Phone.svg";
-import Mail from "../assets/Mail.svg";
+import Phone from "../assets/phone.svg";
+import Mail from "../assets/mail.svg";
 
 const Icons = () => {
     return (
