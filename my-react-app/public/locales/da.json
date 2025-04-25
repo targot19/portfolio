@@ -33,7 +33,7 @@
                 "Balsamiq",
                 "LaTeX"
             ],
-            "image": "../src/assets/frontend.svg"
+            "image": "/frontend.svg"
         },
         {
             "title": "Back-end",
@@ -48,7 +48,7 @@
                 "Linux kernel",
                 "IPv4/IPv6"
             ],
-            "image": "../src/assets/backend.svg"
+            "image": "/backend.svg"
         },
         {
             "title": "Projektledelse",
@@ -67,7 +67,7 @@
                 "Kanban",
                 "Wrike"
             ],
-            "image": "../src/assets/project.svg"
+            "image": "/project.svg"
         },
         {
             "title": "Andre Kompetencer",
@@ -81,7 +81,7 @@
                 "B2B",
                 "B2C"
             ],
-            "image": "../src/assets/softskills.svg"
+            "image": "/softskills.svg"
         }
 
     ],
