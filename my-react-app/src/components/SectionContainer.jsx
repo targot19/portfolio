@@ -25,7 +25,7 @@ const SectionContainer = styled.section`
 export const Box3 = styled(SectionContainer)`
     margin: auto;
     display: inline-block;
-    height: calc(120vh - 4rem);
+    height: calc(100vh - 4rem);
     width: 100%;
 
     @media (max-width: 1024px) {
