@@ -28,6 +28,10 @@ export const Box3 = styled(SectionContainer)`
     height: calc(100vh - 4rem);
     width: 100%;
 
+    @media (max-width: 1024px) {
+        calc(110vh - 4rem);
+    }
+
     @media (max-width: 768px) {
         height: calc(192vh - 4rem);
     }

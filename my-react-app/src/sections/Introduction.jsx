@@ -100,6 +100,7 @@ const IntroText = styled.p`
 
 const StyledButton = styled.button`
     background-color: #3D405B;
+    font-color: #CB997E;
     border-radius: 5px;
     justify-content: space-evenly;
     border: none;

@@ -23,6 +23,18 @@ const GlobalStyles = createGlobalStyle`
         scroll-padding-top: 4rem;
     }
 
+    .button {
+        background-color: #3D405B;
+        color: #F4F1DE;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+
+        -webkit-text-fill-color: #F4F1DE;
+    }
+
     @media (max-width: 768px) {
         body {
             font-size: 14px;
@@ -42,8 +54,6 @@ const GlobalStyles = createGlobalStyle`
     body::-webkit-scrollbar-thumb {
         background-color: #CB997E;
     }
-
-
 `
 
 export default GlobalStyles;
