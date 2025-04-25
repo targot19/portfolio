@@ -11,7 +11,8 @@
     "progress": "Stadig under udvikling ...",
     "introduction": {
         "title": "Mød Tania",
-        "description": "Uddannet humanist med interesse for at udvikle og sikre etisk korrekt IT med målgruppen inkluderet i hvert skridt i processen. Med en bachelor i kommunikation og en fremtidig kandidat i informationsteknologi kan jeg agere som både udvikler og integrator."
+        "description": "Humanist med stort H, der brænder for at udvikle og sikre etisk korrekt IT. Med et solidt fundament i kommunikation og en passion for UX/UI og dermed front-end, mener jeg noget af det vigtigste vi kan gøre for at udvikle IT der rykker simpelthen er at inddrage brugerne. Det er ikke altid de kan sætte ord på deres behov, eller hvorfor de har dét behov, men med min analytiske sans og øje for detaljer, dykker jeg ned i hvad brugerne siger - og hvad de ikke gør - for netop at finde ud af det.",
+        "description1": "Min overbygning i IT gør mig til en unik profil, der er et krydsfelt mellem mennesket og systemet. Måske er det lige netop mig, I leder efter?"
     },
     "skillboxList": [
         {
@@ -133,10 +134,11 @@
     ],
     "contact": {
         "title": "Lad os tage en snak!",
-        "name": "Indtast Navn",
-        "mail": "Indtast Mail",
-        "message": "Indtast Besked",
-        "submit": "Send"
+        "name": "Indtast navn",
+        "mail": "Indtast mail",
+        "message": "Indtast besked",
+        "submit": "Send",
+        "success": "Din besked blev sendt."
     },
     "projects": {
         "title": "Projekter",

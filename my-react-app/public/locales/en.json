@@ -11,7 +11,8 @@
     "progress": "Still in progress ...",
     "introduction": {
         "title": "Meet Tania",
-        "description": "To ensure ethical Human-Computer Interaction, IT needs to be developed with the target group in mind at all times - that’s where I come in. I’m a BA graduate in Communication who’s currently pursuing a MSc in Information Technology to be able to act as both developer and integrator."
+        "description": "Humanist with a capital H, passionate about developing and ensuring ethically correct IT. With a solid foundation in communication and a passion for UX/UI and thus front-end, I believe that one of the most important things we can do to develop IT that moves forward is simply to involve users. They can't always put their needs into words, or why they have that need, but with my analytical mind and eye for detail, I delve into what users say - and what they don't - to find out exactly that.",
+        "description1": "My top-up in IT makes me a unique profile, a cross-section between the human and the system. Maybe that's exactly what you're looking for?"
     },
     "skillboxList": [
         {
@@ -136,7 +137,8 @@
         "name": "Enter Name",
         "mail": "Enter Mail",
         "message": "Enter Message",
-        "submit": "Submit"
+        "submit": "Submit",
+        "success": "Your message was sent."
     },
     "projects": {
         "title": "Projects",

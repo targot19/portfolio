@@ -50,6 +50,9 @@ const Introduction = () => {
                     <IntroText>{t("introduction.description")}</IntroText>
                 </IntroWrapperHorizon>
                 <IntroWrapperHorizon>
+                    <IntroText>{t("introduction.description1")}</IntroText>
+                </IntroWrapperHorizon>
+                <IntroWrapperHorizon>
                     <StyledButton>
                         <a onClick={handleOnClick}>
                             {t("download.github")}

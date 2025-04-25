@@ -57,7 +57,7 @@ const EducationYear = styled.h4`
 `;
 
 const EducationDescription = styled.p`
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: normal;
     text-align: justify;
     word-break: break-word;
