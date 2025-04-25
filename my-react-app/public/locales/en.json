@@ -8,9 +8,7 @@
         "education": "Education",
         "recommendations": "Recommendations"
     },
-    "footer": {
-        "copyright": "by Tania Argot"
-    },
+    "progress": "Still in progress ...",
     "introduction": {
         "title": "Meet Tania",
         "description": "To ensure ethical Human-Computer Interaction, IT needs to be developed with the target group in mind at all times - that’s where I come in. I’m a BA graduate in Communication who’s currently pursuing a MSc in Information Technology to be able to act as both developer and integrator."
@@ -47,7 +45,7 @@
                 "API calls",
                 "C",
                 "Linux kernel",
-                "IPv4/IPv6 Address Management"
+                "IPv4/IPv6"
             ],
             "image": "../src/assets/backend.svg"
         },
@@ -163,9 +161,9 @@
             },
             {
                 "title": "Portfolio",
-                "image": "/projects/portfolio.jpg",
+                "image": "./src/assets/portfolioss.png",
                 "labels": ["React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "This is the project you’re currently looking at! This portfolio is a built-from-scratch web application, developed using React, Styled Components, and CSS frameworks like Material UI and Embla Carousel. To both showcase my work and practice building a React application, this portfolio was made at the end of my Master.",
+                "description": "This is the project you’re currently looking at! This portfolio is a built-from-scratch web application, developed using React, Styled Components, and CSS frameworks like Material UI and Embla Carousel. To both showcase my work and practice building a React application, this portfolio was made at the end of my Master. Disclaimer: The project is still missing responsiveness and a complete clean-cut design.",
                 "sourcecode": "View Code",
                 "sourcecodelink": "https://github.com/targot19/portfolio.git"
             },

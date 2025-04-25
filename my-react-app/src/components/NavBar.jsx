@@ -32,6 +32,7 @@ const NavBar = () => {
 
     return (
         <NavBarContainer>
+            <RightContainer>
             <NavLinks isMenuOpen={isMenuOpen}>
                 <NavItem href="#education" className={activeSection === "education" ? "active" : ""}>
                     {t("navigation.education")}
@@ -52,7 +53,6 @@ const NavBar = () => {
                     {t("navigation.contact")}
                 </NavItem>
             </NavLinks>
-            <RightContainer>
                 <TranslatorWrapper>
                     <Translator />
                 </TranslatorWrapper>

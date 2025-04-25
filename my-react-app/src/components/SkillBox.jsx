@@ -72,14 +72,14 @@ const SkillsImage = styled.img`
 
 const SkillBoxTitle = styled.h4`
     font-family: system-ui;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     padding: 0.1rem;
 `
 
 const SkillBoxText = styled.p`
     font-family: "Verdana", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
 
     @media (max-width: 1024px) {
@@ -108,7 +108,7 @@ const SkillsSpan = styled.div`
     text-align: center;
 
     span {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: #333;
     }
 
@@ -127,16 +127,16 @@ const SkillsList = styled.ul`
     
     li {
         display: inline-block;
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0.3rem 0.3rem;
         border: 1px solid black;
         border-radius: 5px;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     @media (max-width: 1024px) {
         li {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     }
 

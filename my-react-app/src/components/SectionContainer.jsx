@@ -106,12 +106,12 @@ export const IntroSection = styled(SectionContainer)`
     height: 100vh;
     justify-content: center;
     align-items: center;
-    align-self: center;
     //border: 2px solid black;
-    padding: 0;
     margin: 0;
     overflow: hidden;
     background-size: cover;
+    padding: 2rem;
+    flex-direction: column;
 
     @media (max-width: 1600px) {
         width: 100%;

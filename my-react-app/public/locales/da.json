@@ -8,9 +8,7 @@
         "education": "Uddannelse",
         "recommendations": "Anbefalinger"
     },
-    "footer": {
-        "copyright": "af Tania Argot"
-    },
+    "progress": "Stadig under udvikling ...",
     "introduction": {
         "title": "Mød Tania",
         "description": "Uddannet humanist med interesse for at udvikle og sikre etisk korrekt IT med målgruppen inkluderet i hvert skridt i processen. Med en bachelor i kommunikation og en fremtidig kandidat i informationsteknologi kan jeg agere som både udvikler og integrator."
@@ -47,7 +45,7 @@
                 "API calls",
                 "C",
                 "Linux kernel",
-                "IPv4/IPv6 adressehåndtering"
+                "IPv4/IPv6"
             ],
             "image": "../src/assets/backend.svg"
         },
@@ -62,10 +60,10 @@
                 "Android Studio",
                 "Jira",
                 "Overleaf",
-                "Waterfall Methodology",
+                "Vandfaldsmetoden",
                 "Scrum",
                 "Design Thinking",
-                "Kanban Methodology",
+                "Kanban",
                 "Wrike"
             ],
             "image": "../src/assets/project.svg"
@@ -163,9 +161,9 @@
             },
             {
                 "title": "Portfolio",
-                "image": "/projects/portfolio.jpg",
+                "image": "./src/assets/portfolioss.png",
                 "labels": ["React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
-                "description": ".",
+                "description": "Dette er projektet, du i øjeblikket kigger på! Denne portefølje er en webapplikation, bygget fra bunden og udviklet ved hjælp af React, Styled Components og CSS-frameworks som Bootstrap og Embla Carousel. For både at fremvise mit arbejde og øve mig i at bygge en React-applikation blev denne portfolio lavet i slutningen af ​​min kandidat. Disclaimer: Projektet mangler et strømlinet design og at blive gjort responsivt.",
                 "sourcecode": "Se kode",
                 "sourcecodelink": "https://github.com/targot19/portfolio.git"
             },

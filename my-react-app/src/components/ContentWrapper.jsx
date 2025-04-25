@@ -83,10 +83,11 @@ import styled from "styled-components";
  `;
 
  export const IntroWrapper = styled(ContentWrapper)`
-    margin: 10rem 40rem 10rem 5rem;
+    margin: 10rem 30rem 10rem 5rem;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    //border: 2px solid red;
 
     @media (max-width: 1024px) {
         margin: 5rem 20rem 5rem 5rem;

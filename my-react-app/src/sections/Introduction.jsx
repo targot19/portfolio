@@ -62,6 +62,9 @@ const Introduction = () => {
                     </StyledButton>
                 </IntroWrapperHorizon>
             </IntroWrapper>
+            <Disclaimer>
+                {t("progress")}
+            </Disclaimer>
         </IntroSection>
     );
 };
@@ -73,8 +76,8 @@ const IntroText = styled.p`
     font-size: 1.4rem;
     padding-right: 1rem;
     place-content: center;
-    max-width: 70%;
-    border: 2px solid red;
+    max-width: 100%;
+    //border: 2px solid red;
 
     @media (max-width: 1024px) {
         font-size: 1.2rem;
@@ -128,3 +131,18 @@ const StyledButton = styled.button`
         font-size: 1rem;
     }
 }`;
+
+const Disclaimer = styled.div`
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    //border: 2px solid red;`
