@@ -48,7 +48,7 @@ const SkillBoxContainer = styled.div`
 
     @media (max-width: 420px) {
         width: 25rem;
-        height: 8rem;
+        height: 20rem;
     }
 `
 
@@ -91,7 +91,7 @@ const SkillBoxText = styled.p`
     }
 
     @media (max-width: 420px) {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 `
 

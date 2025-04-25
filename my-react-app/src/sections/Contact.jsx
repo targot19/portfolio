@@ -46,7 +46,7 @@ const ProfilePic = styled.img`
     }
 
     @media (max-width: 420px) {
-        width: 10rem;
-        height: 10rem;
+        width: 13rem;
+        height: 13rem;
     }
 `;

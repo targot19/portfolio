@@ -2,16 +2,16 @@ import styled from "styled-components";
 import EducationBg from "../assets/education.jpg"; // Photo by Taryn Elliott: https://www.pexels.com/photo/a-gradient-of-pastel-colors-8052681/
 
 const SectionContainer = styled.section`
-     display: flex;
-     overflow: hidden;
-     flex-direction: column;
-     width: 100%;
-     max-width: 100vw;
-     height: auto;
-     justify-content: center;
-     align-items: center;
-     gap: 1em;
-     box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    box-sizing: border-box;
  `;
 
  export const Box1 = styled(SectionContainer)`
@@ -29,11 +29,11 @@ export const Box3 = styled(SectionContainer)`
     width: 100%;
 
     @media (max-width: 768px) {
-        height: calc(200vh - 4rem);
+        height: calc(192vh - 4rem);
     }
 
     @media (max-width: 420px) {
-        padding: 0.5rem;
+        height: calc(220vh - 4rem);
     }
     `
 

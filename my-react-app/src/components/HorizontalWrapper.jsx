@@ -19,46 +19,40 @@ import styled from "styled-components";
 
  export const EducationWrapperHorizon = styled(HorizontalWrapper)`
     display: flex;
-     //overflow: hidden;
-     width: 100%;
-     flex-direction: column;
-     justify-content: center;
-     //border: 2px dotted purple;
-     flex: 1;
-     height: auto;
-     box-sizing: border-box;
-     align-items: center;
-     //min-width: 8em;
-     flex-wrap: wrap;
-     //gap: 1em;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: wrap;
  `;
 
  export const IntroWrapperHorizon = styled(HorizontalWrapper)`
     display: flex;
-     //overflow: hidden;
-     width: 100%;
-     flex-direction: row;
-     justify-content: left;
-     //border: 2px dotted red;
-     flex: 1;
-     height: auto;
-     box-sizing: border-box;
-     align-items: center;
-     //min-width: 8em;
-     flex-wrap: wrap;
-     gap: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: left;
+    flex: 1;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     @media (max-width: 1024px) {
-        width: 100%;
-        justify-content: left;
+        padding-right: 0.8rem;
     }
 
     @media (max-width: 768px) {
-        width: 90%;
+        padding-right: 0.5rem;
     }
 
     @media (max-width: 420px) {
-        width: 80%;
+        //padding-right: 0.4rem;
+        flex-direction: column;
+        margin: 0 auto;
     }
  `;
 

@@ -7,7 +7,6 @@ const SectionTitle = styled.h1`
     font-weight: bold;
     font-family: system-ui;
     letter-spacing: 0.01em;
-    //border: 2px red dotted;
     margin: auto;
 
     @media (max-width: 1024px) {

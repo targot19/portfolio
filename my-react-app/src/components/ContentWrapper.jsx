@@ -77,7 +77,8 @@ import styled from "styled-components";
     }
 
     @media (max-width: 420px) {
-        margin: 0.5rem 2rem;
+        margin: 0rem 0rem;
+        gap: 0;
     }
  `;
 
@@ -88,7 +89,6 @@ import styled from "styled-components";
     justify-content: center;
 
     @media (max-width: 1024px) {
-        //width: 100%;
         margin: 5rem 20rem 5rem 5rem;
         align-items: left;
     }
@@ -98,7 +98,7 @@ import styled from "styled-components";
     }
 
     @media (max-width: 420px) {
-        width: 80%;
+        width: 10%;
     }
  `;
 

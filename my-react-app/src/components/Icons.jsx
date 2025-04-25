@@ -61,7 +61,7 @@ const Icon = styled.img`
     }
 
     @media (max-width: 420px) {
-        width: 3rem;
-        height: 2rem;
+        width: 4rem;
+        height: 3rem;
     }
     `

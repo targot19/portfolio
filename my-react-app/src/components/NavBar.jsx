@@ -74,7 +74,7 @@ const NavBarContainer = styled.nav`
     background-color: #81B29A;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     height: 4rem;
 
     @media (max-width: 1024px) {
@@ -91,6 +91,8 @@ const NavBarContainer = styled.nav`
 const NavLinks = styled.div`
     display: flex;
     margin-left: auto;
+    justify-content: flex-end;
+    margin-left: 0 auto;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -143,7 +145,7 @@ const NavItem = styled.a`
 const RightContainer = styled.div`
     display: flex;
     align-items: center;
-    gap: 1rem; /* Add spacing between the translator and hamburger menu */
+    gap: 1rem;
     margin-left: auto;
 `;
 

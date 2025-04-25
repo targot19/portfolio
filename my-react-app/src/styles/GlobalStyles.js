@@ -2,15 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 
-    export const breakpoints = {
-        phoneSm: "420px",
-        phone: "767px",
-        tablet: "768px",
-        tabletLg: "1024px",
-        desktop: "1025px",
-        desktopLg: "1600px",
-    };
-
     body {
         background-color: #F4F1DE;
         font-family: "Verdana", sans-serif;
@@ -32,40 +23,17 @@ const GlobalStyles = createGlobalStyle`
         scroll-padding-top: 4rem;
     }
 
-    @media (max-width: 1600px) {
-        body {
-            font-size: 20px;
-        }
-    }
-
-    @media (max-width: 1024px) {
-        body {
-            font-size: 18px;
-        }
-    }
-
     @media (max-width: 768px) {
-        body {
-            font-size: 16px;
-        }
-    }
-
-    @media (max-width: 420px) {
         body {
             font-size: 14px;
         }
     }
 
-
-
-    :root {
-    --font-size-large: 2rem;
-    --font-size-medium: 1.5rem;
-    --font-size-small: 1rem;
-    --primary-color: #81B29A;
-    --secondary-color: #CB997E;
+    @media (max-width: 420px) {
+        body {
+            font-size: 12px;
+        }
     }
-
 
     body::-webkit-scrollbar {
         width: 10px;

@@ -21,7 +21,6 @@ const EducationCardContainer = styled.div`
 
 const EducationTitle = styled.h3`
     font-size: 1.6rem;
-    font-family: system-ui;
     font-weight: bold;
     margin: 2rem 0 0 0;
 
@@ -34,13 +33,12 @@ const EducationTitle = styled.h3`
     }
 
     @media (max-width: 420px) {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 `;
 
 const EducationYear = styled.h4`
     font-size: 1.1rem;
-    font-family: system-ui;
     font-weight: normal;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
@@ -60,7 +58,6 @@ const EducationYear = styled.h4`
 
 const EducationDescription = styled.p`
     font-size: 1.3rem;
-    font-family: system-ui;
     font-weight: normal;
     text-align: justify;
     word-break: break-word;
@@ -78,7 +75,8 @@ const EducationDescription = styled.p`
     }
 
     @media (max-width: 420px) {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        text-align: left;
     }
 `;

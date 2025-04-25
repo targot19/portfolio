@@ -73,20 +73,23 @@ const IntroText = styled.p`
     font-size: 1.4rem;
     padding-right: 1rem;
     place-content: center;
+    max-width: 70%;
+    border: 2px solid red;
 
     @media (max-width: 1024px) {
         font-size: 1.2rem;
         padding-right: 0.8rem;
+        max-width: 80%;
     }
 
     @media (max-width: 768px) {
         font-size: 1.1rem;
-        padding-right: 0.7rem;
+        max-width: 90%;
     }
 
     @media (max-width: 420px) {
         font-size: 1rem;
-        padding-right: 0.6rem;
+        max-width: 95%;
     }
 `;
 
@@ -121,7 +124,7 @@ const StyledButton = styled.button`
 
     @media (max-width: 420px) {
         width: 5rem;
-        height: 0.9rem;
+        height: 2rem;
         font-size: 1rem;
     }
 }`;
