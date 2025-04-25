@@ -31,6 +31,18 @@ export const SectionTitleIntro = styled(SectionTitle)`
 
 export const SectionTitleEducation = styled(SectionTitle)`
     margin-bottom: 2rem;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 420px) {
+        margin-bottom: 0;
+    }
 `
 
 export const SectionTitleRecommendation = styled(SectionTitle)`

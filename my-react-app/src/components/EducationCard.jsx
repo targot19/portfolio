@@ -64,8 +64,6 @@ const EducationDescription = styled.p`
     font-weight: normal;
     text-align: justify;
     word-break: break-word;
-    //border: 2px solid green;
-    //padding-right: 2rem;
     line-height: 2rem;
     word-wrap: break-word;
 
@@ -75,8 +73,8 @@ const EducationDescription = styled.p`
     }
 
     @media (max-width: 768px) {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
     }
 
     @media (max-width: 420px) {

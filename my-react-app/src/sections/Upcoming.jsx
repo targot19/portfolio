@@ -64,7 +64,7 @@ const Dunno = styled.div`
     position: absolute;
     display: inline-block;
     white-space: nowrap;
-    animation: move-right-to-left 8.5s linear infinite;
+    animation: move-right-to-left 10.5s linear infinite;
 `;
 
 const GlobalKeyframes = createGlobalStyle`

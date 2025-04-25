@@ -44,7 +44,7 @@ const ProjectCardContainer = styled.div`
 
     @media (max-width: 768px) {
         width: 45rem;
-        height: 30rem;
+        height: 28rem;
     }
 
     @media (max-width: 420px) {
@@ -64,7 +64,7 @@ const ProjectCardTextContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        width: 25rem;
+        width: 30rem;
     }
 
     @media (max-width: 420px) {
@@ -85,8 +85,8 @@ const ProjectImage = styled.img`
     }
 
     @media (max-width: 768px) {
-        width: 15rem;
-        max-height: 20rem;
+        width: 17rem;
+        max-height: 22rem;
     }
 
     @media (max-width: 420px) {
@@ -105,7 +105,7 @@ const ProjectCardTitle = styled.h4`
     }
 
     @media (max-width: 768px) {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     @media (max-width: 420px) {
@@ -122,7 +122,7 @@ const ProjectCardText = styled.p`
     }
 
     @media (max-width: 768px) {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     @media (max-width: 420px) {
@@ -155,7 +155,7 @@ const ProjectList = styled.ul`
 
     @media (max-width: 768px) {
         li {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
         }
     }
 

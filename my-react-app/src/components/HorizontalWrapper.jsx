@@ -70,9 +70,7 @@ import styled from "styled-components";
     flex: 1;
     height: auto;
     align-items: center;
-    //min-width: 8em;
     flex-wrap: wrap;
-    //gap: 1rem;
     max-width: 30rem;
 
     @media (max-width: 1024px) {
@@ -83,6 +81,8 @@ import styled from "styled-components";
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 1rem;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
     }
 
     @media (max-width: 420px) {

@@ -157,7 +157,7 @@
                 "title": "Experiment on Trust in AI",
                 "image": "./src/assets/thesis.png",
                 "labels": ["API calls", "Prompt Engineering", "React", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "As part of my master’s thesis, we developed a user interface for an experiment exploring trust in AI, specifically in LLMs. With two independent variables, four different conditions were specified with the purpose of examining how they influence user trust. By using OpenAI’s API (also known as ChatGPT), we used prompt engineering to design our experiment. As the topic of AI becomes more prominent in our everyday lives, the main idea built upon calibrating one's trust to avoid becoming both overreliant and underreliant. The UI served as research through design and was built with React, Material UI, and Tailwind CSS.",
+                "description": "As part of my master’s thesis, we developed a user interface for an experiment exploring trust in AI, specifically in LLMs. With two independent variables, four different conditions were specified with the purpose of examining how they influence user trust. By using OpenAI’s API, we used prompt engineering to design our experiment. As the topic of AI becomes more prominent in our everyday lives, the main idea built upon calibrating one's trust to avoid becoming both overreliant and underreliant. The UI served as research through design and was built with React, Material UI, and Tailwind CSS.",
                 "sourcecode": "View Code",
                 "sourcecodelink": "https://github.com/targot19/speciale-P10.git"
             },

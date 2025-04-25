@@ -157,7 +157,7 @@
                 "title": "Eksperiment omkring tillid til AI",
                 "image": "./src/assets/thesis.png",
                 "labels": ["API calls", "Prompt Engineering", "React", "Vite", "Tailwind CSS", "Material UI"],
-                "description": "Som en del af mit speciale udviklede vi en brugergrænseflade til et eksperiment, der udforskede tillid til AI, specifikt i LLM'er. Med to uafhængige variabler, blev fire forskellige forhold specificeret med dét formål at undersøge, hvordan de påvirker brugertillid. Ved at bruge OpenAIs API (også kendt som ChatGPT) brugte vi prompt engineering til at designe vores eksperiment. Efterhånden som emnet AI bliver mere fremtrædende i vores hverdag, byggede hovedideen på at kalibrere ens tillid for at undgå at blive både over- og underafhængig. Brugergrænsefladen tjente som forskning gennem design og blev bygget med React, Material UI og Tailwind CSS.",
+                "description": "Som en del af mit speciale udviklede vi et UI til et eksperiment, der udforskede tillid til AI, specifikt i LLM'er. Med to uafhængige variabler, blev fire forskellige forhold specificeret med dét formål at undersøge, hvordan de påvirker brugertillid. Ved at bruge OpenAIs API brugte vi prompt engineering til at designe vores eksperiment. Efterhånden som AI bliver mere fremtrædende i vores hverdag, byggede hovedideen på at kalibrere ens tillid for at undgå at blive både over- og underafhængig. UI tjente som forskning gennem design og blev bygget med React, Material UI og Tailwind CSS.",
                 "sourcecode": "Se kode",
                 "sourcecodelink": "https://github.com/targot19/speciale-P10.git"
             },

@@ -42,8 +42,8 @@ const SkillBoxContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        width: 30rem;
-        height: 12rem;
+        width: 44rem;
+        height: 17rem;
     }
 
     @media (max-width: 420px) {
@@ -87,7 +87,7 @@ const SkillBoxText = styled.p`
     }
 
     @media (max-width: 768px) {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     @media (max-width: 420px) {
@@ -104,7 +104,7 @@ const SkillsSpan = styled.div`
     padding: 10px;
     border-top: 1px solid #ccc;
     transform: translateY(100%);
-    transition: transform 0.5s ease-in-out; /* Smooth slide-in effect */
+    transition: transform 0.5s ease-in-out;
     text-align: center;
 
     span {
@@ -123,14 +123,32 @@ const SkillsList = styled.ul`
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 0.5rem;
     
     li {
         display: inline-block;
-        font-size: 1em;
-        padding: 0.3em 0.3em;
+        font-size: 1rem;
+        padding: 0.3rem 0.3rem;
         border: 1px solid black;
         border-radius: 5px;
-        gap: 1em;
+        gap: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+        li {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        li {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 420px) {
+        li {
+            font-size: 0.8rem;
+        }
     }
 `

@@ -94,7 +94,7 @@ import styled from "styled-components";
     }
 
     @media (max-width: 768px) {
-        width: 90%;
+        width: 50%;
     }
 
     @media (max-width: 420px) {
@@ -118,7 +118,9 @@ import styled from "styled-components";
     }
 
     @media (max-width: 768px) {
-        width: 90%;
+        width: 50%;
+        justify-content: center;
+        padding-bottom: 1rem;
     }
 
     @media (max-width: 420px) {

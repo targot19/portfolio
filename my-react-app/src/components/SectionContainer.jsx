@@ -27,6 +27,14 @@ export const Box3 = styled(SectionContainer)`
     display: inline-block;
     height: calc(100vh - 4rem);
     width: 100%;
+
+    @media (max-width: 768px) {
+        height: calc(200vh - 4rem);
+    }
+
+    @media (max-width: 420px) {
+        padding: 0.5rem;
+    }
     `
 
 export const EducationBox = styled(SectionContainer)`

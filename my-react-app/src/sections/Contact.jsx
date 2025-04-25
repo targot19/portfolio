@@ -33,7 +33,7 @@ const ProfilePic = styled.img`
     height: 25rem;
     object-fit: cover;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 0;
 
     @media (max-width: 1024px) {
         width: 20rem;
@@ -41,8 +41,8 @@ const ProfilePic = styled.img`
     }
 
     @media (max-width: 768px) {
-        width: 15rem;
-        height: 15rem;
+        width: 13rem;
+        height: 13rem;
     }
 
     @media (max-width: 420px) {

@@ -114,8 +114,8 @@ const StyledButton = styled.button`
     }
 
     @media (max-width: 768px) {
-        width: 6rem;
-        height: 1rem;
+        width: 7rem;
+        height: 3rem;
         font-size: 1rem;
     }
 

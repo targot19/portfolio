@@ -32,9 +32,6 @@ const NavBar = () => {
 
     return (
         <NavBarContainer>
-            <HamburgerMenu onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                ☰
-            </HamburgerMenu>
             <NavLinks isMenuOpen={isMenuOpen}>
                 <NavItem href="#education" className={activeSection === "education" ? "active" : ""}>
                     {t("navigation.education")}
@@ -55,9 +52,14 @@ const NavBar = () => {
                     {t("navigation.contact")}
                 </NavItem>
             </NavLinks>
-            <TranslatorWrapper>
-                <Translator />
-            </TranslatorWrapper>
+            <RightContainer>
+                <TranslatorWrapper>
+                    <Translator />
+                </TranslatorWrapper>
+                <HamburgerMenu onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    ☰
+                </HamburgerMenu>
+            </RightContainer>
         </NavBarContainer>
     );
 };
@@ -138,6 +140,13 @@ const NavItem = styled.a`
     }
 `;
 
+const RightContainer = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Add spacing between the translator and hamburger menu */
+    margin-left: auto;
+`;
+
 const HamburgerMenu = styled.div`
     display: none;
     font-size: 2rem;
@@ -147,6 +156,7 @@ const HamburgerMenu = styled.div`
     @media (max-width: 768px) {
         display: block;
         z-index: 10;
+        justify-content: flex-end;
     }
 
     @media (max-width: 420px) {
