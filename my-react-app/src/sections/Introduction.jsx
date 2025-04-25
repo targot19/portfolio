@@ -22,9 +22,9 @@ const Introduction = () => {
 
     const downloadFile = () => {
         if (i18n.language === "en") {
-            window.open('/src/assets/EN-CV.pdf', '_blank');
+            window.open('/EN-CV.pdf', '_blank');
         } else if (i18n.language === "da") {
-            window.open('/src/assets/DA-CV.pdf', '_blank');
+            window.open('/DA-CV.pdf', '_blank');
         }
     };
 
