@@ -147,7 +147,7 @@
         "projectList": [
             {
                 "title": "EcoHour",
-                "image": "./src/assets/ecohour.png",
+                "image": "/projects/ecohour.png",
                 "labels": ["Java",  "Android", "API calls"],
                 "description": "EcoHour is an Android application developed as part of a semester project. In collaboration with MinStrøm’s API, we created a calendar, to-do list, and electricity price app all in one planning tool. EcoHour makes it possible to plan household tasks around electricity prices.",
                 "sourcecode": "View Code",
@@ -155,7 +155,7 @@
             },
             {
                 "title": "Experiment on Trust in AI",
-                "image": "./src/assets/thesis.png",
+                "image": "/projects/thesis.png",
                 "labels": ["API calls", "Prompt Engineering", "React", "Vite", "Tailwind CSS", "Material UI"],
                 "description": "As part of my master’s thesis, we developed a user interface for an experiment exploring trust in AI, specifically in LLMs. With two independent variables, four different conditions were specified with the purpose of examining how they influence user trust. By using OpenAI’s API, we used prompt engineering to design our experiment. As the topic of AI becomes more prominent in our everyday lives, the main idea built upon calibrating one's trust to avoid becoming both overreliant and underreliant. The UI served as research through design and was built with React, Material UI, and Tailwind CSS.",
                 "sourcecode": "View Code",
@@ -163,7 +163,7 @@
             },
             {
                 "title": "Portfolio",
-                "image": "./src/assets/portfolioss.png",
+                "image": "/projects/portfolioss.png",
                 "labels": ["React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
                 "description": "This is the project you’re currently looking at! This portfolio is a built-from-scratch web application, developed using React, Styled Components, and CSS frameworks like Material UI and Embla Carousel. To both showcase my work and practice building a React application, this portfolio was made at the end of my Master. Disclaimer: The project is still missing responsiveness and a complete clean-cut design.",
                 "sourcecode": "View Code",
@@ -171,7 +171,7 @@
             },
             {
                 "title": "Tom and Jerry",
-                "image": "./src/assets/tomandjerry.png",
+                "image": "/projects/tomandjerry.png",
                 "labels": ["Java"],
                 "description": "The game is based on the popular “Tom and Jerry” TV series and was developed in Java for my object-oriented programming course. As simple as the UI may look, just as simple is the game. This was my first Java application, and building it helped me develop a fundamental understanding of object-oriented programming concepts such as inheritance, polymorphism, and encapsulation.",
                 "sourcecode": "View Code",
