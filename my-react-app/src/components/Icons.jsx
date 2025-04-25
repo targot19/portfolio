@@ -1,23 +1,19 @@
 import styled from 'styled-components';
-import Github from "../assets/github.svg";
-import LinkedIn from "../assets/LinkedIn.svg";
-import Phone from "../assets/phone.svg";
-import Mail from "../assets/mail.svg";
 
 const Icons = () => {
     return (
         <IconsWrapper>
             <a href='mailto:taniaargot@gmail.com' target='blank' rel='noopener noreferrer'>
-            <Icon src={Mail} alt="Mail. Source: https://icons8.com/icon/YRRhCXfA0Vd0/mail" />
+                <Icon src="/mail.svg" alt="Mail. Source: https://icons8.com/icon/YRRhCXfA0Vd0/mail" />
             </a>
             <a href='tel:+4522831999' target='blank' rel='noopener noreferrer'>
-            <Icon src={Phone} alt="Phone. Source: https://icons8.com/icon/jShwZ2RCyPSO/phone" />
+                <Icon src="/phone.svg" alt="Phone. Source: https://icons8.com/icon/jShwZ2RCyPSO/phone" />
             </a>
             <a href='https://www.linkedin.com/in/taniaargot/' target='blank' rel='noopener noreferrer'>
-            <Icon src={LinkedIn} alt="LinkedIn. Source: https://icons8.com/icon/8808/linkedin"/>
+                <Icon src="/Linkedin.svg" alt="LinkedIn. Source: https://icons8.com/icon/8808/linkedin"/>
             </a>
             <a href='https://github.com/targot19' target='blank' rel='noopener noreferrer'>
-            <Icon src={Github} alt="Github. Source: https://icons8.com/icon/62856/github" />
+                <Icon src="/github.svg" alt="Github. Source: https://icons8.com/icon/62856/github" />
             </a>
         </IconsWrapper>
     )
