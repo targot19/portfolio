@@ -164,7 +164,7 @@
             {
                 "title": "Portfolio",
                 "image": "/projects/portfolioss.png",
-                "labels": ["React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+                "labels": ["HTML/CSS", "React", "Bootstrap", "Material UI", "i18n"],
                 "description": "This is the project you’re currently looking at! This portfolio is a built-from-scratch web application, developed using React, Styled Components, and CSS frameworks like Material UI and Embla Carousel. To both showcase my work and practice building a React application, this portfolio was made at the end of my Master. Disclaimer: The project is still missing responsiveness and a complete clean-cut design.",
                 "sourcecode": "View Code",
                 "sourcecodelink": "https://github.com/targot19/portfolio.git"
@@ -172,7 +172,7 @@
             {
                 "title": "Tom and Jerry",
                 "image": "/projects/tomandjerry.png",
-                "labels": ["Java"],
+                "labels": ["Java", "JavaFX"],
                 "description": "The game is based on the popular “Tom and Jerry” TV series and was developed in Java for my object-oriented programming course. As simple as the UI may look, just as simple is the game. This was my first Java application, and building it helped me develop a fundamental understanding of object-oriented programming concepts such as inheritance, polymorphism, and encapsulation.",
                 "sourcecode": "View Code",
                 "sourcecodelink": "https://github.com/targot19/GOOP-EXAM.git"

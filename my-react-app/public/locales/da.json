@@ -164,7 +164,7 @@
             {
                 "title": "Portfolio",
                 "image": "/projects/portfolioss.png",
-                "labels": ["React", "React Hooks", "Vite", "Tailwind CSS", "Material UI"],
+                "labels": ["HTML/CSS", "React", "Bootstrap", "Material UI", "i18n"],
                 "description": "Dette er projektet, du i øjeblikket kigger på! Denne portefølje er en webapplikation, bygget fra bunden og udviklet ved hjælp af React, Styled Components og CSS-frameworks som Bootstrap og Embla Carousel. For både at fremvise mit arbejde og øve mig i at bygge en React-applikation blev denne portfolio lavet i slutningen af ​​min kandidat. Disclaimer: Projektet mangler et strømlinet design og at blive gjort responsivt.",
                 "sourcecode": "Se kode",
                 "sourcecodelink": "https://github.com/targot19/portfolio.git"
@@ -172,7 +172,7 @@
             {
                 "title": "Tom and Jerry",
                 "image": "/projects/tomandjerry.png",
-                "labels": ["Java"],
+                "labels": ["Java", "JavaFX"],
                 "description": "Spillet er baseret på den populære 'Tom and Jerry' tv-serie og er udviklet i Java til mit objektorienterede programmeringskursus. Så simpelt som brugergrænsefladen kan se ud, lige så enkelt er spillet. Dette var min første Java-applikation, og opbygningen af ​​den hjalp mig med at udvikle en grundlæggende forståelse af objektorienterede programmeringskoncepter såsom arv, polymorfi og indkapsling.",
                 "sourcecode": "Se kode",
                 "sourcecodelink": "https://github.com/targot19/GOOP-EXAM.git"
