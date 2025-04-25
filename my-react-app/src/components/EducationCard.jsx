@@ -17,6 +17,20 @@ export default EducationCard;
 const EducationCardContainer = styled.div`
     display: flex;
     flex-direction: column;
+    margin: 0.5rem 10rem;
+
+    @media (max-width: 1024px) {
+        margin: 1.5rem 10rem;
+    }
+
+    @media (max-width: 768px) {
+        margin: 1rem 5rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 100%;
+        margin: 0rem 0rem;
+    }
 `;
 
 const EducationTitle = styled.h3`

@@ -7,8 +7,9 @@ import styled from "styled-components";
     justify-content: center;
     //border: 2px solid blue;
     padding: 1em;
-    width: auto;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
     box-sizing: border-box;
     x-index: 1;
  `
@@ -58,7 +59,7 @@ import styled from "styled-components";
 
  export const EducationWrapper = styled(ContentWrapper)`
     flex-wrap: no-wrap;
-    margin: 2rem 20rem;
+    margin: 10rem 20rem;
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
@@ -77,29 +78,34 @@ import styled from "styled-components";
     }
 
     @media (max-width: 420px) {
+        width: 100%;
         margin: 0rem 0rem;
-        gap: 0;
     }
  `;
 
  export const IntroWrapper = styled(ContentWrapper)`
-    margin: 10rem 30rem 10rem 5rem;
+    margin: auto;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     //border: 2px solid red;
 
     @media (max-width: 1024px) {
-        margin: 5rem 20rem 5rem 5rem;
-        align-items: left;
+        margin: 5rem 5rem 5rem 5rem;
+        align-items: flex-start;
     }
 
     @media (max-width: 768px) {
-        width: 50%;
+        margin: 1rem 1rem 5rem 5rem;
     }
 
     @media (max-width: 420px) {
-        width: 10%;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        align-items: left;
+        text-align: justify;
+        flex-wrap: wrap;
     }
  `;
 

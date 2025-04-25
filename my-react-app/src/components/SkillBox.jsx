@@ -38,7 +38,7 @@ const SkillBoxContainer = styled.div`
 
     @media (max-width: 1024px) {
         width: 31rem;
-        height: 15rem;
+        height: 22rem;
     }
 
     @media (max-width: 768px) {
@@ -48,7 +48,7 @@ const SkillBoxContainer = styled.div`
 
     @media (max-width: 420px) {
         width: 25rem;
-        height: 20rem;
+        height: 25rem;
     }
 `
 
@@ -115,6 +115,10 @@ const SkillsSpan = styled.div`
     ${SkillBoxContainer}:hover & {
         transform: translateY(0);
     }
+
+    @media (max-width: 420px) {
+        transform: translateY(0);
+    }
 `
 
 const SkillsList = styled.ul`
@@ -136,7 +140,7 @@ const SkillsList = styled.ul`
 
     @media (max-width: 1024px) {
         li {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 

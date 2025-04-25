@@ -19,6 +19,7 @@ const SectionTitle = styled.h1`
 
     @media (max-width: 420px) {
         font-size: 1.9rem;
+        margin-top: 1rem;
     }
 `;
 
@@ -64,6 +65,8 @@ export const SectionTitleProjects = styled(SectionTitle)`
 
     @media (max-width: 420px) {
         font-size: 1.9rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 `
 

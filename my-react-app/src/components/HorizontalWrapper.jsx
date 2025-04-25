@@ -51,7 +51,7 @@ import styled from "styled-components";
 
     @media (max-width: 420px) {
         //padding-right: 0.4rem;
-        flex-direction: column;
+        flex-direction: row;
         margin: 0 auto;
     }
  `;

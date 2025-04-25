@@ -29,29 +29,36 @@ export default ProjectCard;
 const ProjectCardContainer = styled.div`
     position: relative;
     display: flex;
-    margin-bottom: 1rem;
     flex-direction: row;
-    width: 70rem;
-    height: 30rem;
-    border-radius: 0.8em;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 30rem;
+    border-radius: 0.8rem;
     overflow: hidden;
     background-color: transparent;
+    justify-content: center;
+    //border: 2px solid red;
 
     @media (max-width: 1024px) {
-        width: 60rem;
-        height: 28rem;
+        max-width: 60rem;
+        min-height: 28rem;
     }
 
     @media (max-width: 768px) {
-        width: 45rem;
-        height: 28rem;
+        //height: 80%;
+        //min-height: 28rem;
+        //margin: auto;
+        flex-direction: column;
     }
 
     @media (max-width: 420px) {
-        width: 30rem;
-        height: 55rem;
+        min-width: 25rem;
+        min-height: 40rem;
         flex-direction: column;
-        justify-content: center;
+        margin: 0;
+        flex-wrap: wrap;
         align-items: center;
     }
 `
@@ -60,10 +67,13 @@ const ProjectCardTextContainer = styled.div`
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    width: 40rem;
+    width: 100%;
+    max-width: 40rem;
+    box-sizing: border-box;
+    //border: 2px solid blue;
 
     @media (max-width: 1024px) {
-        width: 35rem;
+        width: 37rem;
     }
 
     @media (max-width: 768px) {
@@ -71,7 +81,7 @@ const ProjectCardTextContainer = styled.div`
     }
 
     @media (max-width: 420px) {
-        width: 25rem;
+        max-width: 90%;
     }
 `
 
@@ -121,7 +131,7 @@ const ProjectCardText = styled.p`
     text-align: justify;
 
     @media (max-width: 1024px) {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     @media (max-width: 768px) {
@@ -129,7 +139,7 @@ const ProjectCardText = styled.p`
     }
 
     @media (max-width: 420px) {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 `
 
@@ -164,7 +174,7 @@ const ProjectList = styled.ul`
 
     @media (max-width: 420px) {
         li {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
     }
 `

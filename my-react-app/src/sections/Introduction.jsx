@@ -93,8 +93,8 @@ const IntroText = styled.p`
     }
 
     @media (max-width: 420px) {
-        font-size: 1rem;
-        max-width: 95%;
+        font-size: 0.9rem;
+        max-width: 100%;
     }
 `;
 
@@ -129,7 +129,7 @@ const StyledButton = styled.button`
     }
 
     @media (max-width: 420px) {
-        width: 5rem;
+        width: 6rem;
         height: 2rem;
         font-size: 1rem;
     }
@@ -148,4 +148,21 @@ const Disclaimer = styled.div`
     font-size: 1rem;
     font-weight: bold;
     font-style: italic;
-    //border: 2px solid red;`
+    //border: 2px solid red;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 2rem;
+        right: 0.5rem;
+        padding: 0;
+        justify-content: end;
+    }
+
+    @media (max-width: 420px) {
+        width: 100%;
+        height: 2rem;
+        right: 0.5rem;
+        padding: 0;
+        justify-content: end;
+    }
+`

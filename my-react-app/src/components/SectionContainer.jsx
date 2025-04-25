@@ -23,13 +23,13 @@ const SectionContainer = styled.section`
 `;
 
 export const Box3 = styled(SectionContainer)`
-    margin: 0 auto;
+    margin: auto;
     display: inline-block;
-    height: calc(100vh - 4rem);
+    height: calc(120vh - 4rem);
     width: 100%;
 
     @media (max-width: 1024px) {
-        calc(110vh - 4rem);
+        calc(100vh - 4rem);
     }
 
     @media (max-width: 768px) {
@@ -37,7 +37,7 @@ export const Box3 = styled(SectionContainer)`
     }
 
     @media (max-width: 420px) {
-        height: calc(220vh - 4rem);
+        height: calc(200vh - 4rem);
     }
     `
 
@@ -66,7 +66,7 @@ export const EducationBox = styled(SectionContainer)`
     }
 
     @media (max-width: 420px) {
-        padding: 0.5rem;
+        width: 100%;
     }
     `
 
@@ -105,8 +105,8 @@ export const Box5 = styled(SectionContainer)`
 export const IntroSection = styled(SectionContainer)`
     position: relative;
     display: flex;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -130,17 +130,27 @@ export const IntroSection = styled(SectionContainer)`
     }
 
     @media (max-width: 420px) {
-        width: 80%;
+        width: 100%;
     }
     `
 
 export const ProjectSection = styled(SectionContainer)`
     display: flex;
     flex-direction: row;
-    //margin-bottom: 5rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: calc(150vh - 4rem);
     //border: 1px solid black;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 420px) {
+        flex-direction: column;
+    }
     `
 
 export default SectionContainer;
