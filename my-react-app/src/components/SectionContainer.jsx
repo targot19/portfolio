@@ -33,11 +33,11 @@ export const Box3 = styled(SectionContainer)`
     }
 
     @media (max-width: 768px) {
-        height: calc(192vh - 4rem);
+        height: auto;
     }
 
     @media (max-width: 420px) {
-        height: calc(200vh - 4rem);
+        height: auto;
     }
     `
 

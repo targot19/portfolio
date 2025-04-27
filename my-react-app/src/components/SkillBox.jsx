@@ -29,26 +29,31 @@ const SkillBoxContainer = styled.div`
     position: relative;
     width: 45rem;
     height: 17rem;
-    padding: 0.2em;
+    padding: 0.2rem;
     //border: 1px solid #ccc;
-    border-radius: 0.8em;
+    border-radius: 0.8rem;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: #CB997E;
 
     @media (max-width: 1024px) {
-        width: 31rem;
-        height: 22rem;
+        //max-width: 80%;
+        width: auto;
+        min-height: 28rem;
+        height: auto;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     @media (max-width: 768px) {
-        width: 44rem;
-        height: 17rem;
+        width: auto;
+        height: 25rem;
     }
 
     @media (max-width: 420px) {
-        width: 25rem;
-        height: 25rem;
+        width: auto;
+        height: 26rem;
     }
 `
 
@@ -113,6 +118,10 @@ const SkillsSpan = styled.div`
     }
 
     ${SkillBoxContainer}:hover & {
+        transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
         transform: translateY(0);
     }
 

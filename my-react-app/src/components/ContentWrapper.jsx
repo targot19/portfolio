@@ -40,7 +40,9 @@ import styled from "styled-components";
     }
 
     @media (max-width: 768px) {
-        width: 90%;
+        width: auto;
+        margin: auto;
+        justify-content: center;
     }
 
     @media (max-width: 420px) {
@@ -75,7 +77,8 @@ import styled from "styled-components";
     }
 
     @media (max-width: 768px) {
-        margin: 1rem 5rem;
+        width: 100%;
+        margin: 0rem 0rem;
     }
 
     @media (max-width: 420px) {
@@ -97,7 +100,7 @@ import styled from "styled-components";
     }
 
     @media (max-width: 768px) {
-        margin: 1rem 1rem 5rem 5rem;
+        margin: 1rem 2rem 5rem 1rem;
     }
 
     @media (max-width: 420px) {
@@ -126,7 +129,7 @@ import styled from "styled-components";
     }
 
     @media (max-width: 768px) {
-        width: 50%;
+        width: 90%;
         justify-content: center;
         padding-bottom: 1rem;
     }

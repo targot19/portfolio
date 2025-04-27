@@ -24,7 +24,7 @@ const EducationCardContainer = styled.div`
     }
 
     @media (max-width: 768px) {
-        margin: 1rem 5rem;
+        margin: auto;
     }
 
     @media (max-width: 420px) {
@@ -86,6 +86,7 @@ const EducationDescription = styled.p`
     @media (max-width: 768px) {
         font-size: 1.2rem;
         line-height: 1.8rem;
+        text-align: left;
     }
 
     @media (max-width: 420px) {

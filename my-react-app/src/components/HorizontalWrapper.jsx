@@ -46,7 +46,8 @@ import styled from "styled-components";
     }
 
     @media (max-width: 768px) {
-        padding-right: 0.5rem;
+        //padding-right: 0.5rem;
+        margin: 0 auto;
     }
 
     @media (max-width: 420px) {
@@ -75,7 +76,9 @@ import styled from "styled-components";
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 1rem;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
+        width: auto;
         margin-bottom: 1rem;
     }
 

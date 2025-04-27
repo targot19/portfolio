@@ -89,7 +89,7 @@ const IntroText = styled.p`
 
     @media (max-width: 768px) {
         font-size: 1.1rem;
-        max-width: 90%;
+        max-width: 100%;
     }
 
     @media (max-width: 420px) {
