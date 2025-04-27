@@ -51,11 +51,11 @@ export const ContactForm = () => {
     <>
     <Form ref={form} onSubmit={sendEmail}>
       <Form.Group className="mb-3 mt-2">
-				<Form.Control type="text" name="user_name" placeholder={t("contact.name")} />
+				<Form.Control type="text" name="name" placeholder={t("contact.name")} />
 				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
 			</Form.Group>
 			<Form.Group className="mb-3 mt-2">
-				<Form.Control type="email" name="user_email" placeholder={t("contact.mail")} />
+				<Form.Control type="email" name="email" placeholder={t("contact.mail")} />
 				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
 			</Form.Group>
 			<Form.Group className="mb-3">
