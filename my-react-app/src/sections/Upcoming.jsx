@@ -6,28 +6,28 @@ import { ContentWrapper1 } from "../components/ContentWrapper";
 
 const Upcoming = () => {
     const { t } = useTranslation();
-    const upcomingSkills = ["Typescript", "Next.js", "Vue", ".NET"]
+    const upcomingSkills = ["Typescript", "Next.js", "Vue", ".NET", "Power BI", "Kubernetes"]
 
     return (
         <>
         <GlobalKeyframes />
-        <Box1 id="upcoming">
-            <ContentWrapper1>
-                <SectionTitle>{t("navigation.upcoming")}</SectionTitle>
-                <Slider>
-                    <Dunno>
-                        <Text>
-                            {upcomingSkills.map((skill, index) => (
-                                <span key={index}>
-                                    {skill}
-                                    {index < upcomingSkills.length - 1 ? ", " : ""}
-                                </span>
-                            ))}
-                        </Text>
-                    </Dunno>
-                </Slider>
-            </ContentWrapper1>
-        </Box1>
+            <Box1 id="upcoming">
+                <ContentWrapper1>
+                    <SectionTitle>{t("navigation.upcoming")}</SectionTitle>
+                    <Slider>
+                        <SliderBox>
+                            <Text>
+                                {upcomingSkills.map((skill, index) => (
+                                    <span key={index}>
+                                        {skill}
+                                        {index < upcomingSkills.length - 1 ? ", " : ""}
+                                    </span>
+                                ))}
+                            </Text>
+                        </SliderBox>
+                    </Slider>
+                </ContentWrapper1>
+            </Box1>
         </>
     );
 };
@@ -37,10 +37,22 @@ export default Upcoming;
 // Styled Components
 
 const Slider = styled.div`
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     min-height: 82px;
     overflow: hidden;
-    width: 100%;
+    width: 50%;
+    //border: 2px solid red;
+`;
+
+const SliderBox = styled.div`
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: move-right-to-left 12.5s linear infinite;
 `;
 
 const Text = styled.div`
@@ -58,13 +70,6 @@ const Text = styled.div`
     @media (max-width: 420px) {
         font-size: 1.2rem;
     }
-`;
-
-const Dunno = styled.div`
-    position: absolute;
-    display: inline-block;
-    white-space: nowrap;
-    animation: move-right-to-left 10.5s linear infinite;
 `;
 
 const GlobalKeyframes = createGlobalStyle`

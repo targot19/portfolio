@@ -15,11 +15,12 @@ import styled from "styled-components";
  `
 
  export const ContentWrapper1 = styled(ContentWrapper)`
+    display: flex;
     flex-wrap: no-wrap;
     margin: 5rem 20rem;
     flex-direction: column;
     gap: 2rem;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
  `;
 
