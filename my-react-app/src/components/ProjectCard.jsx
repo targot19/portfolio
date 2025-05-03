@@ -112,7 +112,7 @@ const ProjectImage = styled.img`
     }
 
     @media (max-width: 420px) {
-        width: 100%;
+        max-width: 20rem;
         max-height: auto;
     }
 
