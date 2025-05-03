@@ -27,8 +27,13 @@ export default SkillBox;
 
 const SkillBoxContainer = styled.div`
     position: relative;
-    width: 45rem;
-    height: 17rem;
+    max-width: 45rem;
+    min-width: 30rem;
+    width: 100%;
+    margin: auto;
+    max-height: 18rem;
+    min-height: 18rem;
+    height: auto;
     padding: 0.2rem;
     //border: 1px solid #ccc;
     border-radius: 0.8rem;
@@ -36,11 +41,17 @@ const SkillBoxContainer = styled.div`
     overflow: hidden;
     background-color: #CB997E;
 
+    @media (min-width: 1400px) {
+        min-width: 45rem;
+        min-height: 17rem;
+    }
+
     @media (max-width: 1024px) {
-        //max-width: 80%;
+        max-width: 30rem;
+        min-width: 25rem;
         width: auto;
-        min-height: 28rem;
-        height: auto;
+        min-height: 22rem;
+        max-height: 28rem;
         margin: auto;
         justify-content: center;
         align-items: center;
@@ -55,15 +66,25 @@ const SkillBoxContainer = styled.div`
         width: auto;
         height: 26rem;
     }
+
+    @media (max-width: 400px) {
+        width: auto;
+        min-width: auto;
+        min-height: 28rem;
+    }
 `
 
 const SkillBoxTextContainer = styled.div`
     text-align: center;
-    padding: 1.2rem;
+    padding: 1rem;
     overflow: hidden;
 
     &:hover + div {
         transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.5rem;
     }
 `
 
@@ -149,7 +170,7 @@ const SkillsList = styled.ul`
 
     @media (max-width: 1024px) {
         li {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     }
 

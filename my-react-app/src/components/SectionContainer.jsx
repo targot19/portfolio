@@ -20,6 +20,8 @@ const SectionContainer = styled.section`
     background-size: cover;
     background-position: center;
     width: 100%;
+    margin: 0;
+    padding: 0;
 `;
 
 export const Box3 = styled(SectionContainer)`
@@ -27,9 +29,14 @@ export const Box3 = styled(SectionContainer)`
     display: inline-block;
     height: calc(100vh - 4rem);
     width: 100%;
+    box-sizing: border-box;
+
+    @media (max-width: 1400px) {
+        height: auto;
+    }
 
     @media (max-width: 1024px) {
-        calc(100vh - 4rem);
+        height: auto;
     }
 
     @media (max-width: 768px) {
@@ -81,6 +88,7 @@ export const EducationBox = styled(SectionContainer)`
     background-position: center;
     width: 100%;
     height: calc(100vh - 4rem);
+    box-sizing: border-box;
     `
 
 export const Box5 = styled(SectionContainer)`
@@ -112,7 +120,7 @@ export const IntroSection = styled(SectionContainer)`
     align-items: center;
     //border: 2px solid black;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     background-size: cover;
     padding: 2rem;
     flex-direction: column;
@@ -142,6 +150,7 @@ export const ProjectSection = styled(SectionContainer)`
     align-items: center;
     width: 100%;
     min-height: calc(150vh - 4rem);
+    overflow-x: hidden;
     //border: 1px solid black;
 
     @media (max-width: 768px) {

@@ -90,9 +90,15 @@ const IntroText = styled.p`
     @media (max-width: 768px) {
         font-size: 1.1rem;
         max-width: 100%;
+        padding-right: 0.8rem;
     }
 
     @media (max-width: 420px) {
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    @media (max-width: 380px) {
         font-size: 0.9rem;
         max-width: 100%;
     }
@@ -140,7 +146,7 @@ const Disclaimer = styled.div`
     bottom: 1rem;
     right: 1rem;
     display: flex;
-    width: 20%;
+    width: 30%;
     justify-content: center;
     align-items: center;
     text-align: right;
@@ -162,6 +168,14 @@ const Disclaimer = styled.div`
         width: 100%;
         height: 2rem;
         right: 0.5rem;
+        padding: 0;
+        justify-content: end;
+    }
+
+    @media (max-width: 380px) {
+        width: 100%;
+        height: 1rem;
+        right: 1rem;
         padding: 0;
         justify-content: end;
     }

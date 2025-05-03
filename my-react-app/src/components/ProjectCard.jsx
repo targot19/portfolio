@@ -55,10 +55,15 @@ const ProjectCardContainer = styled.div`
     @media (max-width: 420px) {
         min-width: 25rem;
         min-height: 40rem;
+        width: 100%;
         flex-direction: column;
         margin: 0;
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    @media (max-width: 400px) {
+        max-width: 20rem;
     }
 `
 
@@ -82,6 +87,10 @@ const ProjectCardTextContainer = styled.div`
     @media (max-width: 420px) {
         max-width: 90%;
     }
+
+    @media (max-width: 380px) {
+        max-width: 80%;
+    }
 `
 
 const ProjectImage = styled.img`
@@ -102,8 +111,12 @@ const ProjectImage = styled.img`
     }
 
     @media (max-width: 420px) {
-        width: 20rem;
-        max-height: 25rem;
+        width: 100%;
+        max-height: auto;
+    }
+
+    @media (max-width: 380px) {
+        max-width: 20rem;
     }
 `
 
@@ -126,11 +139,11 @@ const ProjectCardTitle = styled.h4`
 `
 
 const ProjectCardText = styled.p`
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
 
     @media (max-width: 1024px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     @media (max-width: 768px) {

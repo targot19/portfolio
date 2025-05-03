@@ -20,16 +20,17 @@ const EducationCardContainer = styled.div`
     margin: 0.5rem 10rem;
 
     @media (max-width: 1024px) {
-        margin: 1.5rem 10rem;
+        margin: 1rem 8rem;
     }
 
     @media (max-width: 768px) {
         margin: auto;
+        margin: 1rem 0rem;
     }
 
     @media (max-width: 420px) {
         width: 100%;
-        margin: 0rem 0rem;
+        margin: 1rem 0rem;
     }
 `;
 
@@ -40,6 +41,7 @@ const EducationTitle = styled.h3`
 
     @media (max-width: 1024px) {
         font-size: 1.5rem;
+        margin: 0 0 0 0;
     }
 
     @media (max-width: 768px) {
@@ -71,7 +73,7 @@ const EducationYear = styled.h4`
 `;
 
 const EducationDescription = styled.p`
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: normal;
     text-align: justify;
     word-break: break-word;

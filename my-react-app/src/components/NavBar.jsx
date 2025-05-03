@@ -92,7 +92,7 @@ const NavLinks = styled.div`
     display: flex;
     margin-left: auto;
     justify-content: flex-end;
-    margin-left: 0 auto;
+    //margin-left: 0 auto;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -138,7 +138,7 @@ const NavItem = styled.a`
 
     @media (max-width: 420px) {
         font-size: 1rem;
-        padding: 0.3rem;
+        padding: 0.2rem;
     }
 `;
 

@@ -95,7 +95,7 @@ import styled from "styled-components";
     //border: 2px solid red;
 
     @media (max-width: 1024px) {
-        margin: 5rem 5rem 5rem 5rem;
+        margin: 2rem 5rem 5rem 5rem;
         align-items: flex-start;
     }
 
@@ -104,12 +104,16 @@ import styled from "styled-components";
     }
 
     @media (max-width: 420px) {
-        margin: auto;
+        margin: 0rem 2rem 2rem 2rem;
         max-width: 100%;
         height: auto;
         align-items: left;
         text-align: justify;
         flex-wrap: wrap;
+    }
+
+    @media (max-width: 380px) {
+        margin: 0rem 0rem 5rem 0rem;
     }
  `;
 

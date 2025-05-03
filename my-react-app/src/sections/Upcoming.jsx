@@ -53,6 +53,8 @@ const SliderBox = styled.div`
     white-space: nowrap;
     overflow: hidden;
     animation: move-right-to-left 12.5s linear infinite;
+    will-change: transform;
+    max-width: 100%;
 `;
 
 const Text = styled.div`
