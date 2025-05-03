@@ -10,7 +10,7 @@ const Icons = () => {
                 <Icon src="/phone.svg" alt="Phone. Source: https://icons8.com/icon/jShwZ2RCyPSO/phone" />
             </a>
             <a href='https://www.linkedin.com/in/taniaargot/' target='blank' rel='noopener noreferrer'>
-                <Icon src="/Linkedin.svg" alt="LinkedIn. Source: https://icons8.com/icon/8808/linkedin"/>
+                <Icon src="/Linkedin.svg" alt="LinkedIn. Source: https://icons8.com/icon/8808/linkedin" />
             </a>
             <a href='https://github.com/targot19' target='blank' rel='noopener noreferrer'>
                 <Icon src="/github.svg" alt="Github. Source: https://icons8.com/icon/62856/github" />

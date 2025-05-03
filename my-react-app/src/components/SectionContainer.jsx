@@ -12,6 +12,10 @@ const SectionContainer = styled.section`
     align-items: center;
     gap: 1em;
     box-sizing: border-box;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
  `;
 
  export const Box1 = styled(SectionContainer)`
@@ -97,7 +101,7 @@ export const Box5 = styled(SectionContainer)`
     height: calc(100vh - 4rem);
     width: 100%;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
         gap: 0;
     }
 

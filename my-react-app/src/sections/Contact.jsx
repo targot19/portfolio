@@ -36,13 +36,13 @@ const ProfilePic = styled.img`
     z-index: 0;
 
     @media (max-width: 1024px) {
-        width: 20rem;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
     }
 
     @media (max-width: 768px) {
-        width: 13rem;
-        height: 13rem;
+        width: 15rem;
+        height: 15rem;
     }
 
     @media (max-width: 420px) {

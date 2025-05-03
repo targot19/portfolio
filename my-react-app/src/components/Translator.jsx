@@ -6,19 +6,17 @@ import styled from "styled-components";
 
 const Translator = () => {
     const { i18n } = useTranslation();
-    const [isRotated, setIsRotated] = useState(false);
 
     const toggleLanguage = () => {
         const newLanguage = i18n.language === "en" ? "da" : "en";
         i18n.changeLanguage(newLanguage);
-        setIsRotated(!isRotated); // Toggle rotation state
     };
 
     return (
         <OuterWrapper>
             <InnerWrapper>
-                <Button onClick={toggleLanguage} isRotated={isRotated}>
-                    <ButtonText isRotated={isRotated}>
+                <Button onClick={toggleLanguage}>
+                    <ButtonText>
                         {i18n.language === "en" ? "DA" : "EN"}
                     </ButtonText>
                 </Button>
@@ -38,7 +36,6 @@ const Button = styled.button`
     padding: 0.3rem 0.8rem;
     font-size: 1rem;
     border-radius: 5px;
-    //transform: rotateY(${(props) => (props.isRotated ? "180deg" : "0deg")});
     transition: transform 0.5s ease, background-color 0.5s ease;
 
     &:hover {
@@ -48,7 +45,6 @@ const Button = styled.button`
 
 const ButtonText = styled.span`
     display: inline-block;
-    //transform: rotateY(${(props) => (props.isRotated ? "180deg" : "0deg")});
     transition: transform 0.5s ease;
 `;
 

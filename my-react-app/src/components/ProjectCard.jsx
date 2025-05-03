@@ -50,6 +50,7 @@ const ProjectCardContainer = styled.div`
         width: auto;
         flex-direction: column;
         margin: auto;
+        align-items: center;
     }
 
     @media (max-width: 420px) {

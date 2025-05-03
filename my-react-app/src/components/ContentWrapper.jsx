@@ -129,7 +129,7 @@ import styled from "styled-components";
     x-index: 1;
 
     @media (max-width: 1024px) {
-        padding: 0;
+        padding: 1rem;
     }
 
     @media (max-width: 768px) {

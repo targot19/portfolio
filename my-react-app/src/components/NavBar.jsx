@@ -33,7 +33,7 @@ const NavBar = () => {
     return (
         <NavBarContainer>
             <RightContainer>
-            <NavLinks isMenuOpen={isMenuOpen}>
+            <NavLinks $isMenuOpen={isMenuOpen}>
                 <NavItem href="#education" className={activeSection === "education" ? "active" : ""}>
                     {t("navigation.education")}
                 </NavItem>
@@ -56,7 +56,7 @@ const NavBar = () => {
                 <TranslatorWrapper>
                     <Translator />
                 </TranslatorWrapper>
-                <HamburgerMenu onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <HamburgerMenu $isMenuOpen={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     ☰
                 </HamburgerMenu>
             </RightContainer>
@@ -82,7 +82,7 @@ const NavBarContainer = styled.nav`
         justify-content: space-between;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 920px) {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -94,7 +94,7 @@ const NavLinks = styled.div`
     justify-content: flex-end;
     //margin-left: 0 auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: 920px) {
         flex-direction: column;
         align-items: center;
         position: absolute;
@@ -102,7 +102,8 @@ const NavLinks = styled.div`
         left: 0;
         right: 0;
         background-color: #81B29A;
-        display: ${({ isMenuOpen }) => (isMenuOpen ? "flex" : "none")};
+        cursor: pointer;
+        display: ${({ $isMenuOpen }) => ($isMenuOpen ? "flex" : "none")};
     }
 `;
 
@@ -155,7 +156,7 @@ const HamburgerMenu = styled.div`
     cursor: pointer;
     color: #F4F1DE;
 
-    @media (max-width: 768px) {
+    @media (max-width: 920px) {
         display: block;
         z-index: 10;
         justify-content: flex-end;

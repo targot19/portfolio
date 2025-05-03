@@ -57,7 +57,9 @@ const SkillBoxContainer = styled.div`
         align-items: center;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 835px) {
+        min-width: 20rem;
+        max-width: 30rem;
         width: auto;
         height: 25rem;
     }

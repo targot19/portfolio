@@ -51,23 +51,39 @@ export const ContactForm = () => {
     <>
     <Form ref={form} onSubmit={sendEmail}>
       <Form.Group className="mb-3 mt-2">
-				<Form.Control type="text" name="name" placeholder={t("contact.name")} />
-				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
-			</Form.Group>
-			<Form.Group className="mb-3 mt-2">
-				<Form.Control type="email" name="email" placeholder={t("contact.mail")} />
-				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
-			</Form.Group>
-			<Form.Group className="mb-3">
-				<Form.Control as="textarea" rows={3} name="message" placeholder={t("contact.message")} />
-				<Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
-			</Form.Group>
-			<div className="text-end">
+        <Form.Control
+          type="text"
+          name="name"
+          placeholder={t("contact.name")}
+          autoComplete="name" // Enable autocomplete for the name field
+        />
+        <Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
+      </Form.Group>
+      <Form.Group className="mb-3 mt-2">
+        <Form.Control
+          type="email"
+          name="email"
+          placeholder={t("contact.mail")}
+          autoComplete="email" // Enable autocomplete for the email field
+        />
+        <Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
+      </Form.Group>
+      <Form.Group className="mb-3">
+        <Form.Control
+          as="textarea"
+          rows={3}
+          name="message"
+          placeholder={t("contact.message")}
+          autoComplete="off" // Disable autocomplete for the message field
+        />
+        <Form.Control.Feedback type="valid">Message</Form.Control.Feedback>
+      </Form.Group>
+      <div className="text-end">
           <SubmitButton type="submit">
             {t("contact.submit")}
           </SubmitButton>
-			</div>
-		</Form>
+      </div>
+    </Form>
       {isSubmitted && (
           <Alert severity="success" className="mt-3">
             {t("contact.success")}

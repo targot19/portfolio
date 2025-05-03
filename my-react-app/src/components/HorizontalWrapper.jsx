@@ -69,7 +69,7 @@ import styled from "styled-components";
     max-width: 30rem;
 
     @media (max-width: 1024px) {
-        width: 100%;
+        width: 90%;
         justify-content: left;
     }
 
