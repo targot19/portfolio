@@ -47,6 +47,7 @@ import styled from "styled-components";
 
     @media (max-width: 768px) {
         //padding-right: 0.5rem;
+        padding-right: 0;
         margin: 0 auto;
     }
 

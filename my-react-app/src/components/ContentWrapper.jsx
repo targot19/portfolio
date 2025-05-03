@@ -103,13 +103,9 @@ import styled from "styled-components";
         margin: 1rem 2rem 5rem 1rem;
     }
 
-    @media (max-width: 420px) {
-        margin: 0rem 2rem 2rem 2rem;
-        max-width: 100%;
-        height: auto;
-        align-items: left;
+    @media (max-width: 500px) {
+        margin: 0rem 0rem 5rem 0rem;
         text-align: justify;
-        flex-wrap: wrap;
     }
 
     @media (max-width: 380px) {

@@ -90,12 +90,13 @@ const IntroText = styled.p`
     @media (max-width: 768px) {
         font-size: 1.1rem;
         max-width: 100%;
-        padding-right: 0.8rem;
+        //padding-right: 0.5rem;
     }
 
-    @media (max-width: 420px) {
-        font-size: 1.1rem;
+    @media (max-width: 500px) {
+        font-size: 1rem;
         max-width: 100%;
+        padding-right: 0rem;
     }
 
     @media (max-width: 380px) {
