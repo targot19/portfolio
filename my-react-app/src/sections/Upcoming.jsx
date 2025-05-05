@@ -6,7 +6,7 @@ import { ContentWrapper1 } from "../components/ContentWrapper";
 
 const Upcoming = () => {
     const { t } = useTranslation();
-    const upcomingSkills = ["Typescript", "Next.js", "Vue", ".NET", "Power BI", "Kubernetes"]
+    const upcomingSkills = ["Typescript", "Next.js", ".NET", "Angular", "Kubernetes"]
 
     return (
         <>
